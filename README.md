@@ -1,5 +1,7 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
+Copyright (c) 2023 by Clear Bible, Inc.
+
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
