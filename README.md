@@ -5,7 +5,7 @@ Word alignments for Bibles, including both automatic alignments and manually cor
 
 Copyright (c) 2023 by Clear Bible, Inc.
 
-This data is licensed under a
+All data is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
 
