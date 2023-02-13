@@ -1,0 +1,25 @@
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Emacs lisp
+*.elc
+
+# Packaging
+.cask
+dist/
+
+# Backup files
+*~
+
+# Undo-tree save-files
+*.~undo-tree
+
+# MacOS
+.DS_Store
+
+# project-specific
+# ignore luigi logging
+.ipynb_checkpoints/
+.pytest_cache/
