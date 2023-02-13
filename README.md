@@ -5,7 +5,7 @@ Word alignments for Bibles, including both automatic alignments and manually cor
 
 Copyright (c) 2023 by Clear Bible, Inc.
 
-This work is licensed under a
+This data is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
 
@@ -15,3 +15,4 @@ This work is licensed under a
 [![CC BY 4.0][cc-by-image]][cc-by]
 
   
+All code is shared under a MIT License.

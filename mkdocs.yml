@@ -1,0 +1,61 @@
+site_name: alignments
+repo_url: https://github.com/sboisen/alignments
+site_url: https://sboisen.github.io/alignments
+site_description: Word alignments for Bibles, including both automatic alignments and manually corrected alignments.
+site_author: Sean Boisen
+edit_uri: edit/main/docs/
+repo_name: sboisen/alignments
+copyright: Maintained by <a href="https://sboisen.com">Florian</a>.
+
+nav:
+  - Home: index.md
+  - Alignment Formats: formats.md
+  - Alignment Metadata: metadata.md
+  - Modules: modules.md
+  - Other Resources: resources.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sboisen/alignments
+    - icon: fontawesome/brands/python
+      link: https://pypi.com/project/alignments
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
