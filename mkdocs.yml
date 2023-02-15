@@ -1,11 +1,11 @@
-site_name: alignments
-repo_url: https://github.com/sboisen/alignments
-site_url: https://sboisen.github.io/alignments
+site_name: Alignments
+repo_url: https://github.com/Clear-Bible/alignments
+#site_url: https://sboisen.github.io/alignments
 site_description: Word alignments for Bibles, including both automatic alignments and manually corrected alignments.
 site_author: Sean Boisen
 edit_uri: edit/main/docs/
-repo_name: sboisen/alignments
-copyright: Maintained by <a href="https://sboisen.com">Florian</a>.
+repo_name: Clear-Bible/alignments
+copyright: Maintained by <a href="https://sboisen.com">Sean Boisen</a>.
 
 nav:
   - Home: index.md
@@ -46,7 +46,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/sboisen/alignments
+      link: https://github.com/Clear-Bible/alignments
     - icon: fontawesome/brands/python
       link: https://pypi.com/project/alignments
 
@@ -56,6 +56,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - def_list
+  - footnotes
   - pymdownx.tasklist:
       custom_checkbox: true
 

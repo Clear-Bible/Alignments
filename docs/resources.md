@@ -39,5 +39,6 @@ associated data that is outside the scope of this repository.
   community.
 * [eBible.org](https://ebible.org/) has a large collection of
   openly-licensed Bible versions in many languages.
-
-
+* [Diegesis](https://diegesis.bible/list) has a list of many
+  openly-licensed Bibles in a variety of languages, some from eBible
+  and some from other sources.

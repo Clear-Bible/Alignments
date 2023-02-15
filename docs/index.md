@@ -19,7 +19,9 @@ advantage of.
       others)
     * Note that Clear is not able to enforce any license terms, so do not
       upload materials unless you are willing to share them.
-    * "Freely you have received; freely give." (Matt 10:8, NIV)
+    * "Freely you have received; freely give." ([Matt 10:8, NIV](https://www.bible.com/bible/111/MAT.10.8.NIV))
+* While one alignment pair is sufficient to unlock aligned resources
+  for a language, we want to support multiple pairs where they are available.
 * More data is better, but some data is better than none. So please
   upload relevant data and metadata, even if it's not complete, and
   add or correct data where you can.
