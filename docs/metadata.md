@@ -27,7 +27,7 @@ not get incorporated into downstream data aggregations.
       like [Digital Bible Library][dbl] or [eBible.org][ebible].
     * Common identifiers for the Greek New Testament include:
       `SBLGNT`, `NA1904`, `UGNT`.
-	  Common identifiers for the Hebrew Bible include: `BHS`, `UHB`.
+	  Common identifiers for the Hebrew Bible include: `WLC`, `UHB`.
 * _`source.version`_ (string): an identifier of specific version of the
   text. This might be a date or a version number.
 * `source.name.<code>` (string): a localized name for the source
