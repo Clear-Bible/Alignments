@@ -23,3 +23,6 @@ dist/
 # ignore luigi logging
 .ipynb_checkpoints/
 .pytest_cache/
+
+# ignore non-publishable data
+data/raw
