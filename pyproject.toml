@@ -4,10 +4,10 @@ version = "0.0.1"
 description = "Word alignments for Bibles, including both automatic alignments and manually corrected alignments."
 authors = ["Sean Boisen <fsean.boisen@clear.bible>"]
 repository = "https://github.com/sboisen/alignments"
-documentation = "https://sboisen.github.io/alignments/"
+#documentation = "https://sboisen.github.io/alignments/"
 readme = "README.md"
 packages = [
-  {include = "alignments"}
+  {include = "src"}
 ]
 
 [tool.poetry.dependencies]
@@ -40,7 +40,7 @@ preview = true
 profile = "black"
 
 [tool.mypy]
-files = ["alignments"]
+files = ["src"]
 disallow_untyped_defs = "True"
 disallow_any_unimported = "True"
 no_implicit_optional = "True"
@@ -54,5 +54,5 @@ skip_empty = true
 
 [tool.coverage.run]
 branch = true
-source = ["alignments"]
+source = ["src"]
 
