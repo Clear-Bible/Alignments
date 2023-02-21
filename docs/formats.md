@@ -43,6 +43,35 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
 ...
 ```
 
+* `identifier`: book, chapter, verse, word, word part encoded as
+  BBCCCVVVWWWP.
+* `altId`: ? Omitted for copyrighted texts.
+* `text`: surface text from the source. Omitted for copyrighted texts.
+* `strongs`: Strongs concordance identifier for this lemma.
+* `gloss`: English gloss for this lemma. Includes some context
+  information.
+* `gloss2`: ?
+* `lemma`: the dictionary form of the word.
+* `pos`: Part Of Speech, one of the following values:
+    * prep: preposition
+    * verb: verb
+    * ij: interjection
+    * noun: noun
+    * om: omitted?
+    * pron: pronoun
+    * ptcl: participle
+    * art: article
+    * num: number
+    * rel: relative pronoun
+    * x: ?
+    * cj: conjunction
+    * Name: proper name
+    * adj: adjective
+    * adv: adverb
+* `morph`: encoded morphological information.
+    * Example: "n- -nsf-" is a noun in the nominative case, singular, feminine.
+
+
 ### Target Text Example
 
 This is based on Young's Literal Translationd.
