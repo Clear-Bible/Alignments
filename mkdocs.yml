@@ -11,6 +11,8 @@ nav:
   - Home: index.md
   - Alignment Formats: formats.md
   - Alignment Metadata: metadata.md
+  - Glossary: glossary.md
+  - Workflow: workflow.md
   - Modules: modules.md
   - Other Resources: resources.md
 plugins:

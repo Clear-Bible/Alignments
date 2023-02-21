@@ -6,10 +6,79 @@ data, and we hope one will be developed, in the meantime we will
 support data in a variety of formats. 
 
 Here's a list of currently recognized formats. If you have alignment
-data in a different format, please let us know so we can add it. 
+data in a different format, please let us know so we can support it if
+possible. 
 
-* Pharoah format
-* List-of-lists format: 
+* Alignment group format
+
+## Alignment Group Format
+
+This format combines three files:
+
+* Source: the Hebrew/Greek source text in TSV format.
+    * If the source was a Grape City manual alignment, this includes
+      word/morph identifiers, altId, text, strongs number, gloss,
+      gloss2, lemma, pos, and morph code. If the text is copyrighted,
+      altId and text are omitted. 
+* Target: the translated Bible version in TSV format. 
+    * If the target came from a Grape City manual alignment, this
+      includes altId, text, transType, isPunc, isPrimary. If the text
+      is copyrighted, altId and text are omitted. 
+* Alignment: how the source and target texts are aligned. This
+  supports many-to-many alignment across verse boundaries, with
+  metadata for each alignment group.
+  
+### Source Text Example
+
+This is based on the NA27, so `altId` and `text` values are omitted.
+
+```
+identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
+400010010011	--		--		G0976	a record			A record		βίβλος	noun	n- -nsf-
+400010010021	--		--		G1078	of [the] genealogy	of genealogy	γένεσις	noun	n- -gsf-
+400010010031	--		--		G2424	of Jesus			of Jesus		Ἰησοῦς	Name	nr -gsm-
+400010010041	--		--		G5547	Christ				Christ			Χριστός	Name	nr -gsm-
+400010010051	--		--		G5207	son					son				υἱός	noun	n- -gsm-
+400010010061	--		--		G1138	of David			of David Δαυίδ	Name	nr -gsm-
+...
+```
+
+### Target Text Example
+
+This is based on Young's Literal Translationd.
+
+```
+identifier	altId		text	transType	isPunc	isPrimary
+40001001001	A-1			A		m			False	False
+40001001002	roll-1		roll	k			False	True
+40001001003	of-1		of		m			False	False
+40001001004	the-1		the					False	False
+40001001005	birth-1		birth	k			False	True
+40001001006	of-2		of		m			False	False
+40001001007	Jesus-1		Jesus	k			False	True
+40001001008	Christ-1	Christ	k			False	True
+40001001009	,-1			,					False	False
+40001001010	son-1		son		k			False	True
+40001001011	of-2		of		m			False	False
+40001001012	David-1		David	k			False	True
+...
+```
+
+### Alignment Example
+
+```
+[
+{"40001001.1": {"sources": ["400010010011"], "targets": ["40001001002", "40001001001"], "meta": {"process": "manual"}}},
+{"40001001.2": {"sources": ["400010010021"], "targets": ["40001001005", "40001001003"], "meta": {"process": "manual"}}},
+{"40001001.3": {"sources": ["400010010031"], "targets": ["40001001007", "40001001006"], "meta": {"process": "manual"}}},
+{"40001001.4": {"sources": ["400010010041"], "targets": ["40001001008"], "meta": {"process": "manual"}}},
+{"40001001.5": {"sources": ["400010010051"], "targets": ["40001001010"], "meta": {"process": "manual"}}},
+{"40001001.6": {"sources": ["400010010061"], "targets": ["40001001012", "40001001011"], "meta": {"process": "manual"}}},
+{"40001001.7": {"sources": ["400010010071"], "targets": ["40001001014"], "meta": {"process": "manual"}}},
+{"40001001.8": {"sources": ["400010010081"], "targets": ["40001001016", "40001001015"], "meta": {"process": "manual"}}},
+{"40001002.1": {"sources": ["400010020011"], "targets": ["40001002001"], "meta": {"process": "manual"}}},
+...
+```
 
 ## Other Formats
 
