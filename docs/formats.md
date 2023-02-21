@@ -57,13 +57,13 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
     * verb: verb
     * ij: interjection
     * noun: noun
-    * om: omitted?
+    * om: object marker
     * pron: pronoun
     * ptcl: participle
     * art: article
     * num: number
     * rel: relative pronoun
-    * x: ?
+    * x: suffix
     * cj: conjunction
     * Name: proper name
     * adj: adjective
