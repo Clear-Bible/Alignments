@@ -45,12 +45,12 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
 
 * `identifier`: book, chapter, verse, word, word part encoded as
   BBCCCVVVWWWP.
-* `altId`: ? Omitted for copyrighted texts.
+* `altId`: appears to identify the words and punctuation, with numbering added where there is more than one occurrence of the same word or punctuation? Omitted for copyrighted texts.
 * `text`: surface text from the source. Omitted for copyrighted texts.
 * `strongs`: Strongs concordance identifier for this lemma.
-* `gloss`: English gloss for this lemma. Includes some context
+* `gloss`: Literal contextual English gloss for this lemma.
   information.
-* `gloss2`: ?
+* `gloss2`: Alternative less literal contextual English gloss for this lemma?
 * `lemma`: the dictionary form of the word.
 * `pos`: Part Of Speech, one of the following values:
     * prep: preposition
