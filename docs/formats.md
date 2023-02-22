@@ -45,29 +45,32 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
 
 * `identifier`: book, chapter, verse, word, word part encoded as
   BBCCCVVVWWWP.
-* `altId`: appears to identify the words and punctuation, with numbering added where there is more than one occurrence of the same word or punctuation? Omitted for copyrighted texts.
+* `altId`: ? Omitted for copyrighted texts.
 * `text`: surface text from the source. Omitted for copyrighted texts.
 * `strongs`: Strongs concordance identifier for this lemma.
-* `gloss`: Literal contextual English gloss for this lemma.
+* `gloss`: English gloss for this lemma. Includes some context
   information.
-* `gloss2`: Alternative less literal contextual English gloss for this lemma?
+* `gloss2`: ?
 * `lemma`: the dictionary form of the word.
 * `pos`: Part Of Speech, one of the following values:
-    * prep: preposition
-    * verb: verb
-    * ij: interjection
-    * noun: noun
-    * om: object marker
-    * pron: pronoun
-    * ptcl: participle
-    * art: article
-    * num: number
-    * rel: relative pronoun
-    * x: suffix
-    * cj: conjunction
-    * Name: proper name
     * adj: adjective
     * adv: adverb
+    * art: article (OT)
+	* det: determiner (NT)
+    * cj: conjunction (OT)
+    * conj: conjunction (NT)
+    * ij: interjection (OT)
+    * intj: interjection (NT)
+    * Name: proper name
+    * noun: noun
+    * num: number
+    * om: omitted?
+    * prep: preposition
+    * pron: pronoun
+    * ptcl: particle
+    * rel: relative pronoun? (OT)
+    * verb: verb
+    * x: ?
 * `morph`: encoded morphological information.
     * Example: "n- -nsf-" is a noun in the nominative case, singular, feminine.
 
@@ -93,6 +96,26 @@ identifier	altId		text	transType	isPunc	isPrimary
 ...
 ```
 
+* `identifier`: book, chapter, verse, word encoded as
+  BBCCCVVVWWW. Unlike the Greek and Hebrew source texts, the Grape
+  City alignments at least aren't segemented and therefore  don't have
+  word parts. Other alignment targets may, in which case the format
+  would also include Part.
+* `altId`: ? Omitted for copyrighted texts.
+* `text`: surface text from the target. Omitted for copyrighted texts.
+* `transType`: classifies how the translation word(s) linked to the Greek & Hebrew should be understood in relation to the source Greek & Hebrew words.
+    * a: Assisted word (translation word added to assist in conveying
+      the meaning & has no corresponding word in the Greek & Hebrew). 
+    * d: Dynamic translation (no one-to-one correspondence between the translation & the Greek & Hebrew)
+    * k: Key word (content-bearing translation word that corresponds to the Greek & Hebrew)
+    * m: Morphology (translation word reflects Greek or Hebrew
+      morphology and is not a separate word in the Greek or Hebrew)
+    * s: Substitution (pronoun substituted with a full noun reference or a full noun substituted with a pronoun)
+	* u: perhaps Union? Only occurs once for Greek in Rev 7:4 for "144"
+	
+	
+
+
 ### Alignment Example
 
 ```
@@ -108,6 +131,11 @@ identifier	altId		text	transType	isPunc	isPrimary
 {"40001002.1": {"sources": ["400010020011"], "targets": ["40001002001"], "meta": {"process": "manual"}}},
 ...
 ```
+
+Each row represents an *alignment group*. The key (e.g. "40001001.1") combines a verse identifier with
+a sequential counter for alignment groups: this allows extending this
+data with additional information in separate files, provided they use the same
+alignment group identifiers. `sources`
 
 ## Other Formats
 
