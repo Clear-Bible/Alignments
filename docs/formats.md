@@ -120,22 +120,34 @@ identifier	altId		text	transType	isPunc	isPrimary
 
 ```
 [
-{"40001001.1": {"sources": ["400010010011"], "targets": ["40001001002", "40001001001"], "meta": {"process": "manual"}}},
-{"40001001.2": {"sources": ["400010010021"], "targets": ["40001001005", "40001001003"], "meta": {"process": "manual"}}},
-{"40001001.3": {"sources": ["400010010031"], "targets": ["40001001007", "40001001006"], "meta": {"process": "manual"}}},
-{"40001001.4": {"sources": ["400010010041"], "targets": ["40001001008"], "meta": {"process": "manual"}}},
-{"40001001.5": {"sources": ["400010010051"], "targets": ["40001001010"], "meta": {"process": "manual"}}},
-{"40001001.6": {"sources": ["400010010061"], "targets": ["40001001012", "40001001011"], "meta": {"process": "manual"}}},
-{"40001001.7": {"sources": ["400010010071"], "targets": ["40001001014"], "meta": {"process": "manual"}}},
-{"40001001.8": {"sources": ["400010010081"], "targets": ["40001001016", "40001001015"], "meta": {"process": "manual"}}},
-{"40001002.1": {"sources": ["400010020011"], "targets": ["40001002001"], "meta": {"process": "manual"}}},
+{"40001001.1": {"NA27": ["400010010011"], "YLT": ["40001001002", "40001001001"], "meta": {"process": "manual"}}},
+{"40001001.2": {"NA27": ["400010010021"], "YLT": ["40001001005", "40001001003"], "meta": {"process": "manual"}}},
+{"40001001.3": {"NA27": ["400010010031"], "YLT": ["40001001007", "40001001006"], "meta": {"process": "manual"}}},
+{"40001001.4": {"NA27": ["400010010041"], "YLT": ["40001001008"], "meta": {"process": "manual"}}},
+{"40001001.5": {"NA27": ["400010010051"], "YLT": ["40001001010"], "meta": {"process": "manual"}}},
+{"40001001.6": {"NA27": ["400010010061"], "YLT": ["40001001012", "40001001011"], "meta": {"process": "manual"}}},
+{"40001001.7": {"NA27": ["400010010071"], "YLT": ["40001001014"], "meta": {"process": "manual"}}},
+{"40001001.8": {"NA27": ["400010010081"], "YLT": ["40001001016", "40001001015"], "meta": {"process": "manual"}}},
+{"40001002.1": {"NA27": ["400010020011"], "YLT": ["40001002001"], "meta": {"process": "manual"}}},
 ...
 ```
 
-Each row represents an *alignment group*. The key (e.g. "40001001.1") combines a verse identifier with
-a sequential counter for alignment groups: this allows extending this
-data with additional information in separate files, provided they use the same
-alignment group identifiers. `sources`
+* Each row represents an *alignment group*. 
+* The key (e.g. "40001001.1") combines a verse identifier with a
+  sequential counter for alignment groups: this allows extending this
+  data with additional information in separate files, provided they
+  use the same alignment group identifiers.
+* The value is an object that identifies the source text and which
+  source words are part of the alignment group (by identifier), and
+  likewise for the target text. (In the example above, "NA27" is the
+  source and "YLT" is the target.)
+* The value object also includes a "meta" key whose value is a set of
+  key-value pairs with metadata for the alignment. Often this will be
+  the same for all alignment groups (as in the example above
+  reflecting a manual alignment process), but this could be used to
+  capture e.g., difference confidence scores for individual alignment
+  groups. 
+
 
 ## Other Formats
 
