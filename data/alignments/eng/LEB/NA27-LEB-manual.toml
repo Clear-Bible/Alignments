@@ -1,0 +1,22 @@
+[source]
+
+identifier = "NA27"
+license = "Copyright"
+
+[target]
+
+identifier = "LEB"
+license = "Copyright"
+copyright = "Copyright 2012 Logos Bible Software"
+licensenotes = "'You can give away the Lexham English Bible, but you can't sell it on its own.'"
+name.eng = "Lexham English Bible"
+url = "http://www.lexhamenglishbible.com"
+
+[alignment]
+
+identifier = "NA27-LEB-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+
