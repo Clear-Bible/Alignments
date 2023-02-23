@@ -7,7 +7,7 @@ license = "Copyright"
 
 identifier = "NET"
 license = "Copyright"
-license.notes = "Free for personal use"
+licensenotes = "Free for personal use"
 name.eng = "The NET Bible"
 url = "https://bible.org/downloads"
 
