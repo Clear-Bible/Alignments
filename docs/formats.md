@@ -148,6 +148,24 @@ identifier	altId		text	transType	isPunc	isPrimary
   capture e.g., difference confidence scores for individual alignment
   groups. 
 
+### Pharaoh Format Alignment
+
+"Pharaoh format" is common in the machine translation community. This
+represents a set of alignments for a sentence by a list of word
+pair indices, separated by a dash, where many-to-one alignments are
+represented by repeating the word index. Word numbers for this purpose
+are zero-based (in the source data they're one-based). For the alignment example
+above, but encoded in a JSON file, this would look like:
+
+```
+[
+{"40001001": "0-0 0-1 1-2 1-4 2-5 2-6 3-7 4-9 5-10 5-11 6-13 7-14 7-15"},
+{"40001002": "0-0 1-1 3-2 4-5 5-4 6-6 8-7 9-10 10-9 11-11 13-12 14-13 16-15 17-14"},
+{"40001003": "0-1 1-0 2-2 4-3 5-4 7-5 8-6 10-7 11-10 12-9 13-11 15-12 16-15 17-14 18-16 20-17"},
+...
+```
+
+
 
 ## Other Formats
 
