@@ -71,8 +71,27 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
     * rel: relative pronoun? (OT)
     * verb: verb
     * x: ?
-* `morph`: encoded morphological information.
-    * Example: "n- -nsf-" is a noun in the nominative case, singular, feminine.
+* `morph`: encoded morphological information. Examples follow for
+  several parts of speech to illustrate the patterns.
+    * "a- -npf-" is an adjective (`adj`) in the nominative case,
+      plural, feminine.
+    * "d- -----" is an adverb (uninflected).
+	* "ra -asm-" is a determiner (`det`), accusative, singular, masculine.
+	* "nr -nsm-" is a name (`Name`), nominative, singular, masculine.
+    * "an -apf-" is a number (`num`) in the accusative case, plural,
+      feminine.
+    * "n- -nsf-" is a noun in the nominative case, singular,
+      feminine.
+    * "rp 2gs--" is a pronoun (`pron`), second person, genitive
+      singular. "rp -dsm-" is dative, singular, masculine. 
+	* "v- 3-s--aai" is a verb, third person singular, active aorist
+      indicative.  "v- -nsm-aap" is a nominative singular masculine,
+      aorist active participle. An articular infinitive is marked as
+      "v- -----ppn": present, passive, infinitive.
+    * For uninflected forms, the pattern is "X- -----" where X is the
+      first letter of the part of speec ("c" for conjunction, "p" for
+      prep, etc.)
+	  
 
 
 ### Target Text Example
