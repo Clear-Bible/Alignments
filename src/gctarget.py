@@ -34,6 +34,20 @@ class Target:
         """Return a printed representation."""
         return f"<Target: {self.identifier}>"
 
+    @staticmethod
+    def fromrow(row) -> "Target":
+        """Return an instance from a row of data."""
+        row["isPunc"] = True if row["isPunc"] == "True" else False
+        row["isPrimary"] = True if row["isPrimary"] == "True" else False
+        return Target(**row)
+
+    @property
+    def token(self) -> str:
+        """Return text.
+
+        For compatability with Source()."""
+        return self.text
+
     def display(self) -> None:
         """Print a readable display of the key data."""
         print(f"{self.identifier}: {self.text:<20} ('{self.transType}', {self.isPunc}, {self.isPrimary})")
@@ -49,4 +63,4 @@ class Reader(UserDict):
         super().__init__(self)
         with (config.TARGETS / f"{sourceid}-{targetid}.tsv").open(encoding="utf-8") as f:
             dictreader = DictReader(f, fieldnames=Target._fields, delimiter="\t")
-            self.data = {target.identifier: target for row in dictreader if (target := Target(**row))}
+            self.data = {target.identifier: target for row in dictreader if (target := Target.fromrow(row))}
