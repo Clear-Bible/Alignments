@@ -1,6 +1,7 @@
 
 
 # Alignments
+
 Word alignments for Bibles, including both automatic alignments and manually corrected alignments
 
 Copyright (c) 2023 by Clear Bible, Inc.
@@ -16,3 +17,10 @@ All data is licensed under a
 
   
 All code is shared under a MIT License.
+
+## Contributing Alignments
+
+We're interested in collecting alignments that are useful for
+the Bible translation community, especially those based on
+openly-licensed texts. If you have alignments to contribute, see
+[Contributing](docs/contributing.md). 
