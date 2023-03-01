@@ -11,9 +11,10 @@ nav:
   - Home: index.md
   - Alignment Formats: formats.md
   - Alignment Metadata: metadata.md
-  - Glossary: glossary.md
+  - Contributing Alignments: contributing.md
   - Workflow: workflow.md
   - Modules: modules.md
+  - Glossary: glossary.md
   - Other Resources: resources.md
 plugins:
   - search
