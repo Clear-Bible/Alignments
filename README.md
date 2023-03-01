@@ -18,6 +18,13 @@ All data is licensed under a
   
 All code is shared under a MIT License.
 
+## Python Quick Start
+
+To run this code:
+
+- ensure [Poetry](https://python-poetry.org/) is installed
+- `poetry add`
+
 ## Contributing Alignments
 
 We're interested in collecting alignments that are useful for
