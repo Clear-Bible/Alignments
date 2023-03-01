@@ -31,12 +31,18 @@ class Source:
     pos: str
     # coded morphological information: need to document the format
     morph: str
+    _missing: str = "--"
     _fields: tuple = ("identifier", "altId", "text", "strongs", "gloss", "gloss2", "lemma", "pos", "morph")
     # TODO: enumerate and validate part of speech values
 
     def __repr__(self) -> str:
         """Return a printed representation."""
         return f"<Source: {self.identifier}>"
+
+    @property
+    def token(self) -> str:
+        """Return text if available, else lemma."""
+        return self.lemma if (self.text == self._missing) else self.text
 
     def display(self) -> None:
         """Print a readable display of the key data."""
