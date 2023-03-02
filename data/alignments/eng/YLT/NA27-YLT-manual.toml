@@ -8,6 +8,7 @@ license = "Copyright"
 identifier = "YLT"
 license = "Public domain"
 name.eng = "Young's Literal Translation"
+url = "https://ebible.org/find/details.php?id=engylt"
 
 [alignment]
 
