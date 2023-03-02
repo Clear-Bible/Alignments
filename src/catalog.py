@@ -89,7 +89,7 @@ class Catalog:
             fixeddict = self.langverdicts[alignedver]
             if "target.name" in fixeddict and isinstance(fixeddict["target.name"], dict):
                 langcode, langname = list(fixeddict["target.name"].items())[0]
-                fixeddict["target.name"] = f'"{langname}"@{langcode}'
+                fixeddict["target.name"] = f"'{langname}'@{langcode}"
         self.fieldnames = [langverkey] + [
             f"{k}.{subk}" for k in self.stdattrs for subk in self.stdattrs[k] if subk not in self.omittedattrs[k]
         ]
