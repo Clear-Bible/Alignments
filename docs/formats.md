@@ -5,13 +5,12 @@ data. While a single shared standard would be desirable for sharing
 data, and we hope one will be developed, in the meantime we will
 support data in a variety of formats. 
 
-Here's a list of currently recognized formats. If you have alignment
+The currently-recognized formats are listed below. If you have alignment
 data in a different format, please let us know so we can support it if
 possible. 
 
-* Alignment group format
 
-## Alignment Group Format
+## Grape City Format
 
 This format combines three files:
 
@@ -132,8 +131,6 @@ identifier	altId		text	transType	isPunc	isPrimary
     * s: Substitution (pronoun substituted with a full noun reference or a full noun substituted with a pronoun)
 	* u: perhaps Union? Only occurs once for Greek in Rev 7:4 for "144"
 	
-	
-
 
 ### Alignment Example
 
@@ -166,6 +163,8 @@ identifier	altId		text	transType	isPunc	isPrimary
   reflecting a manual alignment process), but this could be used to
   capture e.g., difference confidence scores for individual alignment
   groups. 
+
+## `vref` Format
 
 ### Pharaoh Format Alignment
 
