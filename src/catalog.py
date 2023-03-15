@@ -2,6 +2,10 @@
 
 
 >>> from src import catalo
+
+TODO:
+- add check for missing source/target files
+
 """
 
 from copy import deepcopy
@@ -19,7 +23,7 @@ class Catalog:
     """Manage data across all the alignments"""
 
     alignments: Path = config.ALIGNMENTS
-    catalogpath: Path = config.DATAPATH / "catalog.csv"
+    catalogpath: Path = config.DATAPATH / "catalog.tsv"
     # Standard metadata attributes: warn if not present
     stdattrs: dict[str, dict[str, str]] = {
         "alignment": ["format", "identifier", "license", "process", "scope", "team"],
