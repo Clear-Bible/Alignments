@@ -5,6 +5,21 @@ automatic alignments and manually-corrected alignments. The goal is to
 provide a central location that others can both contribute to and take
 advantage of. 
 
+## What's an Alignment?
+
+NEEDS WORK
+
+Distinguish:
+
+* parallel sentence corpus
+* bilingual word lists: for example, pairing a Greek source word (surface term) with
+  a target language term (perhaps also with lemma and morphological
+  information for the source). 
+  
+By contrast, the alignment data presented here 
+
+* Provides explicit text
+
 ## Principles
 
 * This repository is for alignment data. Other kinds of data
