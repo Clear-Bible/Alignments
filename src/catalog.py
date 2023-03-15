@@ -22,7 +22,7 @@ class Catalog:
     catalogpath: Path = config.DATAPATH / "catalog.csv"
     # Standard metadata attributes: warn if not present
     stdattrs: dict[str, dict[str, str]] = {
-        "alignment": ["format", "identifier", "license", "process", "scope"],
+        "alignment": ["format", "identifier", "license", "process", "scope", "team"],
         "source": ["identifier", "license"],
         "target": ["identifier", "license", "name", "url"],
     }
@@ -49,6 +49,9 @@ class Catalog:
         self.languages = sorted([l.name for l in self.alignments.glob("*")])
         self.versions = sorted([(lang, v.name) for lang in self.languages for v in self.alignments.glob(f"{lang}/*")])
         self.tomlfiles = {
+            # TODO: tomlfile.stem is sufficient to identify an
+            # alignment. Maybe leave these three elements separate
+            # therefore?
             f"{lang}+{version}+{tomlfile.stem}": tomlfile
             for lang, version in self.versions
             for tomlfile in sorted(self.alignments.glob(f"{lang}/{version}/*.toml"))
@@ -75,7 +78,7 @@ class Catalog:
                 else:
                     for stdsubk in stddict[stdk].copy():
                         if stdsubk not in self.stdattrs[stdk]:
-                            warn(f"Dropping non-standard attribute {stdsubk} from {alignedver}")
+                            warn(f"Dropping non-standard attribute {stdk}.{stdsubk} from {alignedver}")
                             del stddict[stdk][stdsubk]
                         elif stdsubk in self.omittedattrs[stdk]:
                             del stddict[stdk][stdsubk]
@@ -101,11 +104,12 @@ class Catalog:
                 langverdict.update({langverkey: alignedver})
                 writer.writerow(langverdict)
 
+    # TODO: add as_markdown() to output a table
     def _validate(self, langver: str, langverdict: dict[str, dict[str, str]]) -> None:
         """Warn if standard attributes are missing."""
         for stdk in self.stdattrs:
             if stdk not in langverdict:
-                warn(f"Dict for {langver} is missing standard key '{stdk}'")
+                warn(f"{langver} is missing standard key '{stdk}'")
             for stdsubk in self.stdattrs[stdk]:
                 if stdsubk not in langverdict[stdk]:
-                    warn(f"Dict for {langver} is missing standard subkey {stdsubk}")
+                    warn(f"{langver} is missing standard subkey {stdsubk}")
