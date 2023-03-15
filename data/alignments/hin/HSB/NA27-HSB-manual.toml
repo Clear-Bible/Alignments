@@ -6,7 +6,7 @@ license = "Copyright"
 [target]
 
 identifier = "HSB"
-license = "Copyright?"
+license = "Copyright"
 name.eng = "Hindi Standard Bible"
 
 [alignment]
@@ -16,3 +16,4 @@ format = "grapecity"
 license = "CC-BY-4.0"
 process = "manual"
 scope = "NT"
+team = "Clear"
