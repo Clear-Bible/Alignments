@@ -1,0 +1,22 @@
+[source]
+
+identifier = "WLC"
+license = "CC-BY-4.0"
+
+[target]
+
+identifier = "LEB"
+license = "Copyright"
+copyright = "Copyright 2012 Logos Bible Software"
+licensenotes = "'You can give away the Lexham English Bible, but you can't sell it on its own.'"
+name.eng = "Lexham English Bible"
+url = "http://www.lexhamenglishbible.com"
+
+[alignment]
+
+identifier = "WLC-LEB-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"
