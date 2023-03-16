@@ -1,7 +1,7 @@
 """Generate a catalog of alignments.
 
-
->>> from src import catalo
+>>> from src import catalog
+>>> catalog.Catalog().write()
 
 TODO:
 - add check for missing source/target files
@@ -77,12 +77,12 @@ class Catalog:
             # drop non-standard pairs
             for stdk in stddict.copy():
                 if stdk not in self.stdattrs:
-                    warn(f"Dropping non-standard attribute {stdk} from {alignedver} data")
+                    warn(f"Dropping {stdk} from {alignedver} data: non-standard.")
                     del stddict[stdk]
                 else:
                     for stdsubk in stddict[stdk].copy():
                         if stdsubk not in self.stdattrs[stdk]:
-                            warn(f"Dropping non-standard attribute {stdk}.{stdsubk} from {alignedver}")
+                            warn(f"Dropping {stdk}.{stdsubk} from {alignedver}: non-standard.")
                             del stddict[stdk][stdsubk]
                         elif stdsubk in self.omittedattrs[stdk]:
                             del stddict[stdk][stdsubk]
