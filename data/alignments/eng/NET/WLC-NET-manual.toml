@@ -1,0 +1,21 @@
+[source]
+
+identifier = "WLC"
+license = "Copyright"
+
+[target]
+
+identifier = "NET"
+license = "Copyright"
+licensenotes = "Free for personal use"
+name.eng = "The NET Bible"
+url = "https://bible.org/downloads"
+
+[alignment]
+
+identifier = "WLC-NET-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"

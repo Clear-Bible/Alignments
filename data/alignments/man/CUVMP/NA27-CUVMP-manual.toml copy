@@ -1,0 +1,19 @@
+[source]
+
+identifier = "WLC"
+license = "Copyright"
+
+[target]
+
+identifier = "CUVMP"
+license = "Public domain"
+name.eng = "Chinese Union Version with Modern Punctuation"
+
+[alignment]
+
+identifier = "WLC-CUVMP-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"
