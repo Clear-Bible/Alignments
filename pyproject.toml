@@ -1,17 +1,31 @@
 [tool.poetry]
 name = "alignments"
-version = "0.0.1"
-description = "Word alignments for Bibles, including both automatic alignments and manually corrected alignments."
-authors = ["Sean Boisen <fsean.boisen@clear.bible>"]
-repository = "https://github.com/sboisen/alignments"
-#documentation = "https://sboisen.github.io/alignments/"
+version = "0.2.2"
+description = "Word-level alignments for Bibles, including both automatic alignments and manually corrected alignments."
+authors = ["Sean Boisen <sean.boisen@clear.bible>"]
+license = "MIT"
 readme = "README.md"
+keywords = ["Bible", "alignment", "Bible alignment"]
+repository = "https://github.com/Clear-Bible/Alignments"
+#documentation = "https://sboisen.github.io/alignments/"
 packages = [
   {include = "src"}
 ]
+# need more here
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Religion",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Religion",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<=3.11"
+python = ">=3.10,<4.0"
 jsonlines = "^3.1.0"
 tomli = "^2.0.1"
 jupyterlab = "^3.6.1"
