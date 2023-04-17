@@ -8,9 +8,7 @@ minor differences from authoritative editions.
 from collections import UserDict
 from dataclasses import dataclass, field
 import json
-from pathlib import Path
 from typing import Union
-import tomli
 
 from src import config, gcsource, gctarget
 
@@ -116,3 +114,7 @@ class Reader(UserDict):
         print(f"Target:\t{self.targetid}\t({len(self.targetreader)} words)")
         print(f"Process:\t{self.processid}")
         print(f"{len(self)} alignments")
+
+    def source_concordance(self, value: str, attr: str = "lemma") -> list[AlignmentGroup]:
+        """Return alignment groups whose source attr value is value."""
+        return [ag for ag in self.data.values() if value in [getattr(s, attr) for s in ag.sourceitems]]
