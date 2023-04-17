@@ -4,7 +4,7 @@ from collections import UserDict
 from csv import DictReader
 from dataclasses import dataclass
 
-import config
+from src import config
 
 # these attribute names match the source data for simplicity
 

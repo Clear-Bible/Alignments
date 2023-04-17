@@ -1,10 +1,15 @@
-"""Manage the source data for Grape City (gc) alignments."""
+"""Manage the source data for Grape City (gc) alignments.
+
+>>> from src import gcsource
+# read NA/27 GNT data for the LEB alignment
+>>> rd = gcsource.Reader(sourceid="NA27", targetid="LEB")
+"""
 
 from collections import UserDict
 from csv import DictReader
 from dataclasses import dataclass
 
-import config
+from src import config
 
 # these attribute names match the source data for simplicity
 
