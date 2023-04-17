@@ -25,7 +25,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"
+python = ">=3.7,<4.0"
 jsonlines = "^3.1.0"
 tomli = "^2.0.1"
 jupyterlab = "^3.6.1"
