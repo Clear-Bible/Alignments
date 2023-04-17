@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.2.6
+
+- Reverted to `Alignments` (not `bible-alignments`) as the repository
+  name. But published to PyPI as `bible-alignments`. 
+
 ## 0.2.5
 
 - loosened Python requirement to >=3.7
