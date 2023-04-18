@@ -1,5 +1,17 @@
 # Release Notes
 
+## 0.2.9
+
+- Rename `src` to `bible_aligments` to make packaging stuff work.
+
+## 0.2.8
+
+- Installed module isn't importable. Change packges to include src/*.py 
+
+## 0.2.7
+
+- Add import of Reader from grapecity.
+
 ## 0.2.6
 
 - Reverted to `Alignments` (not `bible-alignments`) as the repository
