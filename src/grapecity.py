@@ -7,6 +7,7 @@ minor differences from authoritative editions.
 
 from collections import UserDict
 from dataclasses import dataclass, field
+import itertools
 import json
 from typing import Union
 
@@ -53,30 +54,54 @@ class AlignmentGroup:
         print(f"{self.identifier}: {[s.token for s in self.sourceitems]}\t{[s.token for s in self.targetitems]}")
 
 
-# @dataclass
-# class AlignmentSet:
-#     """Manage all the alignment data for a verse."""
+def verseid(ag):
+    """Key function for grouping by verse.
 
-#     verseid: str
-#     items: list = field(default_factory=list)
+    Takes an alignment group and return the verse ID.
+    """
+    # not sure why this doesn't work
+    # assert isinstance(ag, AlignmentGroup), f"Arg must be an AlignmentGroup instance: {ag}"
+    assert ag.__class__.__name__ == "AlignmentGroup", f"Arg must be an AlignmentGroup instance: {ag}"
+    return ag.identifier.split(".")[0]
 
-#     def __repr__(self) -> str:
-#         """Return a printed representation."""
-#         return f"<AlignmentSet({self.verseid})>"
 
-#     def namesets(self, sourceattr: str = "text") -> list:
-#         """Return a list of lists pairing a source name with target term(s).
+@dataclass
+class AlignmentSet:
+    """Manage all the alignment data for a verse."""
 
-#         By default, the text attribute for the source is provided, or
-#         you can specify a different sourceattr.
+    verseid: str
+    sources: list = field(default_factory=list)
+    targets: list = field(default_factory=list)
+    items: list = field(default_factory=list)
 
-#         """
-#         return [
-#             (getattr(ag.sourceitems[0], sourceattr), t.text)
-#             for ag in self.items
-#             if ag.issourcename
-#             for t in ag.targetitems
-#         ]
+    def __repr__(self) -> str:
+        """Return a printed representation."""
+        return f"<AlignmentSet({self.verseid})>"
+
+    @staticmethod
+    def from_aglist(aglist) -> "AlignmentSet":
+        """Return an AlignmentSet for a list of AlignmentGroups."""
+        assert aglist, f"List must not be empty: {aglist}"
+        verseID = verseid(aglist[0])
+        aset = AlignmentSet(verseid=verseID)
+        aset.sources = [item for ag in aglist for item in ag.sourceitems]
+        aset.targets = [item for ag in aglist for item in ag.targetitems]
+        aset.items = aglist
+        return aset
+
+    # def namesets(self, sourceattr: str = "text") -> list:
+    #     """Return a list of lists pairing a source name with target term(s).
+
+    #     By default, the text attribute for the source is provided, or
+    #     you can specify a different sourceattr.
+
+    #     """
+    #     return [
+    #         (getattr(ag.sourceitems[0], sourceattr), t.text)
+    #         for ag in self.items
+    #         if ag.issourcename
+    #         for t in ag.targetitems
+    #     ]
 
 
 class Reader(UserDict):
@@ -118,3 +143,7 @@ class Reader(UserDict):
     def source_concordance(self, value: str, attr: str = "lemma") -> list[AlignmentGroup]:
         """Return alignment groups whose source attr value is value."""
         return [ag for ag in self.data.values() if value in [getattr(s, attr) for s in ag.sourceitems]]
+
+    def verse_groups(self) -> list[list[AlignmentGroup]]:
+        """Return a list of lists of AlignmentGroups, by verse."""
+        return [list(g) for k, g in itertools.groupby(self.values(), verseid)]
