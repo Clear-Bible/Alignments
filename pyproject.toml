@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bible-alignments"
-version = "0.2.6"
+version = "0.2.8"
 description = "Word-level alignments for Bibles, including both automatic alignments and manually corrected alignments."
 authors = ["Sean Boisen <sean.boisen@clear.bible>"]
 license = "MIT"
@@ -9,7 +9,7 @@ keywords = ["Bible", "alignment", "Bible alignment"]
 repository = "https://github.com/Clear-Bible/Alignments"
 #documentation = "https://sboisen.github.io/alignments/"
 packages = [
-  {include = "src"}
+  {include = "bible_alignments"},
 ]
 # need more here
 classifiers = [
