@@ -1,6 +1,6 @@
 """Utilities for loading alignment data.
 
->>> from src import Reader
+>>> from bible_alignments import Reader
 """
 
 from .grapecity import Reader

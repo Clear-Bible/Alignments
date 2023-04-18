@@ -1,6 +1,6 @@
 """Pytest tests for grapecity."""
 
-from src import grapecity
+from bible_alignments import grapecity
 
 
 class TestReader:

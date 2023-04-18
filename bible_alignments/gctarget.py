@@ -4,7 +4,7 @@ from collections import UserDict
 from csv import DictReader
 from dataclasses import dataclass
 
-from src import config
+from bible_alignments import config
 
 # these attribute names match the source data for simplicity
 

@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from src import config
+from bible_alignments import config
 
 
 class TestConfig:

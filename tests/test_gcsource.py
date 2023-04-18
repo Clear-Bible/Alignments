@@ -1,6 +1,6 @@
 """Pytest tests for gcsource."""
 
-from src import gcsource
+from bible_alignments import gcsource
 
 
 class TestReader:

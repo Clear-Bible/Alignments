@@ -11,7 +11,7 @@ import itertools
 import json
 from typing import Union
 
-from src import config, gcsource, gctarget
+from bible_alignments import config, gcsource, gctarget
 
 # from . import config, gcsource, gctarget
 

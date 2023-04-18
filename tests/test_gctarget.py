@@ -1,6 +1,6 @@
 """Pytest tests for gctarget."""
 
-from src import gctarget
+from bible_alignments import gctarget
 
 
 class TestReader:

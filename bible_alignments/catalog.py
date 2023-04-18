@@ -1,6 +1,6 @@
 """Generate a catalog of alignments.
 
->>> from src import catalog
+>>> from bible_alignments import catalog
 >>> catalog.Catalog().write()
 
 TODO:
@@ -10,17 +10,16 @@ TODO:
 
 from copy import deepcopy
 from csv import DictWriter
-from functools import reduce
 from pathlib import Path
 from warnings import warn
 
 import tomli
 
-from src import config
+from bible_alignments import config
 
 
 class Catalog:
-    """Manage data across all the alignments"""
+    """Manage data across all the alignments."""
 
     alignments: Path = config.ALIGNMENTS
     catalogpath: Path = config.DATAPATH / "catalog.tsv"
@@ -50,7 +49,7 @@ class Catalog:
 
     def __init__(self) -> None:
         """Initialize an instance."""
-        self.languages = sorted([l.name for l in self.alignments.glob("*")])
+        self.languages = sorted([lang.name for lang in self.alignments.glob("*")])
         self.versions = sorted([(lang, v.name) for lang in self.languages for v in self.alignments.glob(f"{lang}/*")])
         self.tomlfiles = {
             # TODO: tomlfile.stem is sufficient to identify an
