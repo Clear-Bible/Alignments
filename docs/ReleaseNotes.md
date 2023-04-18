@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.2.10
+
+- Complete renaming of module, fixing imports.
+
 ## 0.2.9
 
 - Rename `src` to `bible_aligments` to make packaging stuff work.
