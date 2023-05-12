@@ -44,6 +44,20 @@ These datasets include:
    data. Note that any copyright-protected text has been stripped out.
 4. Names files (`../data/targets`) derived from alignment data.
 
+Source text files include data from:
+
+* Westminster Leningrad Codex - the somewhat informal license states
+  that "All biblical Hebrew text, in any format, may be viewed or
+  copied without restriction."
+
+Target text files include data from:
+
+* Young's Literal Translation (`YLT`), by Robert Young (1862, 1887, 1898),
+  which is in the public domain.
+* Chinese Union Version with Modern Punctuation (`CUVMP`) is Copyright
+  © 2011 Global Bible Initiative / © 2011 全球圣经促进会 and in the
+  public domain.
+
 ### License
 
 #### Creative Commons Attribution 4.0 International (CC BY 4.0)
