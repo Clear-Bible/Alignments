@@ -54,9 +54,11 @@ Target text files include data from:
 
 * Young's Literal Translation (`YLT`), by Robert Young (1862, 1887, 1898),
   which is in the public domain.
-* Chinese Union Version with Modern Punctuation (`CUVMP`) is Copyright
-  © 2011 Global Bible Initiative / © 2011 全球圣经促进会 and in the
-  public domain.
+* The text for the Chinese Union Version (Simplified) is in the public
+  domain. The Chinese Union Version with Modern Punctuation
+  (Simplified) (`CUVMP`) is a derivative work, and is Copyright © 2011
+  Global Bible Initiative / © 2011 全球圣经促进会 and in the public
+  domain.
 
 ### License
 
