@@ -1,44 +1,7 @@
 # Bible Word Alignments
 
-## Data
-
-[Bible Word Alignments](https://github.com/Clear-Bible/Alignments) © 2022 by [Clear Bible, Inc](http://www.clear.bible) is licensed under [CC BY 4.0 ](http://creativecommons.org/licenses/by/4.0/).
-
-These datasets include:
-
-1. Alignment files (`../data/alignments`) derived from Clear Bible's data.
-2. Source text files (`../data/sources`) derived from Clear Bible's
-   data. Note that any copyright-protected text has been stripped out.
-3. Target text files (`../data/targets`) derived from Clear Bible's
-   data. Note that any copyright-protected text has been stripped out.
-4. Names files (`../data/targets`) derived from alignment data.
-
-
-## License
-
-### Creative Commons Attribution 4.0 International (CC BY 4.0)
-
-This is a human-readable summary of (and not a substitute for) the [license](http://creativecommons.org/licenses/by/4.0/).
-
-#### You are free to:
-
- * **Share** — copy and redistribute the material in any medium or format
- * **Adapt** — remix, transform, and build upon the material
-for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
-#### Under the following terms:
-
- * **Attribution** — You must attribute the work as follows: "MACULA Greek Linguistic Datasets, available at https://github.com/Clear-Bible/macula-greek/". You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
-**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-#### Notices:
-
-You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
-
-No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+We license all of our own code under an MIT license and all of our own
+data under CC-BY.  For details, see sections below for [Code](#code) and [Data](#data).
 
 ## Code
 
@@ -67,3 +30,43 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Data
+
+[Bible Word Alignments](https://github.com/Clear-Bible/Alignments) © 2022 by [Clear Bible, Inc](http://www.clear.bible) is licensed under [CC BY 4.0 ](http://creativecommons.org/licenses/by/4.0/).
+
+These datasets include:
+
+1. Alignment files (`../data/alignments`) derived from Clear Bible's data.
+2. Source text files (`../data/sources`) derived from Clear Bible's
+   data. Note that any copyright-protected text has been stripped out.
+3. Target text files (`../data/targets`) derived from Clear Bible's
+   data. Note that any copyright-protected text has been stripped out.
+4. Names files (`../data/targets`) derived from alignment data.
+
+### License
+
+#### Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This is a human-readable summary of (and not a substitute for) the [license](http://creativecommons.org/licenses/by/4.0/).
+
+##### You are free to:
+
+ * **Share** — copy and redistribute the material in any medium or format
+ * **Adapt** — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+##### Under the following terms:
+
+ * **Attribution** — You must attribute the work as follows: "MACULA Greek Linguistic Datasets, available at https://github.com/Clear-Bible/macula-greek/". You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+##### Notices:
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
