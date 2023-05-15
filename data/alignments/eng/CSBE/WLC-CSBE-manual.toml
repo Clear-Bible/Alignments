@@ -1,0 +1,19 @@
+[source]
+
+identifier = "WLC"
+license = "CC-BY-4.0"
+
+[target]
+
+identifier = "CSBE"
+license = "Copyright © 2017 by Holman Bible Publishers."
+name.eng = "Christian Standard Bible"
+
+[alignment]
+
+identifier = "WLC-CSBE-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"
