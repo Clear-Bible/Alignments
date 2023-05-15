@@ -45,7 +45,8 @@ class Target:
     def token(self) -> str:
         """Return text.
 
-        For compatability with Source()."""
+        For compatability with Source().
+        """
         return self.text
 
     def display(self) -> None:
