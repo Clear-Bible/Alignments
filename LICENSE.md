@@ -60,6 +60,10 @@ Target text files include data from:
   Global Bible Initiative / © 2011 全球圣经促进会 and in the public
   domain.
 
+The repository also includes data on strategic languages for Bible
+translation (`../data/languages`) from the [ETEN Innovation
+Lab](https://dev.lab.eten.bible/).
+
 ### License
 
 #### Creative Commons Attribution 4.0 International (CC BY 4.0)
