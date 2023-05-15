@@ -16,3 +16,7 @@ class TestReader:
         assert len(ag.sourceitems) == 1
         assert ag.sourceitems[0].lemma == "ἀκούω"
         assert ag.targetitems[0].text == "--"
+
+    def test_alignmentsets(self) -> None:
+        """Test alignmentsets"""
+        pass
