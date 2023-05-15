@@ -49,20 +49,13 @@ class AlignmentGroup:
         """Return True if a single source term with pos=Name."""
         return len(self.sourceitems) == 1 and self.sourceitems[0].pos == "Name"
 
+    def verseid(self):
+        """Return verse ID for grouping by verse."""
+        return self.identifier.split(".")[0]
+
     def display(self) -> None:
         """Display text for alignments."""
         print(f"{self.identifier}: {[s.token for s in self.sourceitems]}\t{[s.token for s in self.targetitems]}")
-
-
-def verseid(ag):
-    """Key function for grouping by verse.
-
-    Takes an alignment group and return the verse ID.
-    """
-    # not sure why this doesn't work
-    # assert isinstance(ag, AlignmentGroup), f"Arg must be an AlignmentGroup instance: {ag}"
-    assert ag.__class__.__name__ == "AlignmentGroup", f"Arg must be an AlignmentGroup instance: {ag}"
-    return ag.identifier.split(".")[0]
 
 
 @dataclass
@@ -82,7 +75,7 @@ class AlignmentSet:
     def from_aglist(aglist) -> "AlignmentSet":
         """Return an AlignmentSet for a list of AlignmentGroups."""
         assert aglist, f"List must not be empty: {aglist}"
-        verseID = verseid(aglist[0])
+        verseID = aglist[0].verseid()
         aset = AlignmentSet(verseid=verseID)
         aset.sources = [item for ag in aglist for item in ag.sourceitems]
         aset.targets = [item for ag in aglist for item in ag.targetitems]
@@ -102,6 +95,11 @@ class AlignmentSet:
     #         if ag.issourcename
     #         for t in ag.targetitems
     #     ]
+
+
+def verseid(ag):
+    """Return verse ID for grouping by verse."""
+    return ag.identifier.split(".")[0]
 
 
 class Reader(UserDict):
@@ -132,6 +130,7 @@ class Reader(UserDict):
                 if (targetitems := [self.targetreader[t] for t in aldict[agid][targetid]])
                 if (metadict := aldict[agid]["meta"])
             }
+        self.alignmentsets = [AlignmentSet.from_aglist(vg) for vg in self.verse_groups()]
 
     def display(self) -> None:
         """Display configuration information for a Reader."""
