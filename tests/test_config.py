@@ -14,19 +14,19 @@ class TestConfig:
         assert Path(__file__).parent.parent == config.ROOT
 
 
-class TestVersionSource:
-    """Test VersionSource class."""
+class TestConfiguration:
+    """Test Configuration class."""
 
     def test_init(self) -> None:
         """Test initialization."""
-        vs = config.VersionSource(version="ESV", sourceid="WLC", language="eng", processid="manual")
-        assert vs.version == "ESV"
+        vs = config.Configuration(sourceid="WLC", targetid="ESV", targetlanguage="eng", processid="manual")
+        assert vs.targetid == "ESV"
         assert vs.sourceid == config.SourceidEnum.WLC
-        assert vs.language == "eng"
+        assert vs.targetlanguage == "eng"
         assert vs.processid == "manual"
         assert vs.sourcepath == config.SOURCES / "WLC-ESV.tsv"
         assert vs.targetpath == config.TARGETS / "WLC-ESV.tsv"
-        adirpath = config.ALIGNMENTS / vs.language / vs.version
+        adirpath = config.ALIGNMENTS / vs.targetlanguage / vs.targetid
         assert vs.alignmentsdirpath == adirpath
         assert vs.alignmentspath == adirpath / "WLC-ESV-manual.json"
         assert vs.configpath == adirpath / "WLC-ESV-manual.toml"

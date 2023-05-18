@@ -1,6 +1,6 @@
 """Pytest tests for gcsource."""
 
-from bible_alignments import gcsource
+from bible_alignments import config, gcsource
 
 
 class TestReader:
@@ -9,6 +9,7 @@ class TestReader:
     def test_init(self) -> None:
         """Test initialization."""
         # can you can read a file successfully
-        rd = gcsource.Reader(sourceid="NA27", targetid="LEB")
+        cfg = config.Configuration(sourceid="NA27", targetid="LEB", targetlanguage="eng", processid="manual")
+        rd = gcsource.Reader(configuration=cfg)
         assert rd["410040030011"].gloss == "listen,"
         assert rd["410040030011"].lemma == "ἀκούω"

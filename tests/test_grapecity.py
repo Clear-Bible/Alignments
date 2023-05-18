@@ -1,12 +1,13 @@
 """Pytest tests for grapecity."""
 
-from bible_alignments import grapecity
+from bible_alignments import config, grapecity
 
 
 class TestReader:
     """Test Reader."""
 
-    rd = grapecity.Reader(sourceid="NA27", targetid="LEB", languageid="eng", processid="manual")
+    cfg = config.Configuration(sourceid="NA27", targetid="LEB", targetlanguage="eng", processid="manual")
+    rd = grapecity.Reader(configuration=cfg)
 
     def test_init(self) -> None:
         """Test initialization."""
