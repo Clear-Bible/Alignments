@@ -57,11 +57,9 @@ class Source:
 class Reader(UserDict):
     """Manages source data read from file."""
 
-    def __init__(self, sourceid: str, targetid: str) -> None:
+    def __init__(self, configuration: config.Configuration) -> None:
         """Initialize Reader instance."""
-        self.sourceid = sourceid
-        self.targetid = targetid
         super().__init__(self)
-        with (config.SOURCES / f"{sourceid}-{targetid}.tsv").open(encoding="utf-8") as f:
+        with configuration.sourcepath.open(encoding="utf-8") as f:
             dictreader = DictReader(f, fieldnames=Source._fields, delimiter="\t")
             self.data = {source.identifier: source for row in dictreader if (source := Source(**row))}

@@ -3,6 +3,9 @@
 Note that some of the target texts were typed in by hand, so may have
 minor differences from authoritative editions.
 
+>>> from bible_alignments import grapecity, config
+>>> cfg = config.Configuration(sourceid='WLC', targetid='ESV', targetlanguage='eng', processid='manual')
+>>> rd = grapecity.Reader(configuration=cfg)
 """
 
 from collections import UserDict
@@ -105,38 +108,39 @@ def verseid(ag):
 class Reader(UserDict):
     """Read alignment data and integrate source and target."""
 
-    def __init__(self, sourceid: str, targetid: str, languageid: str, processid: str) -> None:
+    # def __init__(self, sourceid: str, targetid: str, languageid: str, processid: str) -> None:
+    def __init__(self, configuration: config.Configuration) -> None:
         """Initialize Reader instance."""
-        self.sourceid = sourceid
-        self.targetid = targetid
-        self.languageid = languageid
-        self.processid = processid
+        # self.sourceid = sourceid
+        # self.targetid = targetid
+        # self.languageid = languageid
+        # self.processid = processid
         super().__init__(self)
-        self.sourcereader = gcsource.Reader(sourceid, targetid)
-        self.targetreader = gctarget.Reader(sourceid, targetid)
+        self.cfg = configuration
+        self.sourcereader = gcsource.Reader(self.cfg)
+        self.targetreader = gctarget.Reader(self.cfg)
         # check here if a valid language
         # check here if a valid combination of sourceid, targetid, process
-        alignmentdir = config.ALIGNMENTS / languageid / targetid
         # load all the alignments: not grouped by verse
-        with (alignmentdir / f"{sourceid}-{targetid}-{processid}.json").open(encoding="utf-8") as f:
+        with self.cfg.alignmentspath.open(encoding="utf-8") as f:
             self.data = {
                 agid: AlignmentGroup(identifier=agid, sourceitems=sourceitems, targetitems=targetitems, meta=metadict)
                 for aldict in json.load(f)
                 # only a single key
                 if (agid := list(aldict.keys())[0])
                 # map the source identifiers to instances
-                if (sourceitems := [self.sourcereader[s] for s in aldict[agid][sourceid]])
+                if (sourceitems := [self.sourcereader[s] for s in aldict[agid][self.cfg.sourceid]])
                 # map the target identifiers to instances
-                if (targetitems := [self.targetreader[t] for t in aldict[agid][targetid]])
+                if (targetitems := [self.targetreader[t] for t in aldict[agid][self.cfg.targetid]])
                 if (metadict := aldict[agid]["meta"])
             }
         self.alignmentsets = [AlignmentSet.from_aglist(vg) for vg in self.verse_groups()]
 
     def display(self) -> None:
         """Display configuration information for a Reader."""
-        print(f"Source:\t{self.sourceid}\t({len(self.sourcereader)} words)")
-        print(f"Target:\t{self.targetid}\t({len(self.targetreader)} words)")
-        print(f"Process:\t{self.processid}")
+        print(f"Source:\t{self.cfg.sourceid}\t({len(self.sourcereader)} words)")
+        print(f"Target:\t{self.cfg.targetid}\t({len(self.targetreader)} words)")
+        print(f"Process:\t{self.cfg.processid}")
         print(f"{len(self)} alignments")
 
     def source_concordance(self, value: str, attr: str = "lemma") -> list[AlignmentGroup]:
