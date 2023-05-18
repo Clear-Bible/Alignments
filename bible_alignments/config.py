@@ -44,20 +44,20 @@ class SourceidEnum(str, Enum):
     WLC = "WLC"
 
 
-class VersionSource(BaseModel):
-    """Manage configuration data for a specific version and source.
+class Configuration(BaseModel):
+    """Manage configuration data for a specific source and target.
 
     This encapsulates the set of naming conventions, and checks for
     the existence of expected files.
 
     """
 
-    # like 'ESV'
-    version: str
     # an enumerated value from SourceidEnum like 'WLC'
     sourceid: SourceidEnum
+    # like 'ESV'
+    targetid: str
     # like 'eng': 2-4 characters, not a full name
-    language: constr(min_length=2, max_length=4)
+    targetlanguage: constr(min_length=2, max_length=4)
     # like 'manual': an open-ended slug
     processid: str
 
@@ -69,30 +69,36 @@ class VersionSource(BaseModel):
     @property
     def sourcepath(self) -> Path:
         """Return Path to source file."""
-        return SOURCES / f"{self.sourceid}-{self.version}.tsv"
+        return SOURCES / f"{self.sourceid}-{self.targetid}.tsv"
 
     @property
     def targetpath(self) -> Path:
         """Return Path to target file."""
-        return TARGETS / f"{self.sourceid}-{self.version}.tsv"
+        return TARGETS / f"{self.sourceid}-{self.targetid}.tsv"
 
     @property
     def alignmentsdirpath(self) -> Path:
         """Return Path to alignments directory."""
-        return ALIGNMENTS / self.language / self.version
+        return ALIGNMENTS / self.targetlanguage / self.targetid
 
     @property
     def alignmentspath(self) -> Path:
         """Return Path to alignments file."""
-        return self.alignmentsdirpath / f"{self.sourceid}-{self.version}-{self.processid}.json"
+        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.json"
 
     @property
     def configpath(self) -> Path:
         """Return Path to alignments file."""
-        return self.alignmentsdirpath / f"{self.sourceid}-{self.version}-{self.processid}.toml"
+        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.toml"
 
     # optional/experimental
     @property
     def namespath(self) -> Path:
         """Return Path to names file."""
-        return NAMES / f"{self.sourceid}-{self.version}.tsv"
+        return NAMES / f"{self.sourceid}-{self.targetid}.tsv"
+
+    def display(self) -> None:
+        """Display readable values."""
+        print(repr(self))
+        for attr in ["sourcepath", "targetpath", "configpath", "alignmentspath"]:
+            print(f"{attr:<15} = {getattr(self, attr)}")
