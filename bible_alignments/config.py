@@ -4,18 +4,18 @@ This also defines a dataclass for managing the set of values
 associated with a given version and source, e.g. ESV and WLC.
 
 >>> from bible_alignments import config
->>> vs = config.VersionSource(version="ESV", sourceid="WLC", language="eng", processid="manual")
+>>> cfg = config.Configuration(sourceid="WLC", targetid="ESV", targetlanguage="eng", processid="manual")
 
 # get the path to the alignments data (in your local repository)
->>> vs.alignmentspath
+>>> cfg.alignmentspath
 PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/alignments/eng/ESV/NA27-ESV-manual.json')
 
 # get the path to the source data
->>> vs.sourcepath
+>>> cfg.sourcepath
 PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/sources/NA27-ESV.tsv')
 
 # get the path to the target data
->>> vs.targetpath
+>>> cfg.targetpath
 PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/targets/NA27-ESV.tsv')
 
 
