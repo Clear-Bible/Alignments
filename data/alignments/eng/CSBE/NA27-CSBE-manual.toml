@@ -8,6 +8,7 @@ license = "Copyright"
 identifier = "CSBE"
 license = "Copyright © 2017 by Holman Bible Publishers."
 name.eng = "Christian Standard Bible"
+url = "https://csbible.com/"
 
 [alignment]
 

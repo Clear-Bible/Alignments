@@ -1,0 +1,21 @@
+[source]
+
+identifier = "WLC"
+license = "Copyright"
+
+[target]
+
+identifier = "MCL"
+license = "Public domain"
+name.eng = "Myanmar Common Language"
+provider = "Bible Society of Myanmar"
+copyright = "© 2005 Bible Society of Myanmar"
+
+[alignment]
+
+identifier = "WLC-MCL-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"

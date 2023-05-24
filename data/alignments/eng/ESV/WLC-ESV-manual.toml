@@ -8,6 +8,7 @@ license = "CC-BY-4.0"
 identifier = "ESV"
 license = "Copyright © 2001 by Crossway"
 name.eng = "English Standard Version"
+url = "https://www.esv.org/"
 
 [alignment]
 
