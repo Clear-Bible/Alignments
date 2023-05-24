@@ -61,8 +61,13 @@ class Catalog:
         }
         self.tomldicts = {}
         for alignedver, tomlfile in self.tomlfiles.items():
+            if alignedver in self.tomldicts:
+                raise ValueError(f"Duplicate alignment: {alignedver}")
             with tomlfile.open("rb") as f:
-                self.tomldicts[alignedver] = tomli.load(f)
+                try:
+                    self.tomldicts[alignedver] = tomli.load(f)
+                except tomli.TOMLDecodeError as e:
+                    warn(f"Skipping {alignedver}: {e}")
         self.commonkeys = {k for v in self.tomldicts.values() for k in v}
 
     def write(self) -> None:
