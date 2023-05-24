@@ -6,8 +6,9 @@ license = "Copyright"
 [target]
 
 identifier = "HSB"
-license = "Copyright"
+license = "Copyright © 2023 Global Bible Initiative"
 name.eng = "Hindi Standard Bible"
+url = "https://gbi.llc/hindi-standard-bible"
 
 [alignment]
 

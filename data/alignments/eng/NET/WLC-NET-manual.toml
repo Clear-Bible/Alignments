@@ -8,6 +8,7 @@ license = "CC-BY-4.0"
 identifier = "NET"
 license = "COPYRIGHT (c) 1996 BY BIBLICAL STUDIES PRESS, L.L.C."
 name.eng = "the NET BIBLE®"
+url = "https://netbible.org/"
 
 [alignment]
 

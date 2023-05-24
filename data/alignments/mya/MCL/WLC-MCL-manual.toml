@@ -10,6 +10,7 @@ license = "Public domain"
 name.eng = "Myanmar Common Language"
 provider = "Bible Society of Myanmar"
 copyright = "© 2005 Bible Society of Myanmar"
+url = "http://www.myanmarbible.com/"
 
 [alignment]
 

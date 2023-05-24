@@ -9,6 +9,7 @@ identifier = "MSB"
 license = "Copyright © 2023 Global Bible Initiative"
 name.eng = "Myanmar Standard Bible"
 provider = "Global Bible Initiative"
+url = "https://gbi.llc/myanmar-standard-bible"
 
 [alignment]
 
