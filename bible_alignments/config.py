@@ -44,6 +44,7 @@ class SourceidEnum(str, Enum):
     WLC = "WLC"
 
 
+# this has to be initialized with keyword arguments: not sure why
 class Configuration(BaseModel):
     """Manage configuration data for a specific source and target.
 
@@ -65,6 +66,11 @@ class Configuration(BaseModel):
     #     """Compute values after initialization."""
     #     # could add language validation against Language.LanguageManager()
     #     pass
+
+    @property
+    def identifier(self) -> str:
+        """Return a string identifying the configuration."""
+        return f"{self.sourceid}-{self.targetid}-{self.processid}"
 
     @property
     def sourcepath(self) -> Path:
