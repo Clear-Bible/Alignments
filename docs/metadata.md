@@ -1,6 +1,6 @@
 # Alignment Metadata
 
-Each alignment pair *must* include a `config.toml` file that captures
+Each alignment pair *must* include a `.toml` file that captures
 essential and optional metadata about the pair. [^1]
 
 Metadata is in the form of key-value pairs. The list below specifies a
@@ -47,6 +47,27 @@ not get incorporated into downstream data aggregations.
 
 ## Target Text
 
+* **`target.identifier`** (string): a standardized identifier for the target Bible
+  version. 
+    * Best practice: use version identifiers from a standard target,
+      like [Digital Bible Library][dbl] or [eBible.org][ebible].
+* **`target.license`** (string): a license statement for the target Bible version. 
+    * If the version is copyrighted, include the copyright statement
+      as provided by the publisher,
+      e.g. "Copyright © 2012 Logos Bible Software".
+    * Otherwise use a standardized license statemen, like:
+      * "Public domain"
+      * "CC-BY-4.0"
+* *`target.licensenotes`* (string): for additional notes on the
+  license. Typically used for non-standard situations, like a
+  copyrighted version with the note to "Contact the publisher for permission."
+* **`target.name.eng`** (string): an English name for the target Bible version. 
+* **`target.url`** (string): a web link to the actual target version text used for
+  alignment. 
+    * Best practice is to link to the actual text used. If that's not
+      available, however, a link to another edition of the text, or
+      the provider's or publisher's website is still valuable. 
+
 ## Alignment
 
 * `alignment.format` (string): the format for the alignment data. Note
@@ -60,9 +81,14 @@ not get incorporated into downstream data aggregations.
       and any other identifiers as necessary for disambiguation.
     * Example: an automated alignment of ...
     * Example: a manually corrected alignment of an automated alignment ...
+* **`alignment.license`** (string): a license statement for the alignment data. 
+* **`alignment.process`** (string): a standardized identifier for the
+  alignment process. 
+    * Use `manual` for manual alignments.
 * _`alignment.scope`_ (string): how much of the text is aligned?
-  Common values includes "all", "content words", or another
+  Common values includes "OT", "NT",  "all", "content words", or another
   descriptive string.
+* _`alignment.team`_ (string): what organization did the alignment?
 
 
 ## Alignment Process
