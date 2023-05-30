@@ -26,7 +26,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, constr
 
-
+# this only works when loaded into bible_alignments, not when loaded as a library
 ROOT = Path(__file__).parent.parent
 DATAPATH = ROOT / "data"
 
@@ -53,6 +53,10 @@ class Configuration(BaseModel):
 
     """
 
+    # the root directory for input and output
+    # default is okay within this module, but has to be specified for
+    # clients using this as a library
+    root: Path = Path(__file__).parent.parent
     # an enumerated value from SourceidEnum like 'WLC'
     sourceid: SourceidEnum
     # like 'ESV'
@@ -75,17 +79,17 @@ class Configuration(BaseModel):
     @property
     def sourcepath(self) -> Path:
         """Return Path to source file."""
-        return SOURCES / f"{self.sourceid}-{self.targetid}.tsv"
+        return self.root / "data/sources" / f"{self.sourceid}-{self.targetid}.tsv"
 
     @property
     def targetpath(self) -> Path:
         """Return Path to target file."""
-        return TARGETS / f"{self.sourceid}-{self.targetid}.tsv"
+        return self.root / "data/targets" / f"{self.sourceid}-{self.targetid}.tsv"
 
     @property
     def alignmentsdirpath(self) -> Path:
         """Return Path to alignments directory."""
-        return ALIGNMENTS / self.targetlanguage / self.targetid
+        return self.root / "data/alignments" / self.targetlanguage / self.targetid
 
     @property
     def alignmentspath(self) -> Path:
@@ -93,15 +97,24 @@ class Configuration(BaseModel):
         return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.json"
 
     @property
+    def alignmentswordspath(self) -> Path:
+        """Return Path to alignments file that includes words."""
+        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}+words.json"
+
+    @property
     def configpath(self) -> Path:
-        """Return Path to alignments file."""
+        """Return Path to alignments configuration file."""
         return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.toml"
 
     # optional/experimental
     @property
     def namespath(self) -> Path:
         """Return Path to names file."""
-        return NAMES / f"{self.sourceid}-{self.targetid}.tsv"
+        return self.root / "data/names" / f"{self.sourceid}-{self.targetid}.tsv"
+
+    # to add
+    # - plain pharaoh
+    # - JSONified pharaoh
 
     def display(self) -> None:
         """Display readable values."""
