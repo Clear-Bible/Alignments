@@ -27,7 +27,7 @@ class Catalog:
     stdattrs: dict[str, dict[str, str]] = {
         "alignment": ["format", "identifier", "license", "process", "scope", "team"],
         "source": ["identifier", "license"],
-        "target": ["identifier", "license", "name", "url"],
+        "target": ["identifier", "license", "name", "url", "copyright"],
     }
     # no warnings, but don't include in output
     omittedattrs: dict[str, dict[str, str]] = {
@@ -43,7 +43,10 @@ class Catalog:
         ],
         "target": [
             # already in the key
-            "identifier"
+            "identifier",
+            # non-essential
+            "licensenotes",
+            "provider",
         ],
     }
 
