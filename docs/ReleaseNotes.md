@@ -2,10 +2,12 @@
 
 ## 0.2.13
 
+- Added `identifier` to Configuration for downstream use.
 - Added URLs for several versions.
 - Better error handling in catalog.py.
 - Restored NET data.
 - Added MSB data for Myanmar (mya).
+- Minor improvements to documentation.
 
 ## 0.2.12
 
