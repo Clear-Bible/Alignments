@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.2.14
+
+- Path().parent only works when loading config.py directly: when it's
+  pip-installed, it points to the venv. So made `root` a fifth
+  paramemter to `Configuration()`, defaulting to the same local value
+  when loaded locally, but it needs to be supplied when loaded as
+  a package.
+
 ## 0.2.13
 
 - Added `identifier` to Configuration for downstream use.
