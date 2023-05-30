@@ -1,5 +1,16 @@
 # Release Notes
 
+## 0.2.13
+
+- Added URLs for several versions.
+- Better error handling in catalog.py.
+- Restored NET data.
+- Added MSB data for Myanmar (mya).
+
+## 0.2.12
+
+- Add Configuration class to manage details, and refactor around it.
+
 ## 0.2.10
 
 - Complete renaming of module, fixing imports.
