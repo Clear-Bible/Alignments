@@ -26,6 +26,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, constr
 
+# the root of the Alignments repository: you need a local copy of this
 # this only works when loaded into bible_alignments, not when loaded as a library
 ROOT = Path(__file__).parent.parent
 DATAPATH = ROOT / "data"
