@@ -26,7 +26,17 @@ This format combines three files:
 * Alignment: how the source and target texts are aligned. This
   supports many-to-many alignment across verse boundaries, with
   metadata for each alignment group.
-  
+
+### Common Attributes
+
+* `identifier`: a word or token in a standardized reference system
+    * The default reference system is BBCCCVVVWWWP, representing book,
+      chapter, verse, word, and word. Alternate identification systems
+      should be specified with a `referencesystem` attribute.
+    * The same reference system should be used for source and target
+      texts, to ensure consistency in the alignment data.
+
+
 ### Source Text Example
 
 This is based on the NA27, so `altId` and `text` values are omitted.
@@ -42,8 +52,9 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
 ...
 ```
 
-* `identifier`: book, chapter, verse, word, word part encoded as
-  BBCCCVVVWWWP.
+* `identifier`: a word or token in a standardized reference system
+    * The default reference system is BBCCCVVVWWWP, representing book,
+      chapter, verse, word, and word.
 * `altId`: ? Omitted for copyrighted texts.
 * `text`: surface text from the source. Omitted for copyrighted texts.
 * `strongs`: Strongs concordance identifier for this lemma.
