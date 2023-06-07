@@ -5,7 +5,7 @@
 This repository contains word alignments for Bibles, including both automatic alignments and manually corrected alignments.  It is meant to serve two goals:
 
 1. The [Scripture Burrito Working Group](https://docs.burrito.bible/en/latest/) is creating a Scripture Alignments flavor, which will be a standard for exchanging alignment data.  This repository reflects an initial proposal, and as the standard develops, the data in this repository will be used to ensure that the standard is adequate.
-2. People need a way to obtain the best available alignments for a given language or translation.  We want to collect the best alignments we can find here.
+2. Developers need a way to obtain the best available alignments for a given language or translation.  We want to collect the best alignments we can find here and provide a way to find needed alignments and track development of alignment.
 
 Alignment data is provided by various parties, who own the copyright to their alignments. All data is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
