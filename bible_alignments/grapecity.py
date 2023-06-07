@@ -126,13 +126,16 @@ class Reader(UserDict):
             self.data = {
                 agid: AlignmentGroup(identifier=agid, sourceitems=sourceitems, targetitems=targetitems, meta=metadict)
                 for aldict in json.load(f)
+                if (agid := aldict["id"])
                 # only a single key
-                if (agid := list(aldict.keys())[0])
+                # if (agidattr := list(aldict.keys())[0])
                 # map the source identifiers to instances
-                if (sourceitems := [self.sourcereader[s] for s in aldict[agid][self.cfg.sourceid]])
+                # if (sourceitems := [self.sourcereader[s] for s in aldict[agidattr][self.cfg.sourceid]])
+                if (sourceitems := [self.sourcereader[s] for s in aldict["source_ids"]])
                 # map the target identifiers to instances
-                if (targetitems := [self.targetreader[t] for t in aldict[agid][self.cfg.targetid]])
-                if (metadict := aldict[agid]["meta"])
+                # if (targetitems := [self.targetreader[t] for t in aldict[agidattr][self.cfg.targetid]])
+                if (targetitems := [self.targetreader[t] for t in aldict["target_ids"]])
+                if (metadict := aldict["meta"])
             }
         self.alignmentsets = [AlignmentSet.from_aglist(vg) for vg in self.verse_groups()]
 
