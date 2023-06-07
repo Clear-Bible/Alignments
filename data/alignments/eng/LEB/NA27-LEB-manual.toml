@@ -16,6 +16,7 @@ url = "http://www.lexhamenglishbible.com"
 
 identifier = "NA27-LEB-manual"
 format = "grapecity"
+referencesystem = "BBCCCVVVWWP"
 copyright = "Copyright © 2022 by Clear Bible, Inc"
 license = "CC-BY-4.0"
 process = "manual"
