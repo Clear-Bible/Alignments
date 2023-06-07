@@ -94,7 +94,7 @@ class Configuration(BaseModel):
 
     @property
     def alignmentspath(self) -> Path:
-        """Return Path to alignments file."""
+        """Return Path to alignments output file."""
         return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.json"
 
     @property
