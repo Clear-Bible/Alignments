@@ -1,1 +1,1 @@
-::: src
+::: bible_alignments
