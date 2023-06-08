@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.2.15
+
+* Fixes to `grapecity.Reader` for the new format.
+
 ## 0.2.14
 
 - Path().parent only works when loading config.py directly: when it's
