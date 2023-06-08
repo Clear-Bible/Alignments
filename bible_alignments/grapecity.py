@@ -16,12 +16,6 @@ from typing import Union
 
 from bible_alignments import config, gcsource, gctarget
 
-# from . import config, gcsource, gctarget
-
-# type that's either None (undefined) or a float. This allows 0.0 as a
-# declared value.
-nonefloat = Union[str, None]
-
 
 @dataclass
 class AlignmentGroup:
@@ -111,29 +105,17 @@ class Reader(UserDict):
     # def __init__(self, sourceid: str, targetid: str, languageid: str, processid: str) -> None:
     def __init__(self, configuration: config.Configuration) -> None:
         """Initialize Reader instance."""
-        # self.sourceid = sourceid
-        # self.targetid = targetid
-        # self.languageid = languageid
-        # self.processid = processid
         super().__init__(self)
         self.cfg = configuration
         self.sourcereader = gcsource.Reader(self.cfg)
         self.targetreader = gctarget.Reader(self.cfg)
-        # check here if a valid language
-        # check here if a valid combination of sourceid, targetid, process
         # load all the alignments: not grouped by verse
         with self.cfg.alignmentspath.open(encoding="utf-8") as f:
             self.data = {
                 agid: AlignmentGroup(identifier=agid, sourceitems=sourceitems, targetitems=targetitems, meta=metadict)
                 for aldict in json.load(f)
                 if (agid := aldict["id"])
-                # only a single key
-                # if (agidattr := list(aldict.keys())[0])
-                # map the source identifiers to instances
-                # if (sourceitems := [self.sourcereader[s] for s in aldict[agidattr][self.cfg.sourceid]])
                 if (sourceitems := [self.sourcereader[s] for s in aldict["source_ids"]])
-                # map the target identifiers to instances
-                # if (targetitems := [self.targetreader[t] for t in aldict[agidattr][self.cfg.targetid]])
                 if (targetitems := [self.targetreader[t] for t in aldict["target_ids"]])
                 if (metadict := aldict["meta"])
             }
