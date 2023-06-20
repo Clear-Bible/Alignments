@@ -1,7 +1,13 @@
 [source]
 
 identifier = "WLC"
-license = "CC-BY-4.0"
+copyright = "© 2023 The J. Alan Groves Center for Advanced Biblical Research"
+license = "Custom"
+licensenotes = "From http://tanach.us/License.html: 'All biblical Hebrew text, in any format, may be viewed or copied without restriction.' Citation of the Tanach.us site as the source of the text is appreciated: Unicode/XML Leningrad Codex: UXLC 1.8 (26.9), Tanach.us Inc., West Redding, CT, USA, April 2023. "
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
 
 [target]
 
@@ -11,6 +17,10 @@ license = "Copyright"
 licensenotes = "'You can give away the Lexham English Bible, but you can't sell it on its own.'"
 name.eng = "Lexham English Bible"
 url = "http://www.lexhamenglishbible.com"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
 
 [alignment]
 

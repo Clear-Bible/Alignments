@@ -1,14 +1,22 @@
 [source]
 
 identifier = "NA27"
-license = "Copyright"
+copyright = "Copyright 1993, 1994, 1998 Deutsche Bibelgeselschaft, D-Stuttgart."
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
 
 [target]
 
 identifier = "CSBE"
-license = "Copyright © 2017 by Holman Bible Publishers."
+copyright = "Copyright © 2017 by Holman Bible Publishers."
 name.eng = "Christian Standard Bible"
 url = "https://csbible.com/"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
 
 [alignment]
 

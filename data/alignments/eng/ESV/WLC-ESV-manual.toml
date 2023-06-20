@@ -1,7 +1,13 @@
 [source]
 
 identifier = "WLC"
-license = "CC-BY-4.0"
+copyright = "© 2023 The J. Alan Groves Center for Advanced Biblical Research"
+license = "Custom"
+licensenotes = "From http://tanach.us/License.html: 'All biblical Hebrew text, in any format, may be viewed or copied without restriction.' Citation of the Tanach.us site as the source of the text is appreciated: Unicode/XML Leningrad Codex: UXLC 1.8 (26.9), Tanach.us Inc., West Redding, CT, USA, April 2023. "
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
 
 [target]
 
@@ -9,6 +15,26 @@ identifier = "ESV"
 license = "Copyright © 2001 by Crossway"
 name.eng = "English Standard Version"
 url = "https://www.esv.org/"
+
+[target.metadata.gloss]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target.metadata.gloss2]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target.metadata.lemma]
+copyright = "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb."
+license = "CC-BY 4.0"
+
+[target.metadata.morph]
+copyright = "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb."
+license = "CC-BY 4.0"
+
+[target.metadata.pos]
+copyright = "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb."
+license = "CC-BY 4.0"
 
 [alignment]
 

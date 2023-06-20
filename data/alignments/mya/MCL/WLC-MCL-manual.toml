@@ -6,10 +6,9 @@ license = "Copyright"
 [target]
 
 identifier = "MCL"
-license = "Public domain"
+license = "Copyright © 2005 Bible Society of Myanmar"
 name.eng = "Myanmar Common Language"
 provider = "Bible Society of Myanmar"
-copyright = "© 2005 Bible Society of Myanmar"
 url = "http://www.myanmarbible.com/"
 
 [alignment]

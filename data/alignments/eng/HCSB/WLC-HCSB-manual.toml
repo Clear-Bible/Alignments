@@ -11,10 +11,11 @@ license = "CC-BY 4.0"
 
 [target]
 
-identifier = "CSBE"
-copyright = "Copyright © 2017 by Holman Bible Publishers."
-name.eng = "Christian Standard Bible"
-url = "https://csbible.com/"
+identifier = "HCSB"
+copyright = "©1999,2000,2002,2003,2009 Holman Bible Publishers"
+name.eng = "Holman Christian Standard Bible"
+url = "https://www.hcsb.org/"
+notes = "URL now redirects to https://csbible.com/, site for CSB. See https://csbible.com/ministry/hcsb-to-csb/."
 
 [target.metadata.gloss]
 copyright = "Copyright (c) 2023 by Clear Bible, Inc."
@@ -38,7 +39,7 @@ license = "CC-BY 4.0"
 
 [alignment]
 
-identifier = "WLC-CSBE-manual"
+identifier = "WLC-HCSB-manual"
 format = "grapecity"
 license = "CC-BY-4.0"
 process = "manual"
