@@ -1,26 +1,30 @@
 These files make explicit the verse numbers for specific versions in
 vline format in the parent directory, using USFM references.
 
-## VREF
+## Reference (`ref`) files
 
 There are three files, one for each major canon division, together
 representing the content of vref.txt file from
 https://github.com/BibleNLP/ebible/blob/main/metadata/vref.txt , one
-strong candidate for a standard list of verses.
+strong candidate for a standard list of verses. These contain a full
+set of references, one per line, in USFM format. 
 
 * `vref-ot-refline.txt`: the Old Testament canon
 * `vref-nt-refline.txt`: the New Testament canon
 * `vref-dc-refline.txt`: the Deuterocanonical books
 
 
-## SBLGNT
+## SBLGNT-ref.txt
 
-These 30 verses are present in some versions (including vref.txt) but are
+This file contains the references from the published SBLGNT
+(https://github.com/LogosBible/SBLGNT/tree/master/data/sblgnt/text). 
+
+There are 30 verses that are present in some versions (including vref.txt) but are
 absent from the SBLGNT, reflecting different text-critical decisions
 by the editor. 
 
-Blanks lines have been added for these in SBLGNT-vline.txt in the
-parent directory, to synchronize that file with vref-nt-refline.txt. 
+Blanks lines have been added for these in SBLGNT-vref.txt in the
+parent directory, to synchronize that file with nt-ref.txt. 
 
 MAT 17:21
 MAT 18:11
