@@ -44,8 +44,14 @@ class Catalog:
         "target": [
             # already in the key
             "identifier",
-            # non-essential
+            # non-essential attributes
+            # notes for non-standard licenses
             "licensenotes",
+            # general notes
+            "notes",
+            # version identifier for a similar predecessor version, e.g. NRSV -> RSV
+            "predecessor"
+            # organization that publishes or distributes the version
             "provider",
         ],
     }
