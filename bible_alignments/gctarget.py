@@ -37,6 +37,7 @@ class Target:
     @staticmethod
     def fromrow(row) -> "Target":
         """Return an instance from a row of data."""
+        # convert strings to booleans
         row["isPunc"] = True if row["isPunc"] == "True" else False
         row["isPrimary"] = True if row["isPrimary"] == "True" else False
         return Target(**row)
