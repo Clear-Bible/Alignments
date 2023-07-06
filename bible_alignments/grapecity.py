@@ -12,7 +12,8 @@ from collections import UserDict
 from dataclasses import dataclass, field
 import itertools
 import json
-from typing import Union
+
+from biblelib.word import bcvwpid
 
 from bible_alignments import config, gcsource, gctarget
 
@@ -79,6 +80,11 @@ class AlignmentSet:
         aset.items = aglist
         return aset
 
+    @property
+    def usfm(self) -> str:
+        """Return a USFM reference for versid."""
+        return bcvwpid.BCVID(self.verseid).to_usfm()
+
     # def namesets(self, sourceattr: str = "text") -> list:
     #     """Return a list of lists pairing a source name with target term(s).
 
@@ -135,3 +141,11 @@ class Reader(UserDict):
     def verse_groups(self) -> list[list[AlignmentGroup]]:
         """Return a list of lists of AlignmentGroups, by verse."""
         return [list(g) for k, g in itertools.groupby(self.values(), verseid)]
+
+    def write_references(self) -> None:
+        """Write out references for AlignmentSets, one to a line."""
+        # this could go in config
+        referencespath = self.cfg.sourcepath.parent / "references" / f"{self.cfg.identifier}-refline.txt"
+        with referencespath.open("w") as f:
+            for aset in self.alignmentsets:
+                f.write(f"{aset.usfm}\n")
