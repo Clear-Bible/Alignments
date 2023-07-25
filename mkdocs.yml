@@ -9,6 +9,8 @@ copyright: © 2022 by [Clear Bible, Inc](http://www.clear.bible)
 
 nav:
   - Home: index.md
+  - Source Formats: sourceformats.md
+  - Target Formats: targetformats.md
   - Alignment Formats: formats.md
   - Alignment Metadata: metadata.md
   - Contributing Alignments: contributing.md
