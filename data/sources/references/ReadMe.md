@@ -19,7 +19,7 @@ set of references, one per line, in USFM format.
 This file contains the references from the published SBLGNT
 (https://github.com/LogosBible/SBLGNT/tree/master/data/sblgnt/text). 
 
-There are 30 verses that are present in some versions (including vref.txt) but are
+There are 18 verses that are present in some versions (including vref.txt) but are
 absent from the SBLGNT, reflecting different text-critical decisions
 by the editor. 
 
@@ -37,18 +37,6 @@ MRK 15:28
 LUK 17:36
 LUK 23:17
 JHN 5:4
-JHN 7:53
-JHN 8:1
-JHN 8:2
-JHN 8:3
-JHN 8:4
-JHN 8:5
-JHN 8:6
-JHN 8:7
-JHN 8:8
-JHN 8:9
-JHN 8:10
-JHN 8:11
 ACT 8:37
 ACT 15:34
 ACT 24:7
@@ -56,6 +44,10 @@ ACT 28:29
 ROM 16:25
 ROM 16:26
 ROM 16:27
+
+Note that the latest version of the SBLGNT text on the Logos
+repository _does_ include the "pericopae adulterae" verses from John
+7:53-8:11. 
 
 ## N1904-ref.txt
 
