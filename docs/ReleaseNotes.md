@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.2.16
+
+* Upgrade pydantic to 2.1.
+
 ## 0.2.15
 
 * Fixes to `grapecity.Reader` for the new format.
