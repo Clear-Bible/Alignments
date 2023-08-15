@@ -15,3 +15,5 @@ class TestReader:
         assert rd["41004003001"].transType == ""
         assert rd["41004003001"].isPunc == True
         assert rd["41004003001"].isPrimary == False
+        # ensure header row is not read as data
+        assert "identifier" not in rd

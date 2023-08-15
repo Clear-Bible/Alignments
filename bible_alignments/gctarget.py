@@ -62,5 +62,5 @@ class Reader(UserDict):
         """Initialize Reader instance."""
         super().__init__(self)
         with configuration.targetpath.open(encoding="utf-8") as f:
-            dictreader = DictReader(f, fieldnames=Target._fields, delimiter="\t")
+            dictreader = DictReader(f, delimiter="\t")
             self.data = {target.identifier: target for row in dictreader if (target := Target.fromrow(row))}

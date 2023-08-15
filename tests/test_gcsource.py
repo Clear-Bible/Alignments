@@ -12,4 +12,6 @@ class TestReader:
         cfg = config.Configuration(sourceid="NA27", targetid="LEB", targetlanguage="eng", processid="manual")
         rd = gcsource.Reader(configuration=cfg)
         assert rd["410040030011"].gloss == "listen,"
-        assert rd["410040030011"].lemma == "ἀκούω"
+        assert rd["410040030011"].lemma == "ἀκούω"
+        # ensure header row is not read as data
+        assert "identifier" not in rd
