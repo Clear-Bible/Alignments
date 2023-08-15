@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.2.17
+
+* Fixed bug in `gcsource.Reader()` and `gctarget.Reader()` that was
+  treating the header row as data.
+* Updated tests for this instance.
+* Fixed incorrect encoding in `test_grapecity`.
+
 ## 0.2.16
 
 * Upgrade pydantic to 2.1.

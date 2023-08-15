@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bible-alignments"
-version = "0.2.16"
+version = "0.2.17"
 description = "Word-level alignments for Bibles, including both automatic alignments and manually corrected alignments."
 authors = ["Sean Boisen <sean.boisen@clear.bible>"]
 license = "MIT"
