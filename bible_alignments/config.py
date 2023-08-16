@@ -18,6 +18,10 @@ PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/sources/NA27-ESV.tsv')
 >>> cfg.targetpath
 PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/targets/NA27-ESV.tsv')
 
+NOTE when pip-installing, only the LEB alignment files get installed:
+otherwise it would be too much data.
+TODO: add a mechanism to update the configuration with a new ROOT
+value, so you can load data from a local repo clone.
 
 """
 
@@ -51,6 +55,11 @@ class Configuration(BaseModel):
 
     This encapsulates the set of naming conventions, and checks for
     the existence of expected files.
+
+    When loaded through a pip-installed library, only a small amount
+    of LEB alignment data is provided. To use a local data for a
+    configurationg, set the root property to the path to the root of
+    the local Alignments repository.
 
     """
 
