@@ -1,5 +1,15 @@
 # Release Notes
 
+## 0.3.0
+
+* Realized I wasn't including data files, which made this pretty
+  pointless for pip installation. But the alignment data is pretty
+  big, so I'm only including LEB alignments for now, along with
+  languages, catalog, and source reference files. Now it takes much
+  longer to install :-/.
+    * To create a configuration rooted in a local copy of this repo,
+      set the `root` property of `config.Configuration()`. 
+
 ## 0.2.17
 
 * Fixed bug in `gcsource.Reader()` and `gctarget.Reader()` that was
