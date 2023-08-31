@@ -16,7 +16,7 @@ from bible_alignments import config
 
 @dataclass
 class Source:
-    """Manage source data for a word/morph."""
+    """Manage source data for a word/morph read from file."""
 
     # Identifies the word/morph in BBCCCVVVWWWP format
     identifier: str
