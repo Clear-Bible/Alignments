@@ -57,10 +57,11 @@ identifier		altId	text	strongs	gloss				gloss2			lemma	pos		morph
       chapter, verse, word, and word.
 * `altId`: ? Omitted for copyrighted texts.
 * `text`: surface text from the source. Omitted for copyrighted texts.
-* `strongs`: Strongs concordance identifier for this lemma.
+* `strongs`: Strongs concordance identifier for this lemma. These typically match
+  the regular expression "^[A,G-H]\d\d\d\d([a-c])?$"
 * `gloss`: English gloss for this lemma. Includes some context
   information.
-* `gloss2`: ?
+* `gloss2`: another gloss for this lemma; typically Chinese.
 * `lemma`: the dictionary form of the word.
 * `pos`: Part Of Speech, one of the following values:
     * adj: adjective
@@ -177,7 +178,7 @@ identifier	altId		text	transType	isPunc	isPrimary
 
 ## `vref` Format
 
-### Pharaoh Format Alignment
+## Pharaoh Format Alignment
 
 "Pharaoh format" is common in the machine translation community. This
 represents a set of alignments for a sentence by a list of word
