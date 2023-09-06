@@ -1,8 +1,11 @@
 """Manage the source data for Grape City (gc) alignments.
 
->>> from bible_alignments import gcsource
+When pip-installed, this only includes the LEB data: other data isn't included. 
+
+>>> from bible_alignments import gcsource, config
+>>> lebntcfg = config.Configuration(sourceid="NA27", targetid="LEB", targetlanguage="eng", processid="manual")
 # read NA/27 GNT data for the LEB alignment
->>> rd = gcsource.Reader(sourceid="NA27", targetid="LEB")
+>>> rd = gcsource.Reader(configuration=lebntcfg)
 """
 
 from collections import UserDict
