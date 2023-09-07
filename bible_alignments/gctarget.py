@@ -9,7 +9,7 @@ from bible_alignments import config
 # these attribute names match the source data for simplicity
 
 
-@dataclass
+@dataclass(order=True)
 class Target:
     """Manage target data for a word."""
 
@@ -24,18 +24,22 @@ class Target:
     transType: str
     # is this token punctuation?
     # Not always set, at least not for YLT
-    isPunc: bool
+    isPunc: bool | str
     # if the same word is aligned to multiple source words, the
     # primary word is the content-bearing term? Example from 42004003
-    isPrimary: bool
+    isPrimary: bool | str
     _fields: tuple = ("identifier", "altId", "text", "transType", "isPunc", "isPrimary")
 
     def __repr__(self) -> str:
         """Return a printed representation."""
         return f"<Target: {self.identifier}>"
 
+    def __hash__(self) -> int:
+        """Return a hash key for Translation."""
+        return hash(self.identifier)
+
     @staticmethod
-    def fromrow(row) -> "Target":
+    def fromrow(row: dict[str, bool | str]) -> "Target":
         """Return an instance from a row of data."""
         # convert strings to booleans
         row["isPunc"] = True if row["isPunc"] == "True" else False
@@ -49,6 +53,11 @@ class Target:
         For compatability with Source().
         """
         return self.text
+
+    @property
+    def position(self) -> int:
+        """Return the word position in the verse."""
+        return int(self.identifier[8:11])
 
     def display(self) -> None:
         """Print a readable display of the key data."""
