@@ -17,7 +17,7 @@ from bible_alignments import config
 # these attribute names match the source data for simplicity
 
 
-@dataclass
+@dataclass(order=True)
 class Source:
     """Manage source data for a word/morph read from file."""
 
@@ -51,6 +51,11 @@ class Source:
     def token(self) -> str:
         """Return text if available, else lemma."""
         return self.lemma if (self.text == self._missing) else self.text
+
+    @property
+    def position(self) -> int:
+        """Return the word position in the verse."""
+        return int(self.identifier[8:11])
 
     def display(self) -> None:
         """Print a readable display of the key data."""
