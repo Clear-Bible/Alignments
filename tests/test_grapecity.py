@@ -18,6 +18,17 @@ class TestReader:
         assert ag.sourceitems[0].lemma == "ἀκούω"
         assert ag.targetitems[0].text == "--"
 
+    # TODO: add something
     def test_alignmentsets(self) -> None:
         """Test alignmentsets"""
         pass
+
+    # TODO:
+    # - test_source_concordance
+    # - test_dataframe
+    # - test_sourcesbyverse
+
+
+# TODO:
+# - TestAlignmentSet
+# - TestAlignmentGroup
