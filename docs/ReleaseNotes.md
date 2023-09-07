@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.3.1
+
+* Added `dataframe()` to `grapecity.Reader` to better visualize
+  alignment data for a verse.
+* Added notebooks/Alignments.ipynb to show how it all works
+* Other minor supporting improvements.
+
 ## 0.3.0
 
 * Realized I wasn't including data files, which made this pretty
