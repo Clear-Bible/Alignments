@@ -13,6 +13,8 @@ from dataclasses import dataclass, field
 import itertools
 import json
 
+import pandas as pd
+
 from biblelib.word import bcvwpid
 
 from bible_alignments import config, gcsource, gctarget
@@ -47,9 +49,19 @@ class AlignmentGroup:
         """Return True if a single source term with pos=Name."""
         return len(self.sourceitems) == 1 and self.sourceitems[0].pos == "Name"
 
-    def verseid(self):
+    def verseid(self) -> str:
         """Return verse ID for grouping by verse."""
         return self.identifier.split(".")[0]
+
+    @property
+    def sources(self) -> list[str]:
+        """Return a sorted list of source tokens."""
+        return sorted(self.sourceitems)
+
+    @property
+    def targets(self) -> list[str]:
+        """Return a sorted list of target tokens."""
+        return sorted(self.targetitems)
 
     def display(self) -> None:
         """Display text for alignments."""
@@ -70,7 +82,7 @@ class AlignmentSet:
         return f"<AlignmentSet({self.verseid})>"
 
     @staticmethod
-    def from_aglist(aglist) -> "AlignmentSet":
+    def from_aglist(aglist: list[AlignmentGroup]) -> "AlignmentSet":
         """Return an AlignmentSet for a list of AlignmentGroups."""
         assert aglist, f"List must not be empty: {aglist}"
         verseID = aglist[0].verseid()
@@ -83,7 +95,13 @@ class AlignmentSet:
     @property
     def usfm(self) -> str:
         """Return a USFM reference for versid."""
-        return bcvwpid.BCVID(self.verseid).to_usfm()
+        return str(bcvwpid.BCVID(self.verseid).to_usfm())
+
+    def coordinates(self) -> set[tuple[int, int]]:
+        """Return a sequence of pairs indicating token positions in the verse.
+
+        Decrement positions by 1 for zero-based indexing."""
+        return {(src.position - 1, trg.position - 1) for ag in self.items for src in ag.sources for trg in ag.targets}
 
     # def namesets(self, sourceattr: str = "text") -> list:
     #     """Return a list of lists pairing a source name with target term(s).
@@ -100,7 +118,7 @@ class AlignmentSet:
     #     ]
 
 
-def verseid(ag):
+def verseid(ag: AlignmentGroup) -> str:
     """Return verse ID for grouping by verse."""
     return ag.identifier.split(".")[0]
 
@@ -121,11 +139,27 @@ class Reader(UserDict):
                 agid: AlignmentGroup(identifier=agid, sourceitems=sourceitems, targetitems=targetitems, meta=metadict)
                 for aldict in json.load(f)
                 if (agid := aldict["id"])
-                if (sourceitems := [self.sourcereader[s] for s in aldict["source_ids"]])
-                if (targetitems := [self.targetreader[t] for t in aldict["target_ids"]])
+                if (sourceitems := tuple([self.sourcereader[s] for s in aldict["source_ids"]]))
+                if (targetitems := tuple([self.targetreader[t] for t in aldict["target_ids"]]))
                 if (metadict := aldict["meta"])
             }
-        self.alignmentsets = [AlignmentSet.from_aglist(vg) for vg in self.verse_groups()]
+        # todo: group this by reference, then make dataframe a method
+        # here with a reference paraneter so it can also access
+        # sources/targetsbyverse.
+        # BCV reference -> AlignmentSet
+        # these only have the aligned sources and targets
+        self.alignmentsets = {
+            aset.verseid: aset for vg in self.verse_groups() if (aset := AlignmentSet.from_aglist(vg))
+        }
+        # these have all the source and target tokens
+        self.sourcesbyverse = {
+            bcvref: [pair[1] for pair in g]
+            for bcvref, g in itertools.groupby(self.sourcereader.items(), lambda pair: pair[0][:8])
+        }
+        self.targetsbyverse = {
+            bcvref: [pair[1] for pair in g]
+            for bcvref, g in itertools.groupby(self.targetreader.items(), lambda pair: pair[0][:8])
+        }
 
     def display(self) -> None:
         """Display configuration information for a Reader."""
@@ -149,3 +183,20 @@ class Reader(UserDict):
         with referencespath.open("w") as f:
             for aset in self.alignmentsets:
                 f.write(f"{aset.usfm}\n")
+
+    def dataframe(self, verseid: str, hitmark: str = "-G-", missmark: str = "  ") -> pd.DataFrame:
+        """Return a DataFrame showing alignments for verseid, a BCV reference.
+
+        Target terms for column names, source terms for
+        index. Alignments are indicated with the hitmark string:
+        otherwise the missmark string is used.
+
+        """
+        # these are only the aligned tokens
+        sources = [item.token for item in self.sourcesbyverse[verseid]]
+        targets = [item.token for item in self.targetsbyverse[verseid]]
+        df = pd.DataFrame(columns=targets, index=sources)
+        goldcoords = self.alignmentsets[verseid].coordinates()
+        for coord in goldcoords:
+            df.iat[coord] = hitmark
+        return df.fillna(value=missmark)
