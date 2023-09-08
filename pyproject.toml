@@ -29,6 +29,10 @@ include = [
     "data/sources/NA27-LEB.tsv",
     "data/targets/WLC-LEB.tsv",
     "data/targets/NA27-LEB.tsv",
+    # also include YLT NT data for readability
+    "data/alignments/eng/YLT/*",
+    "data/sources/NA27-YLT.tsv",
+    "data/targets/NA27-YLT.tsv",
     "data/sources/references/*.txt",
     "data/catalog.tsv",
 ]
