@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.3.2
+
+* Added YLT data for NT for expository purposes.
+* Fixed Open in Colab link in notebook.
+
 ## 0.3.1
 
 * Added `dataframe()` to `grapecity.Reader` to better visualize
