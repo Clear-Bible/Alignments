@@ -184,6 +184,8 @@ class Reader(UserDict):
             for aset in self.alignmentsets:
                 f.write(f"{aset.usfm}\n")
 
+    # ToDo:
+    # - option for representing isPrimary on the target: maybe *bold*?
     def dataframe(self, verseid: str, hitmark: str = "-G-", missmark: str = "  ") -> pd.DataFrame:
         """Return a DataFrame showing alignments for verseid, a BCV reference.
 

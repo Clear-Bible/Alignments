@@ -160,7 +160,8 @@ identifier	altId		text	transType	isPunc	isPrimary
 ...
 ```
 
-* Each row represents an *alignment group*. 
+* Each row represents an *alignment group*, while the whole file is
+  formatted as JSON so it can be read programmatically. 
 * The key (e.g. "40001001.1") combines a verse identifier with a
   sequential counter for alignment groups: this allows extending this
   data with additional information in separate files, provided they
