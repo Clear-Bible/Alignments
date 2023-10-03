@@ -10,6 +10,30 @@ We use the following abbreviations for summarizing evaluation metrics:
 * FN (false negatives): the number of gold standard alignments for
   which no alignment is proposed
 
+## Intuitions on Metrics for Resource Enhancement
+
+Word alignments support a variety of use cases. For the specific case
+of enhancing resources for Bible translation, we assume:
+
+* Full alignment of every word in source and target texts is not a
+  requirement. Instead, content words are the most important, because
+  (unlike function words) they are much more likely to support
+  resource enhancement.
+* Aligning forms that carry meaning is more important than token-level
+  alignment, since the ultimate goal of resource enhancement is
+  showing meaningful content for target text.
+* Even within these constraints, recall overall may not be as
+  important as precision. For example, many content words referring to
+  common objects (body parts; objects in the natural world; etc.)
+  don't need enhancement: every culture understands the ordinary sense
+  of "hand", or "rock". Recall is most important for terms that refer
+  to objects that aren't native to a specific culture.
+    * This suggests it would be useful to have a score indicating
+      _enhancement importance_ for biblical vocabulary.
+* Precision is important: following an incorrect alignment to enhanced
+  content will produce misleading information. 
+  
+
 ## Alignment Error Rate (AER)
 
 Computed as TP / (TP + FP)
@@ -22,7 +46,7 @@ Fraser and Marcu (2007) argue that AER (defined by then and Och and
 Ney 2003 as combining both "sure" and "possible" alignments) has
 a fundamental flaw: unlike F-measure, "unbalanced precision and recall
 are penalized", and therefore "it is possible to maximize AER by favoring
-precision over recall". z
+precision over recall". 
 
 ## F-Score
 
