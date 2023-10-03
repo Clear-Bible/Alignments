@@ -11,6 +11,7 @@ minor differences from authoritative editions.
 from collections import UserDict
 from dataclasses import dataclass, field
 import itertools
+from pathlib import Path
 import json
 
 import pandas as pd
@@ -132,9 +133,26 @@ class Reader(UserDict):
         super().__init__(self)
         self.cfg = configuration
         self.sourcereader = gcsource.Reader(self.cfg)
+        # these have all the source and target tokens
+        self.sourcesbyverse = {
+            bcvref: [pair[1] for pair in g]
+            for bcvref, g in itertools.groupby(self.sourcereader.items(), lambda pair: pair[0][:8])
+        }
         self.targetreader = gctarget.Reader(self.cfg)
+        self.targetsbyverse = {
+            bcvref: [pair[1] for pair in g]
+            for bcvref, g in itertools.groupby(self.targetreader.items(), lambda pair: pair[0][:8])
+        }
+        self.data = self.read_alignments(self.cfg.alignmentspath)
+
+    def read_alignments(self, alignmentspath: Path) -> dict[str, AlignmentGroup]:
+        """Load alignment data from alignmentspath and return an AlignmentGroup dict.
+
+        Also (re)computes dependent value alignmentsets.
+        """
         # load all the alignments: not grouped by verse
-        with self.cfg.alignmentspath.open(encoding="utf-8") as f:
+        with alignmentspath.open(encoding="utf-8") as f:
+            # have to side-effect self.data here for verse_groups()
             self.data = {
                 agid: AlignmentGroup(identifier=agid, sourceitems=sourceitems, targetitems=targetitems, meta=metadict)
                 for aldict in json.load(f)
@@ -151,15 +169,7 @@ class Reader(UserDict):
         self.alignmentsets = {
             aset.verseid: aset for vg in self.verse_groups() if (aset := AlignmentSet.from_aglist(vg))
         }
-        # these have all the source and target tokens
-        self.sourcesbyverse = {
-            bcvref: [pair[1] for pair in g]
-            for bcvref, g in itertools.groupby(self.sourcereader.items(), lambda pair: pair[0][:8])
-        }
-        self.targetsbyverse = {
-            bcvref: [pair[1] for pair in g]
-            for bcvref, g in itertools.groupby(self.targetreader.items(), lambda pair: pair[0][:8])
-        }
+        return data
 
     def display(self) -> None:
         """Display configuration information for a Reader."""
