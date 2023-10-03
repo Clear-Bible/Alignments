@@ -1,0 +1,20 @@
+[source]
+
+identifier = "WLC"
+license = "Copyright"
+
+[target]
+
+identifier = "HSB"
+license = "Copyright © 2023 Global Bible Initiative"
+name.eng = "Hindi Standard Bible"
+url = "https://gbi.llc/hindi-standard-bible"
+
+[alignment]
+
+identifier = "WLC-HSB-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "Clear"
