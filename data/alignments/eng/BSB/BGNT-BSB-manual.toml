@@ -1,0 +1,22 @@
+[source]
+
+identifier = "BGNT"
+license = "Public domain"
+license = "CC-BY-4.0"
+url = "https://www.bereanbible.com/"
+
+[target]
+
+identifier = "BSB"
+license = "Public domain"
+name.eng = "Berean Standard Bible"
+url = "https://www.bereanbible.com/"
+
+[alignment]
+
+identifier = "SBLGNT-BSB-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Clear"

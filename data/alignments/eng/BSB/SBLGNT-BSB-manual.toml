@@ -6,14 +6,14 @@ license = "CC-BY-4.0"
 
 [target]
 
-identifier = "YLT"
+identifier = "BSB"
 license = "Public domain"
-name.eng = "Young's Literal Translation"
-url = "https://ebible.org/find/details.php?id=engylt"
+name.eng = "Berean Standard Bible"
+url = "https://www.bereanbible.com/"
 
 [alignment]
 
-identifier = "SBLGNT-YLT-manual"
+identifier = "SBLGNT-BSB-manual"
 format = "grapecity"
 license = "CC-BY-4.0"
 process = "manual"

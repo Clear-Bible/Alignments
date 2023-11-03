@@ -21,7 +21,7 @@ license = "CC-BY 4.0"
 
 [alignment]
 
-identifier = "NA27-ESV-manual"
+identifier = "SBLGNT-ESV-manual"
 format = "grapecity"
 license = "CC-BY-4.0"
 process = "manual"

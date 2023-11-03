@@ -23,7 +23,7 @@ license = "CC-BY 4.0"
 
 [alignment]
 
-identifier = "NA27-LEB-manual"
+identifier = "SBLGNT-LEB-manual"
 format = "grapecity"
 referencesystem = "BBCCCVVVWWP"
 copyright = "Copyright © 2022 by Clear Bible, Inc"
