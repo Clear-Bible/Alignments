@@ -148,15 +148,15 @@ identifier	altId		text	transType	isPunc	isPrimary
 
 ```
 [
-{"40001001.1": {"NA27": ["400010010011"], "YLT": ["40001001002", "40001001001"], "meta": {"process": "manual"}}},
-{"40001001.2": {"NA27": ["400010010021"], "YLT": ["40001001005", "40001001003"], "meta": {"process": "manual"}}},
-{"40001001.3": {"NA27": ["400010010031"], "YLT": ["40001001007", "40001001006"], "meta": {"process": "manual"}}},
-{"40001001.4": {"NA27": ["400010010041"], "YLT": ["40001001008"], "meta": {"process": "manual"}}},
-{"40001001.5": {"NA27": ["400010010051"], "YLT": ["40001001010"], "meta": {"process": "manual"}}},
-{"40001001.6": {"NA27": ["400010010061"], "YLT": ["40001001012", "40001001011"], "meta": {"process": "manual"}}},
-{"40001001.7": {"NA27": ["400010010071"], "YLT": ["40001001014"], "meta": {"process": "manual"}}},
-{"40001001.8": {"NA27": ["400010010081"], "YLT": ["40001001016", "40001001015"], "meta": {"process": "manual"}}},
-{"40001002.1": {"NA27": ["400010020011"], "YLT": ["40001002001"], "meta": {"process": "manual"}}},
+{"40001001.1": {"source_ids": ["400010010011"], "target_ids": ["40001001002", "40001001001"], "meta": {"process": "manual"}}},
+{"40001001.2": {"source_ids": ["400010010021"], "target_ids": ["40001001005", "40001001003"], "meta": {"process": "manual"}}},
+{"40001001.3": {"source_ids": ["400010010031"], "target_ids": ["40001001007", "40001001006"], "meta": {"process": "manual"}}},
+{"40001001.4": {"source_ids": ["400010010041"], "target_ids": ["40001001008"], "meta": {"process": "manual"}}},
+{"40001001.5": {"source_ids": ["400010010051"], "target_ids": ["40001001010"], "meta": {"process": "manual"}}},
+{"40001001.6": {"source_ids": ["400010010061"], "target_ids": ["40001001012", "40001001011"], "meta": {"process": "manual"}}},
+{"40001001.7": {"source_ids": ["400010010071"], "target_ids": ["40001001014"], "meta": {"process": "manual"}}},
+{"40001001.8": {"source_ids": ["400010010081"], "target_ids": ["40001001016", "40001001015"], "meta": {"process": "manual"}}},
+{"40001002.1": {"source_ids": ["400010020011"], "target_ids": ["40001002001"], "meta": {"process": "manual"}}},
 ...
 ```
 
@@ -167,9 +167,8 @@ identifier	altId		text	transType	isPunc	isPrimary
   data with additional information in separate files, provided they
   use the same alignment group identifiers.
 * The value is an object that identifies the source text and which
-  source words are part of the alignment group (by identifier), and
-  likewise for the target text. (In the example above, "NA27" is the
-  source and "YLT" is the target.)
+  source words are part of the alignment group, and
+  likewise for the target text.
 * The value object also includes a "meta" key whose value is a set of
   key-value pairs with metadata for the alignment. Often this will be
   the same for all alignment groups (as in the example above
