@@ -169,7 +169,7 @@ class Reader(UserDict):
         self.alignmentsets = {
             aset.verseid: aset for vg in self.verse_groups() if (aset := AlignmentSet.from_aglist(vg))
         }
-        return data
+        return self.data
 
     def display(self) -> None:
         """Display configuration information for a Reader."""
