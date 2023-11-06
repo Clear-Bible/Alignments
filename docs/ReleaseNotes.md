@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.3.3
+
+* Bug fix to grapecity.py: was returning an undefined value.
+
 ## 0.3.2
 
 * Added YLT data for NT for expository purposes.
