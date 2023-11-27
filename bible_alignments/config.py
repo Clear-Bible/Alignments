@@ -72,6 +72,8 @@ class Configuration(BaseModel):
     # like 'ESV'
     targetid: str
     # like 'eng': 2-4 characters, not a full name
+    # TODO: use Annotated instead,
+    # https://docs.pydantic.dev/latest/api/types/#pydantic.types.constr--__tabbed_1_2
     targetlanguage: constr(min_length=2, max_length=4)
     # like 'manual': an open-ended slug
     processid: str
@@ -99,7 +101,7 @@ class Configuration(BaseModel):
     @property
     def alignmentsdirpath(self) -> Path:
         """Return Path to alignments directory."""
-        return self.root / "data/alignments" / self.targetlanguage / self.targetid
+        return Path(self.root / "data/alignments" / self.targetlanguage / self.targetid)
 
     @property
     def alignmentspath(self) -> Path:
