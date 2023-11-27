@@ -46,11 +46,16 @@ least two:
   in the alignments file.
 * `text`: the surface text for each token
 
-Other columns are possible, including (but not limited to):
+Other columns are possible. These column names are optional but for specific
+purposes, and if used, should have the intended content:
 
 * `altId`: typically the lemma followed by a hyphen and a one-up
   integer indexing how many times this lemma occurs in the verse.
-* `strongs`: the Strongs number for the lemma. 
+* `strongs`: the Strongs number for the lemma.
+* `after`: indicates one or more non-whitespace characters (like
+  punctuation) that should follow this token without intervening
+  whitespace. Typically used when punctuation is not treated as a
+  separate token. 
 * `gloss`: an English gloss for the lemma
 * `gloss2`: another gloss for the lemma, typically Chinese
 * `lemma`: the dictionary form of the word
