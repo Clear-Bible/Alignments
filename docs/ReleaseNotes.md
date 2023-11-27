@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.3.4
+
+* Bumped supported Python version to anything <4, for greater generality.
+
 ## 0.3.3
 
 * Bug fix to grapecity.py: was returning an undefined value.
