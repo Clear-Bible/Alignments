@@ -1,0 +1,33 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target]
+
+identifier = "LEB"
+copyright = "Copyright © 2012 Logos Bible Software"
+license = "Custom"
+licensenotes = "'You can give away the Lexham English Bible, but you can't sell it on its own.'"
+name.eng = "Lexham English Bible"
+url = "http://www.lexhamenglishbible.com"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[alignment]
+
+identifier = "SBLGNT-LEB-manual"
+format = "grapecity"
+referencesystem = "BBCCCVVVWWP"
+copyright = "Copyright © 2022 by Clear Bible, Inc"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Clear"

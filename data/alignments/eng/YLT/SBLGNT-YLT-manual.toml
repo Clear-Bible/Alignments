@@ -1,0 +1,21 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+
+[target]
+
+identifier = "YLT"
+license = "Public domain"
+name.eng = "Young's Literal Translation"
+url = "https://ebible.org/find/details.php?id=engylt"
+
+[alignment]
+
+identifier = "SBLGNT-YLT-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Clear"
