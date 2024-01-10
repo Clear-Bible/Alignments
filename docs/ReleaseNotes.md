@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.3.5
+
+* Support NA28 as an edition (since that's what the 'NA27' files
+  really are).
+* Use the identifier attribute in configuration. 
+
 ## 0.3.4
 
 * Bumped supported Python version to anything <4, for greater generality.
