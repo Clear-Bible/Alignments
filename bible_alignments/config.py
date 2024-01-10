@@ -8,15 +8,15 @@ associated with a given version and source, e.g. ESV and WLC.
 
 # get the path to the alignments data (in your local repository)
 >>> cfg.alignmentspath
-PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/alignments/eng/ESV/NA27-ESV-manual.json')
+PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/alignments/eng/ESV/NA28-ESV-manual.json')
 
 # get the path to the source data
 >>> cfg.sourcepath
-PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/sources/NA27-ESV.tsv')
+PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/sources/NA28-ESV.tsv')
 
 # get the path to the target data
 >>> cfg.targetpath
-PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/targets/NA27-ESV.tsv')
+PosixPath('/Users/sboisen/git/Clear-Bible/Alignments/data/targets/NA28-ESV.tsv')
 
 NOTE when pip-installing, only the LEB alignment files get installed:
 otherwise it would be too much data.
@@ -45,6 +45,7 @@ class SourceidEnum(str, Enum):
     """Valid source identifiers."""
 
     NA27 = "NA27"
+    NA28 = "NA28"
     SBLGNT = "SBLGNT"
     WLC = "WLC"
 
@@ -106,17 +107,20 @@ class Configuration(BaseModel):
     @property
     def alignmentspath(self) -> Path:
         """Return Path to alignments output file."""
-        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.json"
+        # return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.json"
+        return self.alignmentsdirpath / f"{self.identifier}.json"
 
     @property
     def alignmentswordspath(self) -> Path:
         """Return Path to alignments file that includes words."""
-        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}+words.json"
+        # return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}+words.json"
+        return self.alignmentsdirpath / f"{self.identifier}+words.json"
 
     @property
     def configpath(self) -> Path:
         """Return Path to alignments configuration file."""
-        return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.toml"
+        # return self.alignmentsdirpath / f"{self.sourceid}-{self.targetid}-{self.processid}.toml"
+        return self.alignmentsdirpath / f"{self.identifier}.toml"
 
     # optional/experimental
     @property
@@ -133,3 +137,10 @@ class Configuration(BaseModel):
         print(repr(self))
         for attr in ["sourcepath", "targetpath", "configpath", "alignmentspath"]:
             print(f"{attr:<15} = {getattr(self, attr)}")
+
+    def reroot(self, root: Path) -> None:
+        """Reset the root and derivative attributes.
+
+        Installing this via pip sets root to an unhelpful value.
+
+        """
