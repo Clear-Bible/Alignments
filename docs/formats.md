@@ -3,16 +3,42 @@
 Multiple formats are currently used in the community for alignment
 data. While a single shared standard would be desirable for sharing
 data, and we hope one will be developed, in the meantime we will
-support data in a variety of formats. 
+support reading data in a variety of formats, but publish in a
+standard format we call AlignmentHub Format. This implements the
+Scripture Burrito standard for alignment data, with some additional
+practices and conventions. 
 
-The currently-recognized formats are listed below. If you have alignment
-data in a different format, please let us know so we can support it if
-possible. 
+## Overview of Formats and Terminology
+
+* A **corpus file** contains tokenized Bible text, in a TSV format with
+  one line per token. There are two types of corpus files:
+    * A **source** file represents the Hebrew/Greek source text, as
+      derived from Macula data.[^1] This covers a small set of texts:
+        * For the Hebrew Bible, `WLC` for the Westminster Leningrad
+          Codex`, and `WLCM` for the Macula version of this.
+        * For the Greek New Testament, 
+            * `SBLGNT` identifies the Society of Biblical Literature
+              Greek New Testament.
+            *  `BGNT` is the NT portion of the Greek text behind the
+               Berean Standard Bible. 
+            *  `NA28` is the Nestle-Aland 28th edition, under
+               copyright to the German Bible Society.
+    * A **target** file captures the text of a translation.
+* An **alignment** file captures the alignments between tokens in the source and
+  target files, and needs those files to be correctly interpreted.
+* The **vline** format is a text file that represents plain text for a
+  Bible, with one verse per line, according to its
+  **versification**. This is typically used as input to
+    * Tokenization, to produce target corpus files.
+    * Automated alignment algorithms.
+* The **vref** format is like vline, but the content is a
+  Bible reference for the verse, not the plain text of the
+  verse. The USFM reference scheme is typical. 
+    * The **vref-vline** format is a hybrid TSV file that includes the
+      reference in the first column, and the plain text in the second.
 
 
 ## Grape City Format
-
-This format combines three files:
 
 * Source: the Hebrew/Greek source text in TSV format.
     * If the source was a Grape City manual alignment, this includes
@@ -23,9 +49,6 @@ This format combines three files:
     * If the target came from a Grape City manual alignment, this
       includes altId, text, transType, isPunc, isPrimary. If the text
       is copyrighted, altId and text are omitted. 
-* Alignment: how the source and target texts are aligned. This
-  supports many-to-many alignment across verse boundaries, with
-  metadata for each alignment group.
 
 ### Common Attributes
 
@@ -205,9 +228,13 @@ purposes but are not fully-specified alignments:
 * (Reverse) interlinear format: this indicates a source lemma for a
   target word, or vice versa. However, when words are repeated in a
   sentence or verse, such formats do not specify which instance is
-  aligned with which, so the alignments are ambiguous.[^1]
+  aligned with which, so the alignments are ambiguous.[^2]
 
 
-[^1]: Hueristics might help to convert such data to a complete
+[^1]: While we do not wish to exclude alignments to other sources than
+    biblica source texts, that is not our current focus.
+
+[^2]: Heuristics might help to convert such data to a complete
     alignment. How well this works is likely to depend on the
     languages involved.
+
