@@ -48,6 +48,7 @@ class SourceidEnum(str, Enum):
     NA28 = "NA28"
     SBLGNT = "SBLGNT"
     WLC = "WLC"
+    WLCM = "WLCM"
 
 
 # this has to be initialized with keyword arguments: not sure why
