@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "bible-alignments"
-version = "0.3.5"
+version = "1.0.0"
 description = "Word-level alignments for Bibles, including both automatic alignments and manually corrected alignments."
-authors = ["Sean Boisen <sean.boisen@clear.bible>"]
+authors = ["Sean Boisen <sean.boisen@biblica.com>"]
 license = "MIT"
 readme = "README.md"
 keywords = ["Bible", "alignment", "Bible alignment"]
@@ -23,16 +23,11 @@ classifiers = [
 include = [
     "LICENSE", 
     "data/languages/*",
-    # lots of larger files: just include LEB data
-    "data/alignments/eng/LEB/*",
-    "data/sources/WLC-LEB.tsv",
-    "data/sources/NA27-LEB.tsv",
-    "data/targets/WLC-LEB.tsv",
-    "data/targets/NA27-LEB.tsv",
-    # also include YLT NT data for readability
-    "data/alignments/eng/YLT/*",
-    "data/sources/NA27-YLT.tsv",
-    "data/targets/NA27-YLT.tsv",
+    # lots of larger files: just include BSB data
+    "data/alignments/eng/BSB/*",
+    "data/sources/BSB.tsv",
+    "data/sources/SBLGNT.tsv",
+    "data/targets/WLC.tsv",
     "data/sources/references/*.txt",
     "data/catalog.tsv",
 ]
@@ -42,12 +37,13 @@ python = ">=3.9,<4"
 jsonlines = "^3.1.0"
 tomli = "^2.0.1"
 jupyterlab = "^3.6.1"
-biblelib = "^0.2.17"
+biblelib = "^0.3.2"
 django = "^4.2.2"
 djangorestframework = "^3.14.0"
 django-environ = "^0.10.0"
 pydantic = "^2.1.1"
 pandas = "^2.1.0"
+unicodecsv = "^0.14.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
