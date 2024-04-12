@@ -3,6 +3,8 @@
 identifier = "BGNT"
 license = "Public domain"
 license = "CC-BY-4.0"
+name.eng = "Berean Greek New Testament"
+notes = "This is the text that the Berean Bible published as the basis for their English translation."
 url = "https://www.bereanbible.com/"
 
 [target]
@@ -18,5 +20,6 @@ identifier = "SBLGNT-BSB-manual"
 format = "grapecity"
 license = "CC-BY-4.0"
 process = "manual"
+process.notes = "The Berean Standard Bible published alignments for their English translation to their own source text. These were converted to Scripture Burrito format by Rick Brannan."
 scope = "NT"
 team = "Clear"

@@ -4,18 +4,30 @@ identifier = "SBLGNT"
 copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
 license = "CC-BY-4.0"
 
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
 [target]
 
 identifier = "BSB"
-license = "Public domain"
+license = "CC-BY-SA 4.0"
 name.eng = "Berean Standard Bible"
 url = "https://www.bereanbible.com/"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by BiblioNexus"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
 
 [alignment]
 
 identifier = "SBLGNT-BSB-manual"
-format = "grapecity"
+copyright = "Copyright © 2024 by BiblioNexus"
+format = "Scripture Burrito v0.3"
 license = "CC-BY-4.0"
 process = "manual"
+process.notes = "The Berean Standard Bible published alignments for their English translation to the source texts. These were converted to match the SBLGNT and Scripture Burrito format by Rick Brannan."
 scope = "NT"
-team = "Clear"
+team = "BiblioNexus"
+

@@ -1,4 +1,0 @@
-# Glossary
-
-* configuration
-* alignment directory

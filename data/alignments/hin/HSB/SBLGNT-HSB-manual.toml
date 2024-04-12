@@ -1,0 +1,30 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target]
+
+identifier = "HSB"
+license = "Copyright © 2023 Global Bible Initiative"
+name.eng = "Hindi Standard Bible"
+url = "https://gbi.llc/hindi-standard-bible"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by Biblica"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
+
+[alignment]
+
+identifier = "SBLGNT-HSB-manual"
+format = "Scripture Burrito v0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Clear"

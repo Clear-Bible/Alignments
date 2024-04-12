@@ -3,6 +3,10 @@
 identifier = "WLC"
 license = "CC-BY-4.0"
 
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
 [target]
 
 identifier = "YLT"
@@ -10,12 +14,19 @@ license = "Public domain"
 name.eng = "Young's Literal Translation"
 url = "https://ebible.org/find/details.php?id=engylt"
 
+[target.metadata]
+copyright = "Copyright (c) 2023 by Biblica"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
+
 [alignment]
 
 identifier = "WLC-YLT-manual"
-format = "grapecity"
+format = "Scripture Burrito v0.3"
 license = "CC-BY-4.0"
 process = "manual"
 scope = "OT"
 team = "Clear"
+
+
 
