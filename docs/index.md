@@ -21,8 +21,8 @@ source
   common sources are WLC (Westminster Leningrad Codex) for OT, and SBLGNT for NT.
   
 target
-: the Bible translation being aligned. 
+: the Bible translation being aligned to a source text.
 
 alignment 
-: 
+: groups of source and target tokens that express equivalent content.
   
