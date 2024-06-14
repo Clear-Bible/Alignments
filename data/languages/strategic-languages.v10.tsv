@@ -1,3 +1,293 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15bb4096b5a1ff367e160bbfb9a0572c2cf8a66bed47452627378bb764ceac09
-size 27196
+BCP47	Language	ISO-639	Resource_Level	RL_Rationale	Inclusive_code	script
+ar	Arabic (MSA)	arb	4	20+ countries of use, 250m L2, use tied heavily to Islam		Arab
+en	English	eng	4	Global Lingua Franca		Latn
+fr	French	fra	4	30+ countries of use, 200m+ L2, Africa		Latn
+hi	Hindi	hin	4	Regional LF use (1-5 countries), 200m L2		Deva
+id	Indonesian	ind	4	Regional LF use (1-5 countries), 200m L2		Latn
+zh	Mandarin	cmn	4	Regional LF use (1-5 countries), 200m L2, emerging Sinosphere		Hans, Hant
+pt	Portuguese	por	4	10+ countries of use, 25m+ L2, Colonial spread		Latn
+ru	Russian	rus	4	10+ countries of use, 100m+ L2, Soviet spread		Cyrl
+es	Spanish	spa	4	20+ countries of use, 80m+ L2, S America		Latn
+sw	Swahili	swh	4	Regional LF use (1-5 countries), 100m L2+, growing stability and use	checked	Latn
+am	Amharic	amh	3	National, primacy, 20m+ L2		Ethi
+as	Assamese	asm	3	Regional primary LWC in NE India, recognized status, 8m L2		Beng
+bn	Bengali	ben	3	Supranational, anchor for Bengalis, 30m + L2		Beng
+my	Burmese	mya	3	National, primacy, 10m+ L2		Mymr
+fa	Farsi	pes	3	Supranational, primacy, anchor for Iranian branch, ~35m L2		Aran
+ha	Hausa	hau	3	Supranational, National language status, 50m+ L2		Latn
+lo	Lao	lao	3	National, primacy, ~1m L2, 20m+ Isan in Thailand		Laoo
+ln	Lingala	lin	3	Regional, primacy, +developing status, 20m+ L2		Latn
+ms	Malay	msa	3	National, primacy, enough differentiaion from Indonesian	checked	Latn
+ne	Nepali	nep	3	National, primacy, ~10m L2	checked	Deva
+tl	Tagalog	tgl	3	National, primacy, 50m+ L2		Latn
+th	Thai	tha	3	National, primacy, 40m+ L2		Thai
+tpi	Tok Pisin	tpi	3	National / Supranational, primacy, 800 dependent OLs, 4m L2, standardized and official		Latn
+tr	Turkish	tur	3	Supranational, primacy anchor for Turkic branch, ~8m L2		Latn
+ur	Urdu	urd	3	Supranational, anchor for Subcontinental Muslims with arabic script, 100m+ L2		Arab
+vi	Vietnamese	vie	3	National, primacy, ~1m L2		Latn
+af	Afrikaans	afr	2	Supranational, 10m+ L2, secondary, supplemental value to English		Latn
+ak	Akan	aka	2	LF in Ghana with a potential 81 connected OLs and 10m L2, supplemental to English		Latn
+arq	Arabic, Algerian	arq	2	"Large regional LWC but secondary to MSA + French, also similar to Moroccan Arabic, Low OL dependency. Still might be helpful as a source text because the population and % use is quite high in Algeria
+"		Arab
+shu	Arabic, Chadian	shu	2	Midsize Regional LWC, 6m L2, secondary to both French and MSA, huge OL count though (130), high supplemental value		Arab
+arz	Arabic, Egyptian	arz	2	Large speaker base, unknown L2, but widespread supranatinoally through media and film. I see evidence for existing Egyptian Arabic Bible despite PB listing no, high supplemental value		Arab
+acm	Arabic, Mesopotamian	acm	2	No listed L2 but that's not true, 30m+ speakers though, and no Bible text. Still could be potential RL2 one day. Borderline RL 1/2		Arab
+ary	Arabic, Moroccan	ary	2	Large speaker base with ~5m L2, need a full Bible though, but high supplemental value to MSA + French		Arab
+ajp	Arabic, South Levantine	ajp	2	Potentially valuable as RL2, wide speaker base and standardized Syrian script. Borderline RL1/2.		Arab
+apd	Arabic, Sudanese	apd	2	Large speaker base with ~9m L2, need a full Bible though, but high supplemental value to MSA + English		Arab
+ay	Aymara	aym	2	Potentially supplemental for Bolivia	checked	Latn
+az	Azerbaijani	aze	2	Supranational, 8m+ L2, secondary, supplemental value to Turkish + Farsi	checked	Latn
+bm	Bambara	bam	2	Supranational, 15m+ L2, high translational value, limited written tradition, supplemental to French		Latn
+bem	Bemba	bem	2	LWC of Zambia, unsure of supplemental potential to English but there are enough languages within its sphere and existing translation to consider RL 2		Latn
+bho	Bhojpuri	bho	2	Regional LWC in India, high L2 but no official status, similar to Hindi, but supplemental value		Deva
+bi	Bislama	bis	2	"110 OL connections but secondary to French and even Tok Pisin derivative. Probably helpful supplemental value
+"		Latn
+ceb	Cebuano	ceb	2	"Regional status in Philippines, but secondary to English and Filipino, questionable supplemental value, but enough languages behind it and a relatively high and prestigious role
+"		Latn
+ny	Chichewa	nya	2	Official language of Malawi / National language of Zambia, unknown L2. supplemental value to English		Latn
+hak	Chinese, Hakka	hak	2	"large Regional LWC S China. Unsure supplemental potential, but there is potential as it is used on Taiwan and Southeastern China and is mutually unintelligible to 
+Min Nan [nan]
+
+"		Hans
+nan	Chinese, Min Nan	nan	2	Taiwanese potentially useful to the 23 OLs, but Mandarin also reasonably prevalent. Borderline RL 1/2		Hans
+wuu	Chinese, Wu	wuu	2	Large Regional LWC E China. Unsure supplemental potential. Bible is from 1914, but there are 2 unstarted AAGs of ~10 mil behind it		Hans
+hsn	Chinese, Xiang	hsn	2	"Large Regional LWC S China. Unsure supplemental potential, but include at RL 2 for the languages behind it, though no Scripture exists yet
+
+"		Hans
+yue	Chinese, Yue	yue	2	"Large Regional LWC SE China. Unsure supplemental potential, but Scripture does exist. Keep at RL 2, supplemental
+"		Hans
+za	Chinese, Zhuang	zha	2	"Regional LWC S China. Supplemental potential, inclusive code on a dialect continuum
+"	checked	Hans
+prs	Dari	prs	2	National language, few Christians, but 30 dependent OLs in Afghanistan, has translational value, near primacy, but supplemental to Farsi		Aran
+nl	Dutch	nld	2	Supranational, 3m L2, secondary, supplemental value to English + French in Carribean		Latn
+ee	Ewe	ewe	2	Large Regional LWC Togo/Ghana, high L2 potental, supplemental value to French		Latn
+fon	Fon	fon	2	Regional LWC in Benin. likely supplemental value to French		Latn
+de	German	deu	2	Supranational, 70m+ L2, secondary, supplemental value to English + French		Latn
+gn	Guarani	grn	2	"Potentially supplemental for Paraguay, inclusive code, existing Bible, and numerical data supports inclusion
+"	checked	Latn
+gu	Gujarati	guj	2	Regional LWC in India, regonized status, secondary to Hindi, supplementary texts likely valuable		Gujr
+hil	Hiligaynon	hil	2	"Large regional LWC in Philippines, supplemental value to English and Filippino
+"		Latn
+hu	Hungarian	hun	2	National language, few reported L2, but potential primacy, supplemental to English		Latn
+ig	Igbo	ibo	2	Large regional language, more closely tied to one ethnicity, limited L2, questionable supplemental usefulness, but existing Scripture and strong Christian tradition		Latn
+ilo	Ilocano	ilo	2	Regional status in Philippines, but secondary to English and Filipino, questionable supplemental value. Borderline RL 1/2		Latn
+it	Italian	ita	2	Supranational, 10m+ L2, secondary, supplemental value to English + French		Latn
+jv	Javanese	jav	2	"Regional status in Indonesia, but secondary to Indonesian, questionable supplemental value, limited / non-reported L2, but  existing Scripture
+"		Java
+kn	Kannada	kan	2	"Regional LWC in India, recognized status, primacy, 14m L2, but no unstarted AAG and can use English or Hindi if fluent, relegate to RL 2 (supplemental) for now
+"		Knda
+km	Khmer	khm	2	"National, primacy, ~1m L2, few languages and fewer AAGs, relegate to RL 2 (supplemental) for now
+"		Khmr
+ktu	Kituba	ktu	2	Regional LWC of DRC, 5m L2, supplemental value to French + Lingala		Latn
+ku	Kurdish	kur	2	Regional dialect continuum, L2 / OL dependents unknown, supplemental value to Turkish + Arabic + Farsi	checked	Latn
+lg	Luganda	lug	2	de facto National langauge, 7m L2, questionable scope but undeniable translational value supplemental to English + Swahili		Latn
+mai	Maithili	mai	2	Regional LWC in India, recognized status, unknown L2 but a historically important language, supplemental to Hindi + Bengali		Deva
+mg	Malagasy	mlg	2	Official language status, but French is widespread through education. Potential usefulness to unite 12 Malagasy dialects. L2 is not reported, but church affirmed though. Borderline RL1/2	checked	Latn
+ml	Malayalam	mal	2	Regional LWC in India, recognized status, smaller than other bordering state languages, large Christian presence, fewer OLs, supplemental		Mlym
+mr	Marathi	mar	2	Regional LWC in India, regonized status, secondary to Hindi, supplementary texts likely valuable		Deva
+mni	Meitei	mni	2	"Regional LWC in Manipur, will be useful as a supplemental resource
+
+"		Mtei
+mn	Mongolian	mon	2	Small national language, potentially useful RL2 but unsure, secondary to both Russian and Chinese, but L2 2.5m, borderline RL 1/2	checked	Cyrl
+pcm	Nigerian Pidgin	pcm	2	"Regional, non-official, pidgin, supplemental, L2 over 100m
+"		Latn
+or	Odia	ory	2	Regional LWC in India, regonized status, secondary to Hindi, supplementary texts likely valuable		Orya
+om	Oromo	orm	2	Regional language, secondary to Amharic, 37m L2 though, supplemental texts highly valuable	checked	Latn
+pa	Punjabi, Western	pnb	2	Regional LWC / state language in Pakistan, but secondary to both English and Urdu, but relatively high Christian presence. Borderline RL1/2		Guru
+qu	Quechua	que	2	Dialect continuum in S America with potential OL connectivity and supplemental potential. Unsure RL 1/2. Hard to choose one dialect for text, but Scripture does exist	checked	Aran
+raj	Rajasthani	raj	2	"Regional LWC Central India (Rajasthan), similarities to Hindi. Unsure supplemental potential, but numerical data supports RL 2, I know their Scripture could use revision
+"		Deva
+ro	Romanian	ron	2	National language, with potential primacy, and potential usefulness to 34 OLs, 4m L2, supplemental to English + French		Latn
+sg	Sango	sag	2	Midsize Regional LWC, 1.6m L2 and 70 OL dependents, secondary to French but might have primacy, high supplemental value		Latn
+sh	Serbo-Croatian	hbs	2	National language in several countries, potential 44 OL dependents, unknown L2 speakers, supplemental to English	checked	Latn
+tn	Setswana	tsn	2	Status in Botswana/SA, 7m L2, secondary, supplemental to English		Latn
+sn	Shona	sna	2	Official Status in Zim/SA, 22 potential dependent OLs, secondary unknown L2, supplemental to English		Latn
+sd	Sindhi	snd	2	Regional LWC, secondary to Urdu and English, but large language with unknown L2. Borderline RL1/2		Aran
+si	Sinhala	sin	2	National language, shared primacy with Tamil, 2.5m L2, 7 dependent OLs		Sinh
+pis	Solomon Islands Pijin	pis	2	"72 OL connections but secondary to English and even Tok Pisin derivative. Still useful supplemental value
+"		Latn
+tg	Tajik	tgk	2	"Supranational language with ties to Dari/Farsi, different alphabet, 13 OLs but unknown L2. Secondary to Russian, still probably enough supplemental value for L2
+"		Cyrl
+ta	Tamil	tam	2	"Regional, primacy, 8m L2, few languages attached and no unstarted AAGs. Church in Tamil Nadu so far is not using Tamil as primary source for BT materials, relegate to supplemental (RL 2 for now)
+
+"		Taml
+te	Telugu	tel	2	"Regional LWC in India, recognized status, primacy, 12m L2, few languages and no unstarted AAGs. No proof church would use more robust materials. Relegate to supplemental (RL 2 for now)
+"		Telu
+bo	Tibetan, Lhasa	bod	2	"Regional LWC Tibet, a supplemental text might be valuable because of its linguistic distance from Mandarin, and the sheer number of Languages and potentially related to it
+"		Tibt
+lua	Tshiluba	lua	2	Regional LWC in DRC and neghboring countries, secondary to French, 5m+ L2, supplemental value to French + Lingala		Latn
+uz	Uzbek	uzb	2	"Supranational language, few Christans, secondary to Russian, 6m L2 though, probable supplemental value
+"	checked	Latn
+wo	Wolof	wol	2	Supranational, 6m+ L2, high translational value but limited written tradition, supplemental to Arabic and French		Latn
+yo	Yoruba	yor	2	Regional language, 2m L2 speakers, major Nigerian language, secondary, supplemental to English + Pidgin		Latn
+ace	Acehnese	ace	1	Regional LWC Indonesia.  Unsure supplemental potential		Latn
+aa	Afar	aar	1	"Regional LWC of NE Africa, also status, potential supplemental value in a region without a strong Christian tradition, Numerical data supports RL 1
+
+"		Latn
+afb	Arabic, Gulf	afb	1	Enough mutual intelligibility with MSA to be potentially pass as RL1. Borderline RL 1/2		Arab
+pga	Arabic, Juba	pga	1	"Numerical data highly supports some level of inclusion
+"		Arab
+ayl	Arabic, Libyan	ayl	1	Midsize regional LWC but secondary to MSA. Low OL dependency, limited additional usefulness for now		Arab
+ars	Arabic, Najdi	ars	1	"Some potential numerical usefulness, in addition to needing Scripture themselves, Numerical data supports RL 1
+"		Arab
+ayn	Arabic, Sanaani	ayn	1	Regional dialect similar to MSA, limited OLs, few Christians, no Bible. Limited usefulness for now but could one day become useful as RL 2		Arab
+aeb	Arabic, Tunisian	aeb	1	"Midsize regional LWC but secondary to MSA + French. Low OL dependency, limited additional usefulness for now but helpful at RL 1 level
+"		Arab
+bal	Baluchi	bal	1	"Regional LWC Western Pakistan / Eastern Iran. Unsure supplemental potential, but limited, very sparse Christian presence. Numerical data supports RL 1
+"	checked	Aran
+bjn	Banjarese	bjn	1	Regional LWC Indonesia.  Numerical data supports RL 1		Latn
+wti	Berta	wti	1	"Regional LWC of Sudan, Numerical data supports RL 1 in the cluster of languages straddling the Sudanese / Ethiopian border
+"		Latn
+brh	Brahui	brh	1	"Regional LWC Pakistan. Unsure supplemental potential, but limited. Numerical data supports RL 1
+"		Aran
+bug	Buginese	bug	1	"Regional LWC Indonesia.  Unsure supplemental potential. Numerical data supports RL 1
+"		Latn
+cjk	Chokwe	cjk	1	"Questionable supplemental potential for Angola, but Numerical data supports RL 1
+"		Latn
+dv	Dhivehi	div	1	"Small national language, no listed L2 and no listed OLs (not true though), but still very limited usefulness. Useful as an entry point into the country
+"		Thaa
+luo	Dholuo	luo	1	"Ethnic language of Kenya with linguistic ties to languages of N Uganda. Unsure of supplemental potential, but Numerical data supports RL 1
+"		Latn
+din	Dinka	din	1	Dinka is a dialect continuum in South Sudan, potential usefulness but unsure how useful text in a dialect would be		Latn
+dz	Dzongkha	dzo	1	Small national language, potentially useful RL2 but secondary to Hindi and English. Also doesn't cover the whole country. Defer to RL1 for now		Tibt
+fan	Fang	fan	1	Midize regional LWC, but secondary to French, limited L2 reported, but do have a new Bible, could be potentially useful as RL 2 but not enough evidence. Borderline RL 1/2		Latn
+ful	Fulfulde	ful	1	Large dialect continuum, inclusive code, useful supplemental value across the continuum as an entry point, few Christians.	checked	Latn
+ff	Fur	fvr	1	"Regional LWC of Sudan, Unsure of supplemental potential, but Numerical data supports RL 1
+"		Adlm
+mey	Hassaniyya	mey	1	"Midsize regional LWC but secondary to MSA and French, Low OL dependency, few Christians, limited additional usefulness for now, but Numerical data supports RL 1
+"		Arab
+kbp	Kabiye	kbp	1	"Regional LWC in Togo. Unsure supplemental potential, but possible Numerical data support for RL 1
+"		Latn
+kr	Kanuri	kau	1	"Regional LWC/ dialect continuum. Unsure supplemental potential, but Numerical data supports RL 1. Likely useful as an entry point
+
+"	checked	Latn
+ks	Kashmiri	kas	1	"Regional LWC in India, recognized status, low L2 and secondary to Hindi, limited OL dependents, but still numerical data supports RL 1
+"		Aran
+kk	Kazakh	kaz	1	National language, secondary, few dependent OLs, unknown L2, borderline RL1/2 as they have Scripture. Potentially useful for the emerging Kazakh church		Cyrl
+naq	Khoekhoe	naq	1	Botswana San language, limited use and unsure of supplemental potential, but possible; distinct linguistic branch, so may be of additional value to have RL 1		Latn
+kpe	Kpelle	kpe	1	"Midsize regional LWC but secondary to English. Supplemental source text could be valuable but English proficiency is reasonably high, Numerical data supports RL 1
+"		Latn
+kri	Krio	kri	1	Midsize regional LWC (pidgin) but secondary to english. Supplemental source text could be valuable but English proficiency is reasonably high		Latn
+kj	Kwanyama	kua	1	"dialect continnuum of Namimiba, unsure of supplemental potential because no strong national language, Numerical data potentially supports RL 1
+"		
+lbj	Ladakhi	lbj	1	"Regional LWC Norhtern India. Unsure supplemental potential, Numerical data potentially supports RL 1
+"		Tibt
+mad	Madurese	mad	1	"Regional LWC Indonesia.  Unsure supplemental potential, Numerical data supports RL 1
+"		Latn
+mak	Makassarese	mak	1	"Regional LWC Indonesia.  Unsure supplemental potential, Numerical data supports RL 1
+
+"		Latn
+vmw	Makhuwa	vmw	1	Questionable supplemental potential for Mozambique, unsure how much Portuguese really covers the country. Potentially useful for supplemental material in a mostly oral continuum		Latn
+abs	Malay, Ambonese	abs	1	"Regional LWC Indonesia.  Unsure supplemental potential, Numerical data supports RL 1
+"		Latn
+pmy	Malay, Papuan	pmy	1	Regional LWC E Indonesia. Unsure supplemental potential, but this is one of the more compelling Indonesian Regional LWCs because of it's distance from the capital. Numerical data supports RL 1 (if not RL 2), but only selections exist so far		
+mnk	Mandinka	mnk	1	"Regional LWC Guinea-Bissau. Unsure supplemental potential, but limited, Numerical data supports RL 1
+"		
+emk	Maninka	emk	1	"Regional LWC Guinea. Unsure supplemental potential, but limited, Numerical data supports RL 1
+"		
+men	Mende	men	1	"Regional LWC Sierra Leone. Unsure supplemental potential, but limited, Numerical data supports RL 1
+"		Latn
+mos	Moore	mos	1	"Moore is a National Language but somewhat limited to the ethnic group. Borderline RL 1/2 but unsure, Numerical data supports RL 1 more than RL 2, though there is Scripture
+
+"		
+sba	Ngambay	sba	1	"Regional LWC. Unsure supplemental potential, but possible, Numerical data supports RL 1 if not RL 2, Bible as of 2019
+"		
+ps	Pashto	pus	1	"National language, secondary to Dari few Christians, RL 1 
+videos would suffice"	checked	Arab
+skr	Saraiki	skr	1	Regional language in Pakistan, secondary to English/Urdu/Punjabi, quesitonable additional translational value, RL 1 suffices		
+scl	Shina	scl	1	"Regional LWC Northern Pakistan. Unsure supplemental potential, but limited, RL 1 will suffice
+"		
+so	Somali	som	1	National language, primacy but few Christians, few dependent OLs, few L2. RL1 may suffice for now		Latn
+snk	Soninke	snk	1	"Regional LWC Mali. Unsure supplemental potential, but limited, Numerical data supports RL 1
+"		
+sus	Susu	sus	1	"Regional LWC Guinea. Unsure supplemental potential, but limited, Numerical data barely supports RL 1
+"		
+tem	Temne	tem	1	"Regional LWC Sierra Leone. Unsure supplemental potential, but limited, Numerical data supports RL 1
+"		Latn
+tet	Tetun	tet	1	"National language of Timor Leste, Numerical data supports RL 1, supplemental to English, Indonesian, and even potentially Portuguese
+"		
+ti	Tigrinya	tir	1	"National language but limited OL dependents. Borderline RL 1/2, Numerical data supports RL 1
+"		Ethi
+tmh	Tuareg	tmh	1	"Regional LWC Tuareg in Niger and beyond. Unsure supplemental potential, but limited. Inclusive code, Numerical data supports RL 1
+"		Latn
+tk	Turkmen	tuk	1	"National language, few Christans, unknown L2, 6 OLs in country. Secondary to Russian. Numerical data supports RL 1
+"		
+umb	Umbundu	umb	1	Dialect continuum in Angola, potentially supplemental to Portuguese but not enough data to support RL2		
+ug	Uyghur	uig	1	"Regional status in China but limited L2 usage / OL dependents. Also few Christians. Limited supplemental value. Numerical data supports RL 1
+"		Arab
+aln	Albanian, Gheg	aln	0	"Midsize national language but limited OL dependents and small Christian presence, numerical data does not support RL 1
+"		
+als	Albanian, Tosk	als	0	Limited data, does not support RL 1		
+acw	Arabic, Hijazi	acw	0	"Few Christians, limited L2, proximity to MSA is high. Limited additional usefulness for now, 2 OL connections. Not enough data to support RL 1
+"		Arab
+apc	Arabic, North Levantine	apc	0	"Supplemental to French, English, and MSA, not enough data to support RL 1
+"		Arab
+acq	Arabic, Ta'izzi-Adeni	acq	0	Regional LWC Yemen. Unsure supplemental potential, but limited, Not enough numerical support for RL 1		Arab
+hy	Armenian	hye	0	"Small national language, secondary to Russian, limited usefulness, but having a supplemental text that's not Russian could potentially add value. Borderline RL 1/2. Strong orthodox tradition suggests less potential usefulness, not enough numerical support for RL 1/2
+"		
+ban	Balinese	ban	0	"Not enough numerical support for RL 1
+"		
+bej	Beja	bej	0	Regional LWC of Sudan, Unsure of supplemental potential, potential none. Not enough numerical support for RL 1		
+bs	Bosnian	bos	0	"Subset of Serbo-Croatian inclusive
+"		Latn
+bg	Bulgarian	bul	0	"Not enough numerical support for RL 1, supplemental to other major languages
+"		Cyrl
+ca	Catalan	cat	0	Regional language, but Not enough numerical support for RL 1		Latn
+gan	Chinese, Gan	gan	0	Large Regional LWC S China. Not enough numerical support for RL 1		
+cjy	Chinese, Jinyu	cjy	0	Large Regional LWC N China. Not enough numerical support for RL 1		
+zdj	Comorian	zdj	0	Questionable supplemental potential for Comoros (probably not)... Not enough numerical support for RL 1		
+hr	Croatian	hrv	0	"Subset of Serbo-Croatian inclusive
+"		Latn
+cs	Czech	ces	0	"Not enough numerical support for RL 1 or 2, access through other major languages
+"		Latn
+da	Danish	dan	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+dgo	Dogri	dgo	0	"Regional LWC Northern India. Likely no supplemental potential, not enough numerical support for RL 1
+"		
+et	Estonian	est	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+fj	Fijian	fij	0	Limited translational usefulness due to limited OL dependency and secondary to English with high levels of proficiency		Latn
+fi	Finnish	fin	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+fuc	Fulfulde (Pulaar)	fuc	0	"Regional dialect, defer to inclusive code for now
+"		
+fuf	Fulfulde (Pular)	fuf	0	"Regional dialect, defer to inclusive code for now
+"		
+fuv	Fulfulde Nigerian	fuv	0	Regional dialect, defer to inclusive code for now, though 15 million speakers in Nigeria		
+ka	Georgian	kat	0	Small national language, secondary to Russian, limited usefulness, but having a supplemental text that's not Russian could potentially add value. Borderline RL 1/2, but strong orthodox tradition suggests this won't be necessary		Geor
+ki	Gikuyu	kik	0	Ethnic language of Kenya, unsure of supplemental potential, not enough numerical support for RL 1 or 2		
+el	Greek	ell	0	Not enough numerical support for RL 1 or 2, access through other major languages		
+is	Icelandic	isl	0	Not enough numerical support for RL 1 or 2, access through other major languages		
+ga	Irish	gle	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+ja	Japanese	jpn	0	Not enough numerical support for RL 1 or 2, access through other major languages. It would be RL 2 if anything		Jpan
+rw	Kinyarwanda	kin	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+ko	Korean	kor	0	"Supranational, wide missionary outreach, unknown L2 and few OLs behind it, offers supplemental value to Mandarin in NE China. Questionable value as RL 2, but doesn't benefit churches as RL 1 either, not enough numerical support for RL 1 or 2
+"		Kore
+ky	Kyrgyz	kir	0	"Small national language, potentially useful RL2 but unsure, secondary to Russian, L2 unknown, only 6 OLs in country, not enough numerical support for RL 1 or 2
+"		
+lv	Latvian	lav	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+lt	Lithuanian	lit	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+mk	Macedonian	mkd	0	Not enough numerical support for RL 1 or 2, access through other major languages		Cyrl
+min	Minangkabau	min	0	"Not enough numerical support for RL 1, limited / no L2 speakers
+"		
+cnr	Montenegrin	cnr	0	Not enough numerical support for RL 1 or 2, access through other major languages		
+nag	Nagamese	nag	0	Regional LWC NE India. Unsure supplemental potential due to status of English in region, church defers to English text		
+nd	Ndebele	nde	0	LWC of southerm Zimbabwe / SA, unsure of supplemental potential. Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+no	Norwegian	nor	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+pl	Polish	pol	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+pa	Punjabi, Eastern	pan	0	Regional, secondary, redundant, no dependent OLs, questionable usefulness for any resourcing level		
+rn	Rundi	run	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+sr	Serbian	srp	0	"Subset of Serbo-Croatian
+"		
+scn	Sicilian	scn	0	Not enough numerical support for RL 1 or 2, access through other major languages		
+sk	Slovak	slk	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+sl	Slovene	slv	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+ses	Songhay	ses	0	Not enough numerical support for RL 1 		
+st	Sotho, Southern	sot	0	Status in Lesotho/SA, 8m L2, but definitely secondary to English, limited OL dependents, Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+su	Sunda	sun	0	Recognized regional language in Indonesia but low OL dependents and potential supplemental value. Unsure without church-led request. Not enough numerical support for RL 1 or 2		
+ss	Swati	ssw	0	National language but high prevalence of English and limited OL potential. Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+sv	Swedish	swe	0	Not enough numerical support for RL 1 or 2, access through other major languages		Latn
+ts	Tsonga	tso	0	Large Bantu language, Regional LWC, 3m+ L2 between Zim and Moz, supplemental to English/Portuguese, not enough numerical support for RL 1 or 2		
+uk	Ukrainian	ukr	0	Not enough numerical support for RL 1 or 2, access through other major languages		Cyrl
+xh	Xhosa	xho	0	Large language of Southern Africa but enough secondary access to English		Latn
+dje	Zarma	dje	0	Regional LWC Niger. Unsure supplemental potential, but limited, not enough numerical support for RL 1		
+zu	Zulu	zul	0	Large language of Southern Africa but enough secondary access to English to limit additional translational value		
+be	Belarusian	bel	0	"Not enough numerical support for RL 1, supplemental to other major languages (ie Russian)
+"		Cyrl
