@@ -6,33 +6,30 @@ from .AlignmentGroup import Document, Metadata, AlignmentReference, AlignmentRec
 
 # probably don't need the other types
 from .AlignmentType import TranslationType
-from .catalog import AlignmentSet, Catalog
+from .AlignmentSet import AlignmentSet
 from .manager import Manager, VerseData
+from .BaseToken import BaseToken, asbool
 from .source import Source, SourceReader
 from .target import Target, TargetReader
-
-# for output
-ALIGNMENTSROOT = ROOT.parent / "Alignments"
-REFERENCESPATH = ALIGNMENTSROOT / "data/sources/references"
 
 
 __all__ = [
     "ROOT",
     "DATAPATH",
     "SRCPATH",
-    "ALIGNMENTSROOT",
-    "REFERENCESPATH",
     # AlignmentGroup
     "Document",
     "Metadata",
     "AlignmentReference",
     "AlignmentRecord",
     "AlignmentGroup",
-    # AlignmentType
-    "TranslationType"
-    # catalog
+    # AlignmentSet
     "AlignmentSet",
-    "Catalog",
+    # AlignmentType
+    "TranslationType",
+    # BaseToken
+    "BaseToken",
+    "asbool",
     # manager
     "Manager",
     "VerseData",
