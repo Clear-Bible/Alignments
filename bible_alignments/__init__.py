@@ -5,6 +5,9 @@ from pathlib import Path
 
 from pydantic import BaseModel, constr
 
+from .strongs import normalize_strongs
+
+
 ROOT = Path(__file__).parent.parent
 DATAPATH = ROOT / "data"
 SRCPATH = ROOT / "src"
@@ -67,6 +70,8 @@ __all__ = [
     "TARGETS",
     "NAMES",
     "SourceidEnum",
+    # strongs
+    "normalize_strongs",
 ]
 
 
