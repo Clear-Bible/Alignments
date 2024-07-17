@@ -61,3 +61,7 @@ class BaseToken:
         # parse the identifier to get the word index
         parsedid = bcvwpid.BCVWPID(self.id)
         return int(parsedid.word_ID) - 1
+
+def asbool(value: bool | str) -> str:
+    """Return a minimal string value for output from a boolean value."""
+    return "y" if bool(value) else "n"
