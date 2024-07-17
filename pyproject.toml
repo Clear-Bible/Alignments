@@ -33,11 +33,11 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4"
+python = ">=3.9,<3.12"
 jsonlines = "^3.1.0"
 tomli = "^2.0.1"
 jupyterlab = "^3.6.1"
-biblelib = "^0.3.2"
+biblelib = ">=0.3"
 django = "^4.2.2"
 djangorestframework = "^3.14.0"
 django-environ = "^0.10.0"
