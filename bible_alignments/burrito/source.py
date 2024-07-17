@@ -1,11 +1,11 @@
 """Manage the sources for alignment data.
 
-This supports reading and writing source records, and is normally
-called from bible_alignments.burrito.manager.Manager().
+This supports reading and writing source records. It is normally
+called from burrito.manager.Manager().
 
->>> from bible_alignments import DATAPATH
+>>> from bible_alignments import SOURCES
 >>> from bible_alignments.burrito import SourceReader
->>> src = SourceReader(DATAPATH / "sources/SBLGNT.tsv")
+>>> src = SourceReader(SOURCES / "SBLGNT.tsv")
 # number of tokens
 >>> len(src)
 137741
@@ -48,8 +48,8 @@ from unicodecsv import DictReader, DictWriter
 
 from biblelib.word import bcvwpid
 
-# should come from Clearlib
-from bible_alignments.util import normalize_strongs
+# should eventually come from Clearlib
+from bible_alignments import normalize_strongs
 from .BaseToken import BaseToken
 
 
@@ -101,7 +101,8 @@ class Source(BaseToken):
             """Return a NFKC normalization of string."""
             return unicodedata.normalize("NFKC", string)
 
-        # use BibleLib to standardize the identifier
+        # use BibleLib to standardize the identifier: no
+        # corpus_prefix. but includes partID
         stdid = bcvwpid.BCVWPID(self.id)
         self.id = stdid.get_id()
 
@@ -112,8 +113,8 @@ class Source(BaseToken):
             self.altId = normalize(self.altId)
             self.text = normalize(self.text)
             self.lemma = normalize(self.lemma)
-        # normalize Strongs
-        if self.strong:
+        # normalize Strongs: skip 'H' in Macula Hebrew data
+        if self.strong and self.strong != "H":
             if not re.match(r"[AGH]", self.strong):
                 if is_nt:
                     self.strong = "G" + self.strong
@@ -123,7 +124,7 @@ class Source(BaseToken):
             try:
                 self.strong = normalize_strongs(self.strong)
             except ValueError:
-                warn(f"Failed to normalize Strong's {self.strong} in {self.id}")
+                warn(f"Failed to normalize Strong's '{self.strong}' in {self.id}")
         # ensure valid values: wrong for Hebrew
         # if not self.text:
         #     raise ValueError(f"Empty text for {self.id}")
@@ -178,18 +179,30 @@ class Source(BaseToken):
         """Print a readable display of the key data."""
         print(self._display)
 
-    def asdict(self, omittext: bool = False) -> dict[str, str]:
+    def asdict(self, omittext: bool = False, essential: bool = False) -> dict[str, str]:
         """Marshall data to a dict for output.
 
-        With omittext = True, replace text with a placeholder: use
-        this for copyrighted texts that cannot be redisstributed.
+        This adds a canon_prefix, and omits the part_index for NT
+        tokens.
+
+        With omittext = True (default is False), replace text with a
+        placeholder: use this for copyrighted texts that cannot be
+        redisstributed.
+
+        With essential = True (default is False), add an 'exclude' key
+        which is True if not is_content().
 
         """
         fdict = dict(self._output_fields)
-        outdict = {fdict[k]: getattr(self, k) for k in fdict}
+        outdict: dict[str, str] = {fdict[k]: getattr(self, k) for k in fdict}
+        normid = bcvwpid.BCVWPID(outdict["id"])
+        part_index: bool = not normid.canon_prefix == "n"
+        outdict["id"] = normid.get_id(prefix=True, part_index=part_index)
         if omittext:
             outdict["altId"] = "--"
             outdict["text"] = "--"
+        if essential:
+            outdict["exclude"] = not self.is_content()
         return outdict
 
 
@@ -240,14 +253,19 @@ class SourceReader(UserDict):
 
     # This assumes the standard set of output fields. That might
     # include fields with no content.
-    def write_tsv(self, outpath: Path) -> None:
+    def write_tsv(self, outpath: Path, essential: bool = False) -> None:
         """Write Sources as TSV."""
-        fields = dict(Source._output_fields).values()
+        fields = list(dict(Source._output_fields).values())
+        if essential:
+            fields += ["exclude"]
         with outpath.open("wb") as f:
             writer = DictWriter(f, fieldnames=fields, delimiter="\t")
             writer.writeheader()
             for sourceinst in self.values():
-                writer.writerow(sourceinst.asdict())
+                srcdict: dict = sourceinst.asdict(essential=essential)
+                # normalize to not include canon prefix or part ID
+                srcdict["id"] = bcvwpid.BCVWPID(srcdict["id"]).get_id(prefix=True, part_index=False)
+                writer.writerow(srcdict)
 
     def term_tokens(self, term: str, tokenattr: str = "text", lowercase: bool = False) -> list[Source]:
         """Return a list of tokens containing term.
@@ -264,3 +282,25 @@ class SourceReader(UserDict):
             if (casedtokenattr := tokattr.lower() if lowercase else tokattr)
             if casedtokenattr == casedterm
         ]
+
+    def _count_by_type(self, items: Iterable) -> int:
+        """Return a count of unique items."""
+        return len({items})
+
+    def counts(self) -> None:
+        """Print various counts for the tokens in self."""
+        for toktype in ["text", "lemma"]:
+            toktypestr = f"{toktype.capitalize()}"
+            instances = [getattr(tok, toktype) for tok in self.values()]
+            counts = {"instance": len(instances), "type": len(set(instances))}
+            for counttype in ["instance", "type"]:
+                counttypestr = f"{toktypestr}.{counttype.capitalize()}"
+                print(f"{counttypestr}\t{counts[counttype]}")
+                contentinstances = [getattr(tok, toktype) for tok in self.values() if tok.is_content()]
+                contentcounts = {"instance": len(contentinstances), "type": len(set(contentinstances))}
+                print(f"{counttypestr}.IsContent\t{contentcounts[counttype]}")
+                for pos in ["adj", "adv", "noun", "verb"]:
+                    posstr = f"{counttypestr}.{pos.capitalize()}"
+                    posinstances = [getattr(tok, toktype) for tok in self.values() if tok._is_pos(pos)]
+                    poscounts = {"instance": len(posinstances), "type": len(set(posinstances))}
+                    print(f"{posstr}\t{poscounts[counttype]}")
