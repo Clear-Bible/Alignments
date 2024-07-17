@@ -1,0 +1,22 @@
+[source]
+
+identifier = "WLC"
+copyright = "© 2023 The J. Alan Groves Center for Advanced Biblical Research"
+license = "Custom"
+licensenotes = "From http://tanach.us/License.html: 'All biblical Hebrew text, in any format, may be viewed or copied without restriction.' Citation of the Tanach.us site as the source of the text is appreciated: Unicode/XML Leningrad Codex: UXLC 1.8 (26.9), Tanach.us Inc., West Redding, CT, USA, April 2023. "
+
+[target]
+
+identifier = "BSB"
+license = "Public domain"
+name.eng = "Berean Standard Bible"
+url = "https://www.bereanbible.com/"
+
+[alignment]
+
+identifier = "WLCM-BSB-manual"
+format = "grapecity"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Clear"
