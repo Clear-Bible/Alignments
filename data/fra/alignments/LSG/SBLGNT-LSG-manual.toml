@@ -1,0 +1,22 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[target]
+
+identifier = "LSG"
+license = "Public domain"
+name.eng = "Louis Segond 1910"
+# url = "https://www.bereanbible.com/"
+
+[alignment]
+
+identifier = "SBLGNT-LSG-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+origin = "manual"
+scope = "NT"
+team = "Biblica"

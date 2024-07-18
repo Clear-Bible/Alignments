@@ -1,0 +1,20 @@
+[source]
+
+identifier = "WLCM"
+license = "CC-BY-4.0"
+url = "https://github.com/Clear-Bible/macula-hebrew/blob/main/WLC/tsv/macula-hebrew.tsv"
+
+[target]
+
+identifier = "LSG"
+license = "Public domain"
+name.eng = "Français Louis Segond 1910"
+
+[alignment]
+
+identifier = "WLCM-IRVHin-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "OT"
+team = "NLCI"
