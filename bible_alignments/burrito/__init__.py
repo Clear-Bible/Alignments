@@ -4,9 +4,10 @@ from bible_alignments import ROOT, DATAPATH, SRCPATH
 
 from .AlignmentGroup import Document, Metadata, AlignmentReference, AlignmentRecord, AlignmentGroup
 
+from .AlignmentSet import AlignmentSet
+
 # probably don't need the other types
 from .AlignmentType import TranslationType
-from .AlignmentSet import AlignmentSet
 from .manager import Manager, VerseData
 from .BaseToken import BaseToken, asbool
 from .source import Source, SourceReader
@@ -39,5 +40,5 @@ __all__ = [
     # target
     "Target",
     "TargetReader",
-    # "TargetWriter",
+    "TargetWriter",
 ]
