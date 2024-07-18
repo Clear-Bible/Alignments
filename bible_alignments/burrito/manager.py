@@ -23,12 +23,12 @@ from itertools import groupby
 import json
 from typing import Any, Callable
 
-from biblelib.word import bcvwpid
-
 from .AlignmentGroup import Document, Metadata, AlignmentGroup, AlignmentReference, AlignmentRecord
+from .AlignmentSet import AlignmentSet
 from .AlignmentType import TranslationType
 from .VerseData import VerseData
-from .catalog import AlignmentSet
+
+# from .catalog import AlignmentSet
 from .source import Source, SourceReader
 from .target import Target, TargetReader
 

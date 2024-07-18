@@ -2,8 +2,8 @@
 
 import pytest
 
-from src import DATAPATH, SOURCES
-from src.burrito import AlignmentSet
+from bible_alignments import DATAPATH, SOURCES
+from bible_alignments.burrito import AlignmentSet
 
 ENGLANGDATAPATH = DATAPATH.parent.parent / "alignments-eng/data"
 HINLANGDATAPATH = DATAPATH.parent.parent / "alignments-hin/data"

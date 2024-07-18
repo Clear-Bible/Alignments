@@ -7,7 +7,7 @@ test files: this only tests common functionality.
 
 import pytest
 
-from src.burrito import BaseToken, asbool
+from bible_alignments.burrito import BaseToken, asbool
 
 
 @pytest.fixture

@@ -2,14 +2,18 @@
 
 import pytest
 
-from bible_alignments.burrito import AlignmentSet, Catalog, Manager, VerseData
+from bible_alignments.burrito import DATAPATH, AlignmentSet, Manager, VerseData
+
+# test published version
+ENGLANGDATAPATH = DATAPATH / "eng"
 
 
 @pytest.fixture
 def sblgntbsb() -> AlignmentSet:
     """Return a AlignmentSet instance."""
-    alset: AlignmentSet = Catalog().get_alignmentset(language="eng", identifier="SBLGNT-BSB-manual")
-    return alset
+    return AlignmentSet(
+        sourceid="SBLGNT", targetid="BSB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH, alternateid="manual"
+    )
 
 
 @pytest.fixture
@@ -28,13 +32,14 @@ class TestManager:
         assert mgr.sourcedoc.docid == "SBLGNT"
         assert mgr.targetdoc.docid == "BSB"
         assert mgr.sourceitems["n41004003001"].lemma == "ἀκούω"
-        assert mgr.targetitems["410040030021"].text == "Listen"
+        assert mgr.targetitems["41004003002"].text == "Listen"
         assert mgr.alignmentrecords["41004003.001"].asdict()["source"] == ["n41004003001", "n41004003002"]
         assert mgr.alignmentrecords["41004003.001"].meta.id == "41004003.001"
         assert mgr.alignmentrecords["41004003.001"].identifier == "41004003.001"
         vd43: VerseData = mgr["41004003"]
         assert vd43.alignments[0][0][0].lemma == "ἀκούω"
         assert vd43.get_texts() == ["“", "Listen", "!", "A", "farmer", "went", "out", "to", "sow", "his", "seed", "."]
+        # happens to be the same
         assert vd43.get_texts(unique=True) == [
             "“",
             "Listen",

@@ -1,4 +1,4 @@
-"""Test code in bible_alignments.burrito.Target
+"""Test code in burrito.Target
 
 Does not test writing files.
 """
@@ -7,14 +7,20 @@ import pytest
 
 from bible_alignments.burrito import DATAPATH, Target, TargetReader
 
+# test published version
+ENGLANGDATAPATH = DATAPATH / "eng"
+
 
 @pytest.fixture
 def mrk_4_9_6() -> Target:
     """Return a Target instance."""
     mrk_4_9_6_dict = {
         "id": "41004009006",
+        "source_verse": "41004009",
+        "skip_space_after": False,
         "altId": "He-1",
         "text": "He",
+        "exclude": True,
         "transType": "m",
         "isPunc": False,
         "isPrimary": False,
@@ -54,37 +60,35 @@ class TestTarget:
 
     def test_asdict(self, mrk_4_9_6: Target) -> None:
         """Test asdict()."""
-        assert mrk_4_9_6.asdict() == {
+        assert mrk_4_9_6.asdict(omitfalse=True, omittext=True) == {
             "id": "41004009006",
-            "altId": "He-1",
-            "text": "He",
-            "source_verse": "41004009",
-            "transType": "m",
-        }
-
-    def test_asdict_omitfalse(self, mrk_4_9_6: Target) -> None:
-        """Test asdict()."""
-        assert mrk_4_9_6.asdict(omitfalse=False) == {
-            "id": "41004009006",
-            "altId": "He-1",
-            "text": "He",
-            "source_verse": "41004009",
-            "skip_space_after": False,
-            "exclude": False,
-            "transType": "m",
-            "isPunc": False,
-            "isPrimary": False,
-        }
-
-    def test_asdict_omittext(self, mrk_4_9_6: Target) -> None:
-        """Test asdict()."""
-        assert mrk_4_9_6.asdict(omittext=True) == {
-            "id": "41004009006",
-            "altId": "--",
             "text": "--",
+            "exclude": "y",
+            "skip_space_after": "",
             "source_verse": "41004009",
-            "transType": "m",
         }
+        assert mrk_4_9_6.asdict(omitfalse=True, omittext=False) == {
+            "id": "41004009006",
+            "text": "He",
+            "exclude": "y",
+            "skip_space_after": "",
+            "source_verse": "41004009",
+        }
+        assert mrk_4_9_6.asdict(omitfalse=False, omittext=True) == {
+            "id": "41004009006",
+            "text": "--",
+            "exclude": "y",
+            "skip_space_after": "n",
+            "source_verse": "41004009",
+        }
+        assert mrk_4_9_6.asdict(omitfalse=False, omittext=False) == {
+            "id": "41004009006",
+            "text": "He",
+            "exclude": "y",
+            "skip_space_after": "n",
+            "source_verse": "41004009",
+        }
+        # TODO: test with variant fields
 
 
 class TestSparseTarget:
@@ -101,49 +105,41 @@ class TestSparseTarget:
 
     def test_asdict(self, sparse_target: Target) -> None:
         """Test asdict()."""
-        assert sparse_target.asdict() == {
-            "id": "41004009006",
-            "altId": "He-1",
-            "text": "He",
-            "source_verse": "41004009",
-            "transType": "",
-        }
-
-    def test_asdict(self, sparse_target: Target) -> None:
-        """Test asdict()."""
         assert sparse_target.asdict(omittext=True) == {
             "id": "41004009006",
-            "altId": "--",
             "text": "--",
+            "exclude": "",
+            "skip_space_after": "",
             "source_verse": "41004009",
-            "transType": "",
         }
 
 
 class TestTargetReader:
     """Test TargetReader()."""
 
-    tr = TargetReader(DATAPATH / "targets/eng/nt_BSB.tsv")
+    tr = TargetReader(ENGLANGDATAPATH / "targets/BSB/nt_BSB.tsv")
 
     def test_init(self) -> None:
         """Test initialization."""
-        # FRAGILE
-        assert len(self.tr) == 201087
-        assert self.tr["410040030021"].text == "Listen"
+        # FRAGILE: exact number changes
+        assert len(self.tr) > 201000
+        assert self.tr["41004003002"].text == "Listen"
 
     def test_term_tokens(self) -> None:
         """Test term_tokens()."""
-        assert [token.id for token in self.tr.term_tokens("Listen")] == [
-            "400150100111",
-            "400170050351",
-            "400210330011",
-            "410040030021",
-            "410090070241",
-            "420090350221",
-            "420180060071",
-            "460150510011",
-            "590020050011",
-        ]
+        listentokens = [token.id for token in self.tr.term_tokens("Listen")]
+        for ltoken in [
+            "40015010011",
+            "40017005035",
+            "40021033001",
+            "41004003002",
+            "41009007024",
+            "42009035022",
+            "42018006007",
+            "46015051001",
+            "59002005001",
+        ]:
+            assert ltoken in listentokens
         # Never occurs capitalized
         assert [token.id for token in self.tr.term_tokens("Crowd")] == []
         assert len([token.id for token in self.tr.term_tokens("crowd")]) == 115

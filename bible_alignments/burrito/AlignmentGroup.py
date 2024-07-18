@@ -16,7 +16,6 @@ spec that are not supported by this code.
 
 """
 
-from collections import Counter
 from dataclasses import dataclass, field, fields
 import datetime as dt
 from itertools import groupby
@@ -131,9 +130,15 @@ class Metadata:
     description: str = ""
     # for AlignmentRecords: unique identifier
     id: str = ""
-    # for AlignmentRecords: how was this alignment created?
+    # for AlignmentRecords: how was this alignment originally created?
+    # This does *not* capture changes to the original value.
     # common values include 'manual', 'automated' or an algorithm name
-    process: str = ""
+    origin: str = ""
+    # for ClearAligner to track status. Output here should always be
+    # 'created': set in Manager._make_record() so it's not set of AlignmentGroup metadata
+    # eventually i may need to separate this into two classes, one for
+    # Groups and one for Records.
+    status: str = ""
     _fieldnames: tuple[str, ...] = ()
 
     def __post_init__(self) -> None:
@@ -172,6 +177,10 @@ class AlignmentRecord:
     def __repr__(self) -> str:
         """Return a printed representation."""
         return f"<AlignmentRecord: {repr(self.references)}>"
+
+    def __hash__(self) -> int:
+        """Return a hash value for the record."""
+        return hash(self.identifier)
 
     @property
     def identifier(self) -> str:

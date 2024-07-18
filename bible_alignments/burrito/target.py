@@ -3,8 +3,8 @@
 >>> from bible_alignments.burrito import target
 # Reading is normally done by Manager
 
->>> from bible_alignments import DATAPATH
->>> tr = target.TargetReader(DATAPATH / "targets/eng/nt_BSB.tsv")
+>>> from bible_alignments import TARGETS
+>>> tr = target.TargetReader(TARGETS / "eng/nt_BSB.tsv")
 # length is the number of tokens
 >>> len(tr)
 201087
@@ -17,21 +17,21 @@
 >>> len(tw)
 160474
 # now write it out
->>> tw.write_tsv(DATAPATH / "targets/rus/RUSSYN.tsv")
+>>> tw.write_tsv(TARGETS / "rus/RUSSYN.tsv")
 """
 
-from collections import UserDict, UserList
-from collections import Counter
+from collections import UserDict
 from dataclasses import dataclass
 from pathlib import Path
 import re
-from string import punctuation
-from typing import Any, KeysView
+from typing import Any, Callable, Optional
 from warnings import warn
 
 from unicodecsv import DictReader, DictWriter
 
-from .BaseToken import BaseToken
+from biblelib.word import bcvwpid
+
+from .BaseToken import BaseToken, asbool
 
 # these attribute names match the source data for simplicity
 
@@ -57,7 +57,7 @@ class Target(BaseToken):
     # optional. id of the associated mss token, used in BSB to more easily generate alignment data
     msId: str = ""
     _boolean_fields: tuple = ("skip_space_after", "exclude", "isPunc", "isPrimary")
-    _output_fields: tuple = (
+    _input_fields: tuple = (
         ("id", "id"),
         ("altId", "altId"),
         ("text", "text"),
@@ -69,6 +69,14 @@ class Target(BaseToken):
         ("isPrimary", "isPrimary"),
         # temp
         # ("msId", "msId"),
+    )
+    # just the minimal standard set: override elsewhere if you want more
+    _output_fields: tuple = (
+        "id",
+        "text",
+        "source_verse",
+        "skip_space_after",
+        "exclude",
     )
     # dataclass rules means __hash__ isn't inherited otherwise
     __hash__ = BaseToken.__hash__
@@ -113,32 +121,30 @@ class Target(BaseToken):
         """Print a readable display of the key data."""
         print(self._display)
 
-    def asdict(self, omitfalse: bool = True, omittext: bool = False, omitpartindex: bool = True) -> dict[str, str]:
+    def asdict(
+        self,
+        fields: tuple[str] = _output_fields,
+        omitfalse: bool = True,
+        omittext: bool = False,
+    ) -> dict[str, str]:
         """Marshall data to a dict for output.
 
-        With omitfalse = True (the default), only write boolean fields
-        if their value is True: otherwise omit them.
-
-        With omitpartindex = True (the default), only include BCVW
-        indices.
+        With omitfalse = True (the default), only write True values
+        for boolean fields.
 
         With omittext = True, replace altid and text with a
         placeholder: use this for copyrighted texts that cannot be
         redisstributed.
 
         """
-        fdict = dict(self._output_fields)
-        outdict = {fdict[k]: getattr(self, k) for k in fdict}
-        if omitfalse:
-            for field in self._boolean_fields:
-                if not outdict[field]:
-                    del outdict[field]
+        outdict = {k: getattr(self, k) for k in fields}
+        for field in fields:
+            if field in self._boolean_fields:
+                outdict[field] = "" if (omitfalse and not outdict[field]) else asbool(outdict[field])
         if omittext:
-            outdict["altId"] = "--"
-            outdict["text"] = "--"
-        # by default, drop the final part index
-        if omitpartindex:
-            outdict["id"] = outdict["id"][:11]
+            for omitfield in ["altId", "text"]:
+                if omitfield in fields:
+                    outdict[omitfield] = "--"
         return outdict
 
 
@@ -153,13 +159,22 @@ class TargetReader(UserDict):
     Verse-level indices in altId are also revised: some data had errors.
     """
 
-    inmap = {v: k for k, v in Target._output_fields}
+    inmap = {v: k for k, v in Target._input_fields}
 
-    def __init__(self, tsvpath: Path, idheader: str = "id") -> None:
-        """Initialize a Reader instance."""
+    def __init__(self, tsvpath: Path, idheader: str = "id", keepwordpart: bool = True) -> None:
+        """Initialize a Reader instance.
+
+        With keepwordpart (default is True), keep the part/subword
+        index when creating a token id: otherwise drop it, which can
+        make it easier to compare two different files for the same
+        target edition.
+
+        """
         super().__init__()
         self.tsvpath = tsvpath
-        assert self.tsvpath.exists(), "No such path: pattern is targets/<lang>/<canon>_<targetid>.tsv"
+        assert (
+            self.tsvpath.exists()
+        ), f"No such path as {tsvpath}:\npattern is targets/<targetid>/<canon>_<targetid>.tsv"
         # assumes conventoins
         self.identifier = self.tsvpath.stem
         # self.canonid, self.targetid = self.identifier.split("_")
@@ -172,26 +187,60 @@ class TargetReader(UserDict):
                     idrow = {("id" if k == idheader else k): v for k, v in row.items()}
                 else:
                     idrow = row
+                # this takes the identifier verbatim: if it has a
+                # canon prefix or a word part. So normalize when
+                # writing, using bcvwpid.BCVWPID.get_id() and
+                # appropriate parameters.
                 identifier = idrow["id"]
+                # hacky
+                if len(identifier) == 12 and not keepwordpart:
+                    identifier = idrow["id"] = idrow["id"][0:11]
                 deserialized = {self.inmap[k]: v for k, v in idrow.items() if k in self.inmap}
                 if identifier in self:
                     warn(f"{identifier} is duplicated in {self.tsvpath}")
                 self.data[identifier] = Target(**deserialized)
 
-    def write_tsv(self, outpath: Path) -> None:
+    def write_tsv(
+        self,
+        outpath: Path,
+        excludefn: Optional[Callable] = None,
+        fields: tuple[str] = (
+            "id",
+            "source_verse",
+            "text",
+            "skip_space_after",
+            "exclude",
+        ),
+    ) -> None:
         """Write Targets as TSV.
 
         This outputs according to the most recent standard, but it does _not_
         correct data errors (e.g. it does not decide if characters are
         actually punctuation, or should not have a following space).
 
+        This outputs a reduced set of standard fields, in an order
+        that matches kathairo: you can specify otherwise.
+
+        With excludefn, apply this (boolean) function to the token and
+        assign the result as the exclude value. This overwrites any
+        existing exclude values.
+
         """
-        fields = dict(Target._output_fields).values()
+        if not fields:
+            fields = tuple(dict(Target._output_fields).values())
+        if excludefn:
+            if "exclude" not in fields:
+                fields = fields + ("exclude",)
         with outpath.open("wb") as f:
             writer = DictWriter(f, fieldnames=fields, delimiter="\t")
             writer.writeheader()
             for targetinst in self.values():
-                writer.writerow(targetinst.asdict())
+                trgdict = targetinst.asdict()
+                # normalize to not include canon prefix or part ID
+                trgdict["id"] = bcvwpid.BCVWPID(trgdict["id"]).get_id(prefix=False, part_index=False)
+                if excludefn:
+                    trgdict["exclude"] = excludefn(targetinst)
+                writer.writerow(trgdict)
 
     def term_tokens(self, term: str, tokenattr: str = "text", lowercase: bool = False) -> list[Target]:
         """Return a list of tokens containing term.
@@ -208,6 +257,3 @@ class TargetReader(UserDict):
             if (casedtokenattr := tokattr.lower() if lowercase else tokattr)
             if casedtokenattr == casedterm
         ]
-
-
-# see internal-alignments for TargetWriter

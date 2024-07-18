@@ -40,7 +40,7 @@ from collections import UserDict
 from dataclasses import dataclass
 from pathlib import Path
 import re
-from typing import Any
+from typing import Any, Iterable
 import unicodedata
 from warnings import warn
 
