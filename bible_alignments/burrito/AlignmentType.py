@@ -37,9 +37,9 @@ class DirectedType(_AlignmentType):
     """Describes a directed but otherwise generic type."""
 
     type: str = "directed"
-    roles: tuple[str, str] = (
-        "from",
-        "to",
+    roles: tuple[str, str] = tuple(
+        ["from",
+        "to"],
     )
 
 
@@ -48,9 +48,9 @@ class TranslationType(_AlignmentType):
     """Represents a source text and its translation as target."""
 
     type: str = "translation"
-    roles: tuple[str, str] = (
-        "source",
-        "target",
+    roles: tuple[str, str] = tuple(
+        ["source",
+        "target"],
     )
 
 
@@ -59,9 +59,9 @@ class AnaphoraType(_AlignmentType):
     """Represents an anaphoric relation."""
 
     type: str = "anaphora"
-    roles: tuple[str, str] = (
-        "antecedent",
-        "anaphor",
+    roles: tuple[str, str] = tuple(
+        ["antecedent",
+        "anaphor"],
     )
 
 
