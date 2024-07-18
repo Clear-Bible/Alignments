@@ -1,0 +1,23 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[target]
+
+identifier = "IRVHin"
+license = "CC-BY-4.0"
+name.eng = " Indian Revised Version(IRV) Hindi - 2019"
+url = "https://app.thedigitalbiblelibrary.org/entry?id=1e8ab327edbce67f#"
+
+[alignment]
+
+identifier = "SBLGNT-IRVHin-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "NLCI"
+
