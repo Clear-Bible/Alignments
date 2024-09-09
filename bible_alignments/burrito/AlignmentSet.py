@@ -28,8 +28,9 @@ True
 from dataclasses import dataclass
 from pathlib import Path
 import re
+from warnings import warn
 
-from bible_alignments import DATAPATH
+from src import DATAPATH, SourceidEnum
 
 
 @dataclass
@@ -44,8 +45,8 @@ class AlignmentSet:
     sourcedatapath: Path = DATAPATH / "sources"
     # language-specific data path, like alignments-hin/data
     langdatapath: Path = Path()
-    # like "manual"
-    alternateid: str = ""
+    # most common default, but override if necessary
+    alternateid: str = "manual"
     # these are computed in post-init
     sourcepath: Path = Path()
     targetpath: Path = Path()
@@ -110,12 +111,7 @@ class AlignmentSet:
     @property
     def canon(self) -> str:
         """Return a string for the source canon: 'nt', 'ot', or 'X'."""
-        if self.sourceid in ["NA27", "NA28", "SBLGNT", "BGNT"]:
-            return "nt"
-        elif self.sourceid in ["WLC", "WLCM"]:
-            return "ot"
-        else:
-            return "X"
+        return SourceidEnum.get_canon(self.sourceid)
 
     @property
     def displaystr(self) -> str:
