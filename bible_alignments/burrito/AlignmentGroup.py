@@ -23,6 +23,8 @@ from typing import Any, Optional
 
 from biblelib.word import bcvwpid
 
+from src import SourceidEnum
+
 from .AlignmentType import TranslationType
 
 
@@ -39,6 +41,19 @@ class Document:
     #   digitalbiblelibrary.org is a good choice.
     docid: str
     scheme: str = "BCVWP"
+    # only set if a source ID
+    sourceid: Optional[SourceidEnum] = None
+
+    def __post_init__(self) -> None:
+        """Compute values after initialization."""
+        try:
+            # set is_source if in the standard list
+            self.sourceid = SourceidEnum(self.docid)
+        except ValueError:
+            self.sourceid = None
+            # downgrade BCVWP to BCVW: no subword indices if not source
+            if self.scheme == "BCVWP":
+                self.scheme = "BCVW"
 
     def asdict(self) -> dict[str, Any]:
         """Return a dict of values suitable for serialization."""
@@ -267,6 +282,9 @@ class AlignmentGroup:
     records: list[AlignmentRecord]
     # keys to AlignmentRecord.references: same order as documents
     roles: tuple[str, str] = ("source", "targt")
+    # either "ot" or "nt", based on documents.docid
+    sourcedocid: str = ""
+    canon: str = ""
     _type: str = ""
     # hoist docid values from reference.document up to this metadata
     _hoist_docid: bool = True
@@ -274,12 +292,20 @@ class AlignmentGroup:
     def __post_init__(self) -> None:
         """Compute values and do checks after initialization."""
         # only a single type across all records
-        typeset = {rec.type.type for rec in self.records}
+        typeset = {rec.type.type for rec in self.records if self.records}
         assert len(typeset) == 1, f"Multiple AlignmentRecord types found: {typeset}"
         self._type = typeset.pop()
         assert len(self.documents) == len(
             self.roles
         ), f"Must have same number of documents and roles: {self.documents}, {self.roles}"
+        # one of the documents should have a non-null sourceid: use it
+        # to set the canon for the group
+        sourcedocid = self.documents[0].sourceid or self.documents[1].sourceid
+        assert (
+            sourcedocid
+        ), f"Neither {self.documents[0].docid} nor {self.documents[1].docid} are recognized as source texts:\ncheck src/SourceidEnum for completeness."
+        self.canon = sourcedocid.canon
+        self.sourcedocid = sourcedocid.value
 
     def __repr__(self) -> str:
         """Return a printed representation."""
