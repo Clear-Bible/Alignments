@@ -9,7 +9,7 @@ from .AlignmentSet import AlignmentSet
 # probably don't need the other types
 from .AlignmentType import TranslationType
 from .manager import Manager, VerseData
-from .BaseToken import BaseToken, asbool
+from .BaseToken import BaseToken, asbool, bare_id
 from .source import Source, SourceReader
 from .target import Target, TargetReader
 
@@ -31,6 +31,7 @@ __all__ = [
     # BaseToken
     "BaseToken",
     "asbool",
+    "bare_id",
     # manager
     "Manager",
     "VerseData",
