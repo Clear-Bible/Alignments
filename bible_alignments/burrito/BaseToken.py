@@ -52,16 +52,22 @@ class BaseToken:
         )
 
     @property
-    def pharaoh_index(self) -> int:
-        """Return a zero-based word index.
+    def bare_id(self) -> str:
+        """Return the ID minus any canon prefixes."""
+        return self.id[1:] if self.id[0].isalpha() else self.id
 
-        This supports generating data in 'pharaoh format'.
+    @property
+    def isempty(self) -> bool:
+        """True if token.text is the empty string: that's not normal."""
+        return self.text == ""
 
-        """
-        # parse the identifier to get the word index
-        parsedid = bcvwpid.BCVWPID(self.id)
-        return int(parsedid.word_ID) - 1
 
 def asbool(value: bool | str) -> str:
     """Return a minimal string value for output from a boolean value."""
     return "y" if bool(value) else "n"
+
+
+def bare_id(identifier) -> str:
+    """Strip any canon prefixes."""
+    assert bcvwpid.is_bcvwpid(identifier), f"'{identifier}' does not look like a valid BCVWPID identifier."
+    return identifier[1:] if identifier[0].isalpha() else identifier
