@@ -38,8 +38,7 @@ class DirectedType(_AlignmentType):
 
     type: str = "directed"
     roles: tuple[str, str] = tuple(
-        ["from",
-        "to"],
+        ["from", "to"],
     )
 
 
@@ -49,8 +48,7 @@ class TranslationType(_AlignmentType):
 
     type: str = "translation"
     roles: tuple[str, str] = tuple(
-        ["source",
-        "target"],
+        ["source", "target"],
     )
 
 
@@ -60,8 +58,7 @@ class AnaphoraType(_AlignmentType):
 
     type: str = "anaphora"
     roles: tuple[str, str] = tuple(
-        ["antecedent",
-        "anaphor"],
+        ["antecedent", "anaphor"],
     )
 
 
