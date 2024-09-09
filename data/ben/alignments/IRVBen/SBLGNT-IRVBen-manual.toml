@@ -1,0 +1,23 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[target]
+
+identifier = "IRVBen"
+license = "CC-BY-4.0"
+name.eng = " Indian Revised Version(IRV) Bengali - 2019"
+url = "https://app.thedigitalbiblelibrary.org/entry?id=4c3eda00cd317568"
+
+[alignment]
+
+identifier = "SBLGNT-IRVBen-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "NLCI"
+

@@ -1,0 +1,23 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[target]
+
+identifier = "IRVAsm"
+license = "CC-BY-4.0"
+name.eng = " Indian Revised Version(IRV) Assamese - 2019"
+url = "https://app.thedigitalbiblelibrary.org/entry?id=d199679f805f5b29"
+
+[alignment]
+
+identifier = "SBLGNT-IRVAsm-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "NLCI"
+
