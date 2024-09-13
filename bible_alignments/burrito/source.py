@@ -115,14 +115,17 @@ class Source(BaseToken):
             self.lemma = normalize(self.lemma)
         # normalize Strongs: skip 'H' in Macula Hebrew data
         if self.strong and self.strong != "H":
-            if not re.match(r"[AGH]", self.strong):
+            if re.match(r"[AGH]", self.strong):
+                prefix = self.strong[0]
+            else:
                 if is_nt:
-                    self.strong = "G" + self.strong
+                    prefix = "G"
                 else:
                     # but what about Aramaic? Assign for selected BCV?
-                    self.strong = "H" + self.strong
+                    prefix = "G"
+                self.strong = prefix + self.strong
             try:
-                self.strong = normalize_strongs(self.strong)
+                self.strong = normalize_strongs(self.strong, prefix=prefix)
             except ValueError:
                 warn(f"Failed to normalize Strong's '{self.strong}' in {self.id}")
         # ensure valid values: wrong for Hebrew

@@ -12,9 +12,9 @@ vd = util.groupby_bcv(tr.values())
 from itertools import groupby
 from typing import Any, Callable
 
-from .source import Source
+from .BaseToken import BaseToken
 
 
-def groupby_bcv(values: list[Any], bcvfn: Callable = Source.to_bcv) -> dict[str, list[Any]]:
+def groupby_bcv(values: list[Any], bcvfn: Callable = BaseToken.to_bcv) -> dict[str, list[Any]]:
     """Group a list of tokens into a dict by their BCV values."""
     return {k: list(g) for k, g in groupby(values, bcvfn)}

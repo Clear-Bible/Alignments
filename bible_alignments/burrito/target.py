@@ -32,6 +32,7 @@ from unicodecsv import DictReader, DictWriter
 from biblelib.word import bcvwpid
 
 from .BaseToken import BaseToken, asbool
+from .util import groupby_bcv
 
 # these attribute names match the source data for simplicity
 
@@ -113,6 +114,11 @@ class Target(BaseToken):
         return Target(**newdict)
 
     @property
+    def same_source_verse(self) -> bool:
+        """Return True if source_verse.bcv matches: otherwise indicates versification differences."""
+        return self.bcv == self.source_verse
+
+    @property
     def _display(self) -> str:
         """Return a displayable string for key data."""
         return f"{self.id}: {self.text}\t\t ({self.transType!r}, {self.isPunc}, {self.isPrimary})"
@@ -161,13 +167,12 @@ class TargetReader(UserDict):
 
     inmap = {v: k for k, v in Target._input_fields}
 
-    def __init__(self, tsvpath: Path, idheader: str = "id", keepwordpart: bool = True) -> None:
+    def __init__(self, tsvpath: Path, idheader: str = "id", keepwordpart: bool = False, strict: bool = False) -> None:
         """Initialize a Reader instance.
 
-        With keepwordpart (default is True), keep the part/subword
-        index when creating a token id: otherwise drop it, which can
-        make it easier to compare two different files for the same
-        target edition.
+        With keepwordpart (default is False), keep the part/subword
+        index when creating a token id. Current convention is to never
+        keep word parts for target texts.
 
         """
         super().__init__()
@@ -177,7 +182,7 @@ class TargetReader(UserDict):
         ), f"No such path as {tsvpath}:\npattern is targets/<targetid>/<canon>_<targetid>.tsv"
         # assumes conventoins
         self.identifier = self.tsvpath.stem
-        # self.canonid, self.targetid = self.identifier.split("_")
+        self.badtokens = {}
         with self.tsvpath.open("rb") as f:
             reader = DictReader(f, delimiter="\t")
             for row in reader:
@@ -199,6 +204,13 @@ class TargetReader(UserDict):
                 if identifier in self:
                     warn(f"{identifier} is duplicated in {self.tsvpath}")
                 self.data[identifier] = Target(**deserialized)
+                # check for empty tokens
+                if self.data[identifier].isempty:
+                    if strict:
+                        warn(f"Empty text for target token {identifier}")
+                    self.badtokens[identifier] = self.data[identifier]
+        if self.badtokens:
+            print(f"{self.identifier} has {len(self.badtokens)} target tokens with empty text: see self.badtokens.")
 
     def write_tsv(
         self,
@@ -241,6 +253,13 @@ class TargetReader(UserDict):
                 if excludefn:
                     trgdict["exclude"] = excludefn(targetinst)
                 writer.writerow(trgdict)
+
+    def write_vref(self, outpath: Path) -> None:
+        """Write a list of verse references for the target tokens."""
+        with outpath.open("w") as f:
+            self.bcv = groupby_bcv(list(self.values()), bcvfn=lambda t: t.bcv)
+            for bcv in self.bcv:
+                f.write(f"{bcv}\n")
 
     def term_tokens(self, term: str, tokenattr: str = "text", lowercase: bool = False) -> list[Target]:
         """Return a list of tokens containing term.
