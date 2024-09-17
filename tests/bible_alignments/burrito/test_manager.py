@@ -28,9 +28,8 @@ class TestManager:
 
     def test_init(self, mgr: Manager) -> None:
         """Test initialization."""
-        assert mgr.scheme == "BCVWP"
-        assert mgr.sourcedoc.docid == "SBLGNT"
-        assert mgr.targetdoc.docid == "BSB"
+        assert mgr.alignmentset.sourceid == "SBLGNT"
+        assert mgr.alignmentset.targetid == "BSB"
         assert mgr.sourceitems["n41004003001"].lemma == "ἀκούω"
         assert mgr.targetitems["41004003002"].text == "Listen"
         assert mgr.alignmentrecords["41004003.001"].asdict()["source"] == ["n41004003001", "n41004003002"]
@@ -55,3 +54,19 @@ class TestManager:
             ".",
         ]
         assert vd43.get_texts(typeattr="sources") == ["Ἀκούετε", "ἰδοὺ", "ἐξῆλθεν", "ὁ", "σπείρων", "σπεῖραι"]
+
+
+class TestWLCMManager:
+    alset = AlignmentSet(sourceid="WLCM", targetid="BSB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH)
+    manager = Manager(alset)
+
+    def test_init(self) -> None:
+        """Test reading WLCM."""
+        # target scheme should be downgraded
+        # refactored
+        # assert self.manager.targetdoc.scheme == "BCVW"
+        assert self.alset.sourceid == "WLCM"
+        assert self.alset.targetid == "BSB"
+
+
+# Should add tests for Reason/BadRecord

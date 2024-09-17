@@ -140,10 +140,6 @@ class TestSource:
         gen_1_1 = Source.fromjsondict(gcdict)
         assert gen_1_1.id == "010010010011"
 
-    def test_pharaoh(self, mrk_4_9_4: Source) -> None:
-        """Text pharaoh format conversion."""
-        assert mrk_4_9_4.pharaoh_index == 4
-
     def test_asdict(self, mrk_4_9_4: Source) -> None:
         """Test asdict()."""
         assert mrk_4_9_4.asdict() == {

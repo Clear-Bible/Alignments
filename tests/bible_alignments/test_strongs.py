@@ -40,3 +40,8 @@ class TestNormalizeStrongs:
         # with invalid character suffix
         with pytest.raises(AssertionError):
             assert normalize_strongs("4053z", "G") == "G4053z"
+
+    def test_pipe(self) -> None:
+        """Test cases with pipes."""
+        # special cases
+        assert normalize_strongs("1886j|2050b", "H") == "H2050b"

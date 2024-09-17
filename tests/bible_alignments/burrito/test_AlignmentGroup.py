@@ -9,9 +9,15 @@ from bible_alignments.burrito import Metadata, Document, AlignmentReference, Ali
 
 
 @pytest.fixture
-def meta() -> Metadata:
+def groupmeta() -> Metadata:
     """Return a Metadata instance."""
     return Metadata(creator="GrapeCity")
+
+
+@pytest.fixture
+def recordmeta() -> Metadata:
+    """Return a Metadata instance."""
+    return Metadata(origin="manual", status="created", id="0708e5ff-2fd1-407b-97df-57f77f0d4a5f")
 
 
 @pytest.fixture
@@ -21,9 +27,21 @@ def document() -> Document:
 
 
 @pytest.fixture
+def documentwlcm() -> Document:
+    """Return a Document instance with default scheme."""
+    return Document(docid="WLCM")
+
+
+@pytest.fixture
 def reference_sblgnt(document: Document) -> AlignmentReference:
     """Return a AlignmentReference instance for SBLGNT."""
     return AlignmentReference(document=document, selectors=["n41004003001", "n41004003002"])
+
+
+@pytest.fixture
+def reference_wlcm(documentwlcm: Document) -> AlignmentReference:
+    """Return a AlignmentReference instance for SBLGNT."""
+    return AlignmentReference(document=documentwlcm, selectors=["o01004003001", "o01004003002"])
 
 
 @pytest.fixture
@@ -33,39 +51,70 @@ def reference_bsb(document: Document) -> AlignmentReference:
 
 
 @pytest.fixture
-def record(meta: Metadata, reference_sblgnt: AlignmentReference, reference_bsb: AlignmentReference) -> AlignmentRecord:
+def reference_bsb_ot(document: Document) -> AlignmentReference:
+    """Return a AlignmentReference instance for BSB."""
+    return AlignmentReference(document=Document(docid="BSB"), selectors=["010040030021"])
+
+
+@pytest.fixture
+def record(
+    recordmeta: Metadata, reference_sblgnt: AlignmentReference, reference_bsb: AlignmentReference
+) -> AlignmentRecord:
     """Return a AlignmentReference instance."""
     return AlignmentRecord(
-        meta=meta,
+        meta=recordmeta,
         references={"source": reference_sblgnt, "target": reference_bsb},
     )
 
 
 @pytest.fixture
-def group(meta: Metadata, record: AlignmentRecord) -> AlignmentGroup:
-    """Return a AlignmentGroup instance."""
-    return AlignmentGroup(
-        documents=(Document(docid="SBLGNT"), Document(docid="BSB")),
-        meta=meta,
-        records=[record],
-        roles=("source", "targt"),
+def recordwlcm(
+    recordmeta: Metadata, reference_wlcm: AlignmentReference, reference_bsb_ot: AlignmentReference
+) -> AlignmentRecord:
+    """Return a AlignmentReference instance."""
+    return AlignmentRecord(
+        meta=recordmeta,
+        references={"source": reference_wlcm, "target": reference_bsb_ot},
     )
 
 
-class TestMetadata:
+@pytest.fixture
+def group(groupmeta: Metadata, record: AlignmentRecord) -> AlignmentGroup:
+    """Return a AlignmentGroup instance."""
+    return AlignmentGroup(
+        documents=(Document(docid="SBLGNT"), Document(docid="BSB")),
+        meta=groupmeta,
+        records=[record],
+        roles=("source", "target"),
+    )
+
+
+# empty case just for testing TopLevelGroups
+@pytest.fixture
+def groupwlcm(groupmeta: Metadata, recordwlcm: AlignmentRecord) -> AlignmentGroup:
+    """Return a AlignmentGroup instance."""
+    return AlignmentGroup(
+        documents=(Document(docid="WLCM"), Document(docid="BSB")),
+        meta=groupmeta,
+        records=[recordwlcm],
+        roles=("source", "target"),
+    )
+
+
+class TestMetadataGroup:
     """Test Metadata()."""
 
-    def test_init(self, meta: Metadata) -> None:
+    def test_init(self, groupmeta: Metadata) -> None:
         """Test initialization."""
-        assert meta.creator == "GrapeCity"
-        assert not meta.created
-        assert "_fieldnames" not in meta._fieldnames
+        assert groupmeta.creator == "GrapeCity"
+        assert not groupmeta.created
+        assert "_fieldnames" not in groupmeta._fieldnames
 
-    def test_asdict(self, meta: Metadata) -> None:
+    def test_asdict(self, groupmeta: Metadata) -> None:
         """Test asdict()."""
-        metadict = meta.asdict()
+        metadict = groupmeta.asdict()
         assert "creator" in metadict
-        assert str(meta.asdict()) == "{'creator': 'GrapeCity'}"
+        assert groupmeta.asdict() == {"creator": "GrapeCity"}
         with pytest.raises(AssertionError):
             assert "created" in metadict
 
@@ -76,7 +125,20 @@ class TestDocument:
     def test_init(self, document: Document) -> None:
         """Test initialization."""
         assert document.docid == "SBLGNT"
+        # Group should downgrade this to BCVW but that's not here
         assert document.scheme == "BCVWP"
+        assert document.sourceid.canon == "nt"
+
+    def test_wlcm(self) -> None:
+        doc = Document(docid="WLCM")
+        assert doc.scheme == "BCVWP"
+        assert doc.sourceid.canon == "ot"
+
+    def test_bsb(self) -> None:
+        doc = Document(docid="BSB")
+        # downgraded scheme
+        assert doc.scheme == "BCVW"
+        assert doc.sourceid is None
 
 
 class TestReference:
@@ -116,18 +178,23 @@ class TestAlignmentRecord:
     def test_init(self, record: AlignmentRecord) -> None:
         """Test initialization."""
         #         assert "source" in ref.roles
-        assert record.meta.creator == "GrapeCity"
+        assert record.meta.asdict() == {
+            "id": "0708e5ff-2fd1-407b-97df-57f77f0d4a5f",
+            "origin": "manual",
+            "status": "created",
+        }
+        assert record.__hash__() == hash("0708e5ff-2fd1-407b-97df-57f77f0d4a5f")
         assert "source" in record.roles
         # the source
         source = record.references["source"]
         assert source.docid == "SBLGNT"
         assert source.scheme == "BCVWP"
 
-    def test_incomplete(self, meta: Metadata, reference_bsb: AlignmentReference, record: AlignmentRecord) -> None:
+    def test_incomplete(self, recordmeta: Metadata, reference_bsb: AlignmentReference, record: AlignmentRecord) -> None:
         """Test incomplete."""
         assert not record.incomplete
         alrec = AlignmentRecord(
-            meta=meta,
+            meta=recordmeta,
             references={
                 "source": AlignmentReference(document=Document(docid="SBLGNT"), selectors=["n41004003001", "MISSING"]),
                 "target": reference_bsb,
@@ -173,8 +240,11 @@ class TestAlignmentGroup:
 
     def test_init(self, group: AlignmentGroup) -> None:
         """Test initialization."""
-        #         assert "source" in ref.roles
+        assert "source" in group.roles
         assert group.meta.creator == "GrapeCity"
+        assert group.canon == "nt"
+        assert isinstance(group.records, list)
+        assert isinstance(group.records[0], AlignmentRecord)
 
     def test_asdict(self, group: AlignmentGroup) -> None:
         """Test asdict()."""

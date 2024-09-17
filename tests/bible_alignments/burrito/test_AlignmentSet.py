@@ -12,9 +12,7 @@ HINLANGDATAPATH = DATAPATH.parent.parent / "alignments-hin/data"
 @pytest.fixture
 def aset() -> AlignmentSet:
     """Return a AlignmentSet instance."""
-    return AlignmentSet(
-        sourceid="SBLGNT", targetid="LEB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH, alternateid="manual"
-    )
+    return AlignmentSet(sourceid="SBLGNT", targetid="LEB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH)
 
 
 @pytest.fixture
@@ -40,7 +38,11 @@ class TestAlignmentSet:
             sourceid="WLC", targetid="LEB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH, alternateid="manual"
         )
         assert wlc.canon == "ot"
-        # should also test X value for not nt or ot
+        # Bogus source ID
+        nunya = AlignmentSet(
+            sourceid="NUNYA", targetid="LEB", targetlanguage="eng", langdatapath=ENGLANGDATAPATH, alternateid="manual"
+        )
+        assert nunya.canon == "X"
 
     def test_sourceid(self) -> None:
         """Test the constructor with various id values."""
@@ -50,11 +52,6 @@ class TestAlignmentSet:
             AlignmentSet(sourceid="SBL-GNT", targetid="LEB", targetlanguage="eng")
         with pytest.raises(ValueError):
             AlignmentSet(sourceid="SBL.GNT", targetid="LEB", targetlanguage="eng")
-
-    def test_noalternateid(self) -> None:
-        """Test the constructor without alternateid value."""
-        cat = AlignmentSet(sourceid="SBLGNT", targetid="LEB", targetlanguage="eng")
-        assert cat.identifier == "SBLGNT-LEB"
 
     def test_paths(self, aset: AlignmentSet) -> None:
         """Test the source, target, alignment, and TOML paths."""

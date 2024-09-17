@@ -54,10 +54,6 @@ class TestTarget:
             "He",
         )
 
-    def test_pharaoh(self, mrk_4_9_6: Target) -> None:
-        """Text pharaoh format conversion."""
-        assert mrk_4_9_6.pharaoh_index == 5
-
     def test_asdict(self, mrk_4_9_6: Target) -> None:
         """Test asdict()."""
         assert mrk_4_9_6.asdict(omitfalse=True, omittext=True) == {

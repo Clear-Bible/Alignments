@@ -1,4 +1,4 @@
-"""Test code in bible_alignments.__init__"""
+"""Test code in burrito.__init__"""
 
 from bible_alignments import burrito
 

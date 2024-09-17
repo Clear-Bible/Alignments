@@ -30,7 +30,7 @@ from pathlib import Path
 import re
 from warnings import warn
 
-from src import DATAPATH, SourceidEnum
+from bible_alignments import DATAPATH, SourceidEnum
 
 
 @dataclass

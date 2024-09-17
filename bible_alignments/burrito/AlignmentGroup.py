@@ -23,7 +23,7 @@ from typing import Any, Optional
 
 from biblelib.word import bcvwpid
 
-from src import SourceidEnum
+from bible_alignments import SourceidEnum
 
 from .AlignmentType import TranslationType
 

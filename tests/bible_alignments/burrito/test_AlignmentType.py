@@ -1,4 +1,4 @@
-"""Test code in bible_alignments.burrito.AlignmentType."""
+"""Test code in burrito.AlignmentType."""
 
 # import pytest
 

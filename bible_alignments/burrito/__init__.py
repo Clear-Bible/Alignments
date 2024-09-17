@@ -8,6 +8,7 @@ from .AlignmentSet import AlignmentSet
 
 # probably don't need the other types
 from .AlignmentType import TranslationType
+from .alignments import AlignmentsReader
 from .manager import Manager, VerseData
 from .BaseToken import BaseToken, asbool, bare_id
 from .source import Source, SourceReader
@@ -32,6 +33,8 @@ __all__ = [
     "BaseToken",
     "asbool",
     "bare_id",
+    # alignments
+    "AlignmentsReader",
     # manager
     "Manager",
     "VerseData",
