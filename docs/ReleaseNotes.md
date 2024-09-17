@@ -1,5 +1,28 @@
 # Release Notes
 
+## 0.4
+
+Major update that restructures the `data` and `bible_alignments`
+(source code) directories. 
+
+Notable changes:
+* `data` directory is now organized first by language, then by
+  `alignments` and `targets`. `data/source` is structured as before
+  (but cleaned out a lot of cruft and updated what’s there). This
+  better matches our newer approach of separate internal repos for
+  each languages alignment data (`alignments-<language code>`). 
+* `bible_alignments` is re-sync’ed with our internal code with
+  reorganization to make this easier in the future.
+
+Going forward, we plan to focus on alignment data for _open_
+translations, in the format specified by the [Scripture Burrito
+Working Group](https://docs.burrito.bible/en/latest/) as a standard
+for exchanging data. Our primary source texts are:
+
+* The SBL Greek New Testament (SBLGNT), [Macula
+  version](https://github.com/Clear-Bible/macula-greek/tree/main/SBLGNT). 
+* [The Macula version of the Westminster Leningrad Codex](https://github.com/Clear-Bible/macula-hebrew/) (WLC[M])
+
 ## 0.3.5
 
 * Support NA28 as an edition (since that's what the 'NA27' files
