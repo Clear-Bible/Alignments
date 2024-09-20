@@ -52,6 +52,33 @@ from biblelib.word import bcvwpid
 from bible_alignments import normalize_strongs
 from .BaseToken import BaseToken
 
+PREFIXRE = re.compile(r"^[no]")
+
+
+def macula_prefixer(bcvwp: str) -> str:
+    """Return a prefixed BCVWP reference."""
+    otcanonre = re.compile(r"^[0-3][0-9]")
+    ntcanonre = re.compile(r"^[4-6][0-9]")
+    # don't include 67-69
+    notntcanonre = re.compile(r"^6[7-9]")
+    if PREFIXRE.match(bcvwp):
+        # already has a prefix
+        return bcvwp
+    elif otcanonre.match(bcvwp):
+        return "o" + bcvwp
+    elif ntcanonre.match(bcvwp) and not notntcanonre.match(bcvwp):
+        return "n" + bcvwp
+    else:
+        raise ValueError(f"Unable to add macula prefix to {bcvwp}")
+
+
+def macula_unprefixer(bcvwp: str) -> str:
+    """Drop a corpus prefix ('n' or 'o') from BCVWP, else return unchanged."""
+    if PREFIXRE.match(bcvwp):
+        return bcvwp[1:]
+    else:
+        return bcvwp
+
 
 # these attribute names match the source data for simplicity
 # TODO: make attributes optional
@@ -113,6 +140,9 @@ class Source(BaseToken):
             self.altId = normalize(self.altId)
             self.text = normalize(self.text)
             self.lemma = normalize(self.lemma)
+            # drop a word part index
+            if len(self.id) == 12:
+                self.id = self.id[:11]
         # normalize Strongs: skip 'H' in Macula Hebrew data
         if self.strong and self.strong != "H":
             if re.match(r"[AGH]", self.strong):
@@ -149,6 +179,16 @@ class Source(BaseToken):
     def is_noun(self) -> bool:
         """Return true if this term is a noun."""
         return self._is_pos("noun")
+
+    @property
+    def maculaid(self) -> str:
+        """Identify with prefix for Macula consistency."""
+        return macula_prefixer(self.id)
+
+    @property
+    def tokenid(self) -> str:
+        """Identify without prefix for simplicity."""
+        return self.bare_id
 
     @staticmethod
     def fromjsondict(jdict: dict[str, Any]) -> "Source":
@@ -239,7 +279,9 @@ class SourceReader(UserDict):
                 deserialized = {self.inmap[k]: v for k, v in idrow.items() if k in self.inmap}
                 if identifier in self:
                     warn(f"{identifier} is duplicated in {self.tsvpath}")
-                self.data[identifier] = Source(**deserialized)
+                srctoken = Source(**deserialized)
+                # drop prefixes, store under the token ID (not the Macula ID)
+                self.data[srctoken.tokenid] = srctoken
 
     def vocabulary(self, tokenattr: str = "text", lower: bool = False) -> list[str]:
         """Return the sorted set of attribute values for tokens.

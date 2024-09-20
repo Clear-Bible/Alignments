@@ -12,7 +12,42 @@ and some Unicode characters.
 import pytest
 
 from bible_alignments import SOURCES
-from bible_alignments.burrito import Source, SourceReader
+from bible_alignments.burrito import Source, SourceReader, macula_prefixer, macula_unprefixer
+
+
+class TestMacula_Prefixer:
+    """Test macula_prefixer()."""
+
+    def test_ot(self) -> None:
+        """Test OT prefixing."""
+        assert macula_prefixer("010010010012") == "o010010010012"
+
+    def test_nt(self) -> None:
+        """Test NT prefixing."""
+        assert macula_prefixer("41001001001") == "n41001001001"
+
+    def test_error(self) -> None:
+        """Test error raising if doesn't match a BCVWP string."""
+        # no prefixing beyond the NT book range
+        with pytest.raises(ValueError):
+            assert macula_prefixer("67001001001") == "67001001001"
+        # no initial book reference
+        with pytest.raises(ValueError):
+            assert macula_prefixer("abc") == "abc"
+
+
+class TestMacula_Unprefixer:
+    """Test macula_unprefixer()."""
+
+    def test_ot(self) -> None:
+        """Test OT unprefixing."""
+        assert macula_unprefixer("o010010010012") == "010010010012"
+        assert macula_unprefixer("010010010012") == "010010010012"
+
+    def test_nt(self) -> None:
+        """Test NT unprefixing."""
+        assert macula_unprefixer("n41001001001") == "41001001001"
+        assert macula_unprefixer("41001001001") == "41001001001"
 
 
 @pytest.fixture
@@ -20,7 +55,7 @@ def mrk_4_9_4() -> Source:
     """Return a Source instance."""
     mrk_4_9_4_dict = {
         # GC data includes a word number
-        "id": "410040090051",
+        "id": "n410040090051",
         "altId": "ὦτα-1",
         "text": "ὦτα",
         "strong": "3775",
@@ -75,16 +110,20 @@ class TestSource:
         # altId has vowel-pointing differences from text?
         # assert gen_1_1_1.altId[:-2] == gen_1_1_1.text
         assert gen_1_1_1.text == "רֵאשִׁית"
+        assert gen_1_1_1.maculaid == "o010010010012"
 
     def test_init(self, mrk_4_9_4: Source) -> None:
         """Test initialization."""
-        assert mrk_4_9_4.id == "410040090051"
+        # no word part index
+        assert mrk_4_9_4.id == "41004009005"
         assert mrk_4_9_4.altId[:-2] == mrk_4_9_4.text
+        assert mrk_4_9_4.maculaid == "n41004009005"
+        assert mrk_4_9_4.tokenid == "41004009005"
 
     def test_idtext(self, mrk_4_9_4: Source) -> None:
         """Text idtext property."""
         assert mrk_4_9_4.idtext == (
-            "410040090051",
+            "41004009005",
             "ὦτα",
         )
 
@@ -226,7 +265,7 @@ class TestSourceReader:
         assert len(self.sr) > 137700
         # no lemmas yet for SBLGNT
         # assert sr["n41004003001"].lemma == "ἀκούω"
-        assert self.sr["n41004003001"].strong == "G0191"
+        assert self.sr["41004003001"].strong == "G0191"
 
     def test_vocabulary(self) -> None:
         """Test vocabulary()."""
@@ -237,16 +276,16 @@ class TestSourceReader:
     def test_term_tokens(self) -> None:
         """Test term_tokens()."""
         # token.id here excludes corpus_prefix, but includes part_ID
-        assert [token.id for token in self.sr.term_tokens("βλαστᾷ")] == ["410040270111"]
+        assert [token.id for token in self.sr.term_tokens("βλαστᾷ")] == ["41004027011"]
         assert [token.id for token in self.sr.term_tokens("βλαστάνω", tokenattr="lemma")] == [
-            "400130260031",
-            "410040270111",
-            "580090040241",
-            "590050180121",
+            "40013026003",
+            "41004027011",
+            "58009004024",
+            "59005018012",
         ]
         # lemma doesn't match surface text
         assert [token.id for token in self.sr.term_tokens("βλαστάνω")] == []
-        assert [token.id for token in self.sr.term_tokens("Οἶδας")] == ["400150120071", "550010150011"]
+        assert [token.id for token in self.sr.term_tokens("Οἶδας")] == ["40015012007", "55001015001"]
         assert len([token.id for token in self.sr.term_tokens("οἶδας")]) == 15
         # more if disregarding case
         assert len([token.id for token in self.sr.term_tokens("Οἶδας", lowercase=True)]) == 17
@@ -262,7 +301,7 @@ class TestOTSourceReader:
         # FRAGILE: round number for slightly more generality
         assert len(self.sr) >= 475000
         # this fails: Unicode normalization??
-        assert self.sr["o010010010021"].text == "בָּרָ֣א"
+        assert self.sr["010010010021"].text == "בָּרָ֣א"
 
     def test_vocabulary(self) -> None:
         """Test vocabulary()."""

@@ -26,6 +26,7 @@ from biblelib.word import bcvwpid
 from bible_alignments import SourceidEnum
 
 from .AlignmentType import TranslationType
+from .source import macula_prefixer
 
 
 # hoisting means this can be defined at several different levels, so
@@ -241,7 +242,7 @@ class AlignmentRecord:
         """True if any selectors in references are incomplete."""
         return any(ref.incomplete for ref in self.references.values())
 
-    def asdict(self, positional: bool = False, withmeta: bool = True) -> dict[str, Any]:
+    def asdict(self, positional: bool = False, withmeta: bool = True, withmaculaprefix: bool = True) -> dict[str, Any]:
         """Return a dict of values suitable for serialization.
 
         With positional=False (the default), returns a dict whose keys
@@ -252,12 +253,25 @@ class AlignmentRecord:
         With withmeta=False (the default), omits record-level
         metadata: otherwise includes it.
 
+        With withmaculaprefix=True (the default), prefix source
+        references with 'o' or 'n' depending on canon.
+
         """
-        recdict: dict[str, Any] = (
-            {"references": self.references.items()}
-            if positional
-            else {role: ref.selectors for role, ref in self.references.items()}
-        )
+        recdict: dict[str, Any] = {}
+        if positional:
+            if not withmaculaprefix:
+                raise NotImplementedError("Positional and not withmaculaprefix is not yet supported.")
+            else:
+                recdict["references"] = self.references.items()
+        else:
+            # typical case
+            sourcerefs: list[str] = self.references["source"].selectors
+            if withmaculaprefix:
+                # default: add back the Macula prefix
+                sourcerefs = [macula_prefixer(srcstr) for srcstr in sourcerefs]
+            # else leave as is (atypical)
+            recdict["source"] = sourcerefs
+            recdict["target"] = self.references["target"].selectors
         if withmeta:
             recdict.update(
                 {

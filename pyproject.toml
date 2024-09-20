@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bible-alignments"
-version = "0.4"
+version = "0.4.2"
 description = "Word-level alignments for Bibles, including both automatic alignments and manually corrected alignments."
 authors = ["Sean Boisen <sean.boisen@biblica.com>"]
 license = "MIT"
@@ -19,17 +19,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Topic :: Religion",
     "Topic :: Software Development :: Libraries :: Python Modules",
-]
-include = [
-    "LICENSE", 
-    "data/languages/*",
-    # lots of larger files: just include BSB data
-    "data/alignments/eng/BSB/*",
-    "data/sources/BSB.tsv",
-    "data/sources/SBLGNT.tsv",
-    "data/targets/WLC.tsv",
-    "data/sources/references/*.txt",
-    "data/catalog.tsv",
 ]
 
 [tool.poetry.dependencies]

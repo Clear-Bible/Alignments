@@ -90,11 +90,11 @@ class Manager(UserDict):
         }
         # The individual AlignmentRecords for convenience: you'll
         # often want them by BCV though
-        alrec: dict[str, AlignmentRecord] = {arec.meta.id: arec for arec in self.alignmentgroup.records}
+        alrecdict: dict[str, AlignmentRecord] = {arec.meta.id: arec for arec in self.alignmentgroup.records}
         # drop badrecords: this means
         # alignmentrecords will be smaller than
         # alignmentgroup.records, but will omit some bad data.
-        self.alignmentrecords = self._clean_alignmentrecords(alrec)
+        self.alignmentrecords = self._clean_alignmentrecords(alrecdict)
         if self.badrecords:
             # update alignmentgroup with the right set of records
             self.alignmentgroup.records = list(self.alignmentrecords.values())
@@ -115,9 +115,10 @@ class Manager(UserDict):
 
         Optionally add a tuple of supporting data.
         """
-        # these labels must match what's in BadRecord._reasons
-        arecdict = arec.asdict()
+        # internally, we don't use macula prefixes (only on output)
+        arecdict = arec.asdict(withmaculaprefix=False)
         badrecdict = {"identifier": arec.identifier, "record": arec}
+        # these labels must match what's in BadRecord._reasons
         if not arecdict["source"]:
             return BadRecord(**badrecdict, reason=Reason.NOSOURCE)
         elif "" in arecdict["source"]:
@@ -138,10 +139,10 @@ class Manager(UserDict):
         else:
             return None
 
-    def _clean_alignmentrecords(self, alrec) -> dict[str, AlignmentRecord]:
+    def _clean_alignmentrecords(self, alrecdict: dict[str, AlignmentRecord]) -> dict[str, AlignmentRecord]:
         """Find bad alignment records, return good ones."""
         self.badrecords: Optional[dict[str, BadRecord]] = {
-            recid: badrec for recid, arec in alrec.items() if (badrec := self._bad_reason(arec)) if badrec
+            recid: badrec for recid, arec in alrecdict.items() if (badrec := self._bad_reason(arec)) if badrec
         }
         if self.badrecords:
             keepmsg = "Keeping" if self.keepbadrecords else "Dropping"
@@ -152,9 +153,9 @@ class Manager(UserDict):
                     print(f"{reason.value}\t{rcount}")
         # drop them from alignmentrecords, unless keeping them
         if self.keepbadrecords:
-            return alrec
+            return alrecdict
         else:
-            return {recid: badrec for recid, badrec in alrec.items() if recid not in self.badrecords}
+            return {recid: badrec for recid, badrec in alrecdict.items() if recid not in self.badrecords}
 
     def read_sources(self) -> SourceReader:
         """Read source data into SourceReader."""
@@ -168,7 +169,10 @@ class Manager(UserDict):
     def make_versedata(self, bcvid: str, verserecords: dict[str, list[AlignmentRecord]]) -> VerseData:
         """Return a VerseData instance for a BCV reference."""
         alpairs: list[tuple[list[str], list[str]]] = [
-            (ardict["source"], ardict["target"]) for ar in verserecords[bcvid] if (ardict := ar.asdict())
+            (ardict["source"], ardict["target"])
+            for ar in verserecords[bcvid]
+            # internal so omit macula prefix
+            if (ardict := ar.asdict(withmaculaprefix=False))
         ]
         alinstpairs: list[tuple[list[Source], list[Target]]] = [
             (sourceinst, targetinst)
@@ -210,5 +214,8 @@ class Manager(UserDict):
         }
         selectorset = set(tokendict)
         # collect alignment records that contain these tokens
-        token_records = [rec for rec in self.alignmentgroup.records if selectorset.intersection(rec.source_selectors)]
+        selectorattr = "source_selectors" if role == "source" else "target_selectors"
+        token_records = [
+            rec for rec in self.alignmentgroup.records if selectorset.intersection(getattr(rec, selectorattr))
+        ]
         return token_records

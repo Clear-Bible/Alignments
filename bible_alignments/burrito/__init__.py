@@ -11,7 +11,7 @@ from .AlignmentType import TranslationType
 from .alignments import AlignmentsReader
 from .manager import Manager, VerseData
 from .BaseToken import BaseToken, asbool, bare_id
-from .source import Source, SourceReader
+from .source import macula_prefixer, macula_unprefixer, Source, SourceReader
 from .target import Target, TargetReader
 
 
@@ -39,6 +39,8 @@ __all__ = [
     "Manager",
     "VerseData",
     # source
+    "macula_prefixer",
+    "macula_unprefixer",
     "Source",
     "SourceReader",
     # target

@@ -16,6 +16,7 @@ from typing import Any, Optional
 from .AlignmentGroup import Document, Metadata, AlignmentGroup, AlignmentReference, AlignmentRecord
 from .AlignmentSet import AlignmentSet
 from .AlignmentType import TranslationType
+from .source import macula_unprefixer
 
 
 class AlignmentsReader:
@@ -74,6 +75,9 @@ class AlignmentsReader:
         # selectors here
         if not alrec["source"]:
             print(f"No source selectors for {alrec['meta']['id']}: dropping the record, adding to self.badrecords.")
+        else:
+            # convert Macula IDs to token IDs (no prefix)
+            alrec["source"] = [macula_unprefixer(src) for src in alrec["source"]]
         sourceref: AlignmentReference = AlignmentReference(document=self.sourcedoc, selectors=alrec["source"])
         # bad hack here to drop word parts
         trgselectors = [self._targetid(trgid) for trgid in alrec["target"]]

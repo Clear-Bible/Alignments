@@ -1,4 +1,4 @@
-"""Test code in bible_alignments.burrito.AlignmentRecord
+"""Test code in burrito.AlignmentRecord
 
 Does not test writing files.
 """

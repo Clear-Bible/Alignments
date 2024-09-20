@@ -30,8 +30,9 @@ class TestManager:
         """Test initialization."""
         assert mgr.alignmentset.sourceid == "SBLGNT"
         assert mgr.alignmentset.targetid == "BSB"
-        assert mgr.sourceitems["n41004003001"].lemma == "ἀκούω"
+        assert mgr.sourceitems["41004003001"].lemma == "ἀκούω"
         assert mgr.targetitems["41004003002"].text == "Listen"
+        # output format, so includes macula prefix
         assert mgr.alignmentrecords["41004003.001"].asdict()["source"] == ["n41004003001", "n41004003002"]
         assert mgr.alignmentrecords["41004003.001"].meta.id == "41004003.001"
         assert mgr.alignmentrecords["41004003.001"].identifier == "41004003.001"

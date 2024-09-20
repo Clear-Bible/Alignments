@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="explanation">Explanation</h1>
+<p>This documentation provides <em>understanding-oriented</em>
+discussion of alignment data and processes.</p>
+<h2 id="understanding-corpus-files">Understanding Corpus Files</h2>
+<h3 id="common-attributes">Common Attributes</h3>
+<ul>
+<li><code>identifier</code>: a word or token in a standardized reference
+system
+<ul>
+<li>The default reference system is BBCCCVVVWWWP, representing book,
+chapter, verse, word, and word. Alternate identification systems should
+be specified with a <code>referencesystem</code> attribute.</li>
+<li>The same reference system should be used for source and target
+texts, to ensure consistency in the alignment data.</li>
+</ul></li>
+</ul>
+<h3 id="source-corpora">Source Corpora</h3>
+<p>This is sample data for the first five words from Mark 1:1 :</p>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 11%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>id</th>
+<th>altId</th>
+<th>text</th>
+<th>strongs</th>
+<th>gloss</th>
+<th>gloss2</th>
+<th>lemma</th>
+<th>pos</th>
+<th>morph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n41001001001</td>
+<td>Ἀρχὴ-1</td>
+<td>Ἀρχὴ</td>
+<td>G0746</td>
+<td>[The] beginning</td>
+<td>beginning</td>
+<td>ἀρχή</td>
+<td>noun</td>
+<td>N-NSF</td>
+</tr>
+<tr>
+<td>n41001001002</td>
+<td>τοῦ-1</td>
+<td>τοῦ</td>
+<td>G3588</td>
+<td>of the</td>
+<td>the</td>
+<td>ὁ</td>
+<td>det</td>
+<td>T-GSN</td>
+</tr>
+<tr>
+<td>n41001001003</td>
+<td>εὐαγγελίου-1</td>
+<td>εὐαγγελίου</td>
+<td>G2098</td>
+<td>gospel</td>
+<td>gospel</td>
+<td>εὐαγγέλιον</td>
+<td>noun</td>
+<td>N-GSN</td>
+</tr>
+<tr>
+<td>n41001001004</td>
+<td>Ἰησοῦ-1</td>
+<td>Ἰησοῦ</td>
+<td>G2424</td>
+<td>of Jesus</td>
+<td>Jesus</td>
+<td>Ἰησοῦς</td>
+<td>noun</td>
+<td>N-GSM</td>
+</tr>
+<tr>
+<td>n41001001005</td>
+<td>χριστοῦ-1</td>
+<td>χριστοῦ</td>
+<td>G5547</td>
+<td>Christ</td>
+<td>Christ</td>
+<td>Χριστός</td>
+<td>noun</td>
+<td>N-GSM</td>
+</tr>
+</tbody>
+</table>
+<p>The attributes:</p>
+<ul>
+<li><code>identifier</code>: a word or token in a standardized reference
+system
+<ul>
+<li>The default reference system is BBCCCVVVWWWP, representing book,
+chapter, verse, word, and word part.</li>
+</ul></li>
+<li><code>altId</code>: ? Omitted for copyrighted texts.</li>
+<li><code>text</code>: surface text from the source. Omitted for
+copyrighted texts.</li>
+<li><code>strongs</code>: Strongs concordance identifier for this lemma.
+These typically match the regular expression “<a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>[a-c])?$”</li>
+<li><code>gloss</code>: English gloss for this lemma. Includes some
+context information.</li>
+<li><code>gloss2</code>: another gloss for this lemma; typically
+Chinese.</li>
+<li><code>lemma</code>: the dictionary form of the word.</li>
+<li><code>pos</code>: Part Of Speech, one of the following values:
+<ul>
+<li>adj: adjective</li>
+<li>adv: adverb</li>
+<li>art: article (OT)</li>
+<li>det: determiner (NT)</li>
+<li>cj: conjunction (OT)</li>
+<li>conj: conjunction (NT)</li>
+<li>ij: interjection (OT)</li>
+<li>intj: interjection (NT)</li>
+<li>Name: proper name</li>
+<li>noun: noun</li>
+<li>num: number</li>
+<li>om: omitted?</li>
+<li>prep: preposition</li>
+<li>pron: pronoun</li>
+<li>ptcl: particle</li>
+<li>rel: relative pronoun? (OT)</li>
+<li>verb: verb</li>
+<li>x: ?</li>
+</ul></li>
+<li><code>morph</code>: encoded morphological information. Examples
+follow for several parts of speech to illustrate the patterns.
+<ul>
+<li>“a- -npf-” is an adjective (<code>adj</code>) in the nominative
+case, plural, feminine.</li>
+<li>“d- —–” is an adverb (uninflected).</li>
+<li>“ra -asm-” is a determiner (<code>det</code>), accusative, singular,
+masculine.</li>
+<li>“nr -nsm-” is a name (<code>Name</code>), nominative, singular,
+masculine.</li>
+<li>“an -apf-” is a number (<code>num</code>) in the accusative case,
+plural, feminine.</li>
+<li>“n- -nsf-” is a noun in the nominative case, singular,
+feminine.</li>
+<li>“rp 2gs–” is a pronoun (<code>pron</code>), second person, genitive
+singular. “rp -dsm-” is dative, singular, masculine.</li>
+<li>“v- 3-s–aai” is a verb, third person singular, active aorist
+indicative. “v- -nsm-aap” is a nominative singular masculine, aorist
+active participle. An articular infinitive is marked as “v- —–ppn”:
+present, passive, infinitive.</li>
+<li>For uninflected forms, the pattern is “X- —–” where X is the first
+letter of the part of speec (“c” for conjunction, “p” for prep,
+etc.)</li>
+</ul></li>
+</ul>
+<h3 id="target-text-example">Target Text Example</h3>
+<p>This is based on Young’s Literal Translationd.</p>
+<pre><code>identifier  altId       text    transType   isPunc  isPrimary
+40001001001 A-1         A       m           False   False
+40001001002 roll-1      roll    k           False   True
+40001001003 of-1        of      m           False   False
+40001001004 the-1       the                 False   False
+40001001005 birth-1     birth   k           False   True
+40001001006 of-2        of      m           False   False
+40001001007 Jesus-1     Jesus   k           False   True
+40001001008 Christ-1    Christ  k           False   True
+40001001009 ,-1         ,                   False   False
+40001001010 son-1       son     k           False   True
+40001001011 of-2        of      m           False   False
+40001001012 David-1     David   k           False   True
+...</code></pre>
+<ul>
+<li><code>identifier</code>: book, chapter, verse, word encoded as
+BBCCCVVVWWW. Unlike the Greek and Hebrew source texts, the Grape City
+alignments at least aren’t segemented and therefore don’t have word
+parts. Other alignment targets may, in which case the format would also
+include Part.</li>
+<li><code>altId</code>: ? Omitted for copyrighted texts.</li>
+<li><code>text</code>: surface text from the target. Omitted for
+copyrighted texts.</li>
+<li><code>transType</code>: classifies how the translation word(s)
+linked to the Greek &amp; Hebrew should be understood in relation to the
+source Greek &amp; Hebrew words.
+<ul>
+<li>a: Assisted word (translation word added to assist in conveying the
+meaning &amp; has no corresponding word in the Greek &amp; Hebrew).</li>
+<li>d: Dynamic translation (no one-to-one correspondence between the
+translation &amp; the Greek &amp; Hebrew)</li>
+<li>k: Key word (content-bearing translation word that corresponds to
+the Greek &amp; Hebrew)</li>
+<li>m: Morphology (translation word reflects Greek or Hebrew morphology
+and is not a separate word in the Greek or Hebrew)</li>
+<li>s: Substitution (pronoun substituted with a full noun reference or a
+full noun substituted with a pronoun)</li>
+<li>u: perhaps Union? Only occurs once for Greek in Rev 7:4 for
+“144”</li>
+</ul></li>
+</ul>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A,G-H<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</body>
+</html>

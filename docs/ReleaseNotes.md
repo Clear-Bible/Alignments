@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.4.1, 0.4.2
+
+* Trying (and failing) to get data included in the
+  installer. Apparently that requires restructuring the directories.
+
 ## 0.4
 
 Major update that restructures the `data` and `bible_alignments`

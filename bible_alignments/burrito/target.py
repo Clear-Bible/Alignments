@@ -262,7 +262,7 @@ class TargetReader(UserDict):
                 f.write(f"{bcv}\n")
 
     def term_tokens(self, term: str, tokenattr: str = "text", lowercase: bool = False) -> list[Target]:
-        """Return a list of tokens containing term.
+        """Return a list of tokens matching term.
 
         The attribute used is 'text' by default.
 
