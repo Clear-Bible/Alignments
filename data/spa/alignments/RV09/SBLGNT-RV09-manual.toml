@@ -1,0 +1,22 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[target]
+
+identifier = "RV09"
+license = "Public domain"
+name.eng = "Reina Valera 1909"
+url = "https://ebible.org/find/details.php?id=spaRV1909"
+
+[alignment]
+
+identifier = "SBLGNT-RV09-manual"
+format = "Scripture Burrito 0.3"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "Biblica"
