@@ -1,17 +1,16 @@
 [source]
 
-identifier = "SBLGNT"
-copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
-license = "CC-BY-4.0"
+identifier = "WLC"
 
 [source.metadata]
 copyright = "Copyright (c) 2023 by Clear Bible, Inc."
 license = "CC-BY 4.0"
+licensenotes = "From http://tanach.us/License.html: 'All biblical Hebrew text, in any format, may be viewed or copied without restriction.' Citation of the Tanach.us site as the source of the text is appreciated: Unicode/XML Leningrad Codex: UXLC 1.8 (26.9), Tanach.us Inc., West Redding, CT, USA, April 2023. "
 
 [target]
 
 identifier = "AVD"
-name.eng = "Van Dyck"
+name.eng = " Arabic: Van Dyck"
 license = "Public domain"
 # sboisen: not sure if this is the same version: this lists a copyright, and
 # qualifies the name as "Full Vocalization"
@@ -24,11 +23,11 @@ tokenization = "LatinWordTokenizer"
 
 [alignment]
 
-identifier = "SBLGNT-AVD-manual"
+identifier = "WLCM-AVD-manual"
 format = "Scripture Burrito v0.3"
 copyright = "Copyright © 2024 by BiblioNexus"
 license = "CC-BY-4.0"
 process = "manual"
 process.notes = "Strong's numbers added by Sami. Converted to Scripture Burrito format by Rick Brannan."
-scope = "NT"
+scope = "OT"
 team = "BiblioNexus"
