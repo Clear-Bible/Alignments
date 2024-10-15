@@ -1,0 +1,32 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target]
+
+identifier = "OHCB"
+license = "Public domain"
+name.eng = " Biblica® Open Hausa Contemporary Bible 2020"
+url = "https://app.thedigitalbiblelibrary.org/entry?id=0ab0c764d56a715d"
+
+[target.metadata]
+copyright = "Copyright (c) 2023 by BiblioNexus"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
+
+[alignment]
+
+identifier = "SBLGNT-OHCB-manual"
+format = "Scripture Burrito v0.3"
+copyright = "Copyright © 2024 by United Bible Societies"
+license = "CC-BY-4.0"
+process = "manual"
+scope = "NT"
+team = "BiblioNexus"
