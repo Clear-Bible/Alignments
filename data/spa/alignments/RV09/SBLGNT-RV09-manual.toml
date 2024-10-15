@@ -5,6 +5,10 @@ copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bibl
 license = "CC-BY-4.0"
 url = "https://sblgnt.com/"
 
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
 [target]
 
 identifier = "RV09"
@@ -12,11 +16,17 @@ license = "Public domain"
 name.eng = "Reina Valera 1909"
 url = "https://ebible.org/find/details.php?id=spaRV1909"
 
+[target.metadata]
+copyright = "Copyright (c) 2023 by BiblioNexus"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
+
 [alignment]
 
 identifier = "SBLGNT-RV09-manual"
-format = "Scripture Burrito 0.3"
+format = "Scripture Burrito v0.3"
+copyright = "Copyright © 2024 by BiblioNexus"
 license = "CC-BY-4.0"
 process = "manual"
 scope = "NT"
-team = "Biblica"
+team = "BiblioNexus"
