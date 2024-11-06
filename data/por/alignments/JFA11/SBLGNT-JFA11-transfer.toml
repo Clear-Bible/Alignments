@@ -1,0 +1,32 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+url = "https://sblgnt.com/"
+
+[source.metadata]
+copyright = "Copyright (c) 2023 by Clear Bible, Inc."
+license = "CC-BY 4.0"
+
+[target]
+
+identifier = "JFA11"
+license = "Public domain"
+name.por = "A Bíblia Sagrada, Edição Revista e Corrigida (Almeida 1911)"
+url = "https://www.gutenberg.org/ebooks/62383"
+
+[target.metadata]
+copyright = "Copyright (c) 2024 by BiblioNexus"
+license = "CC-BY 4.0"
+tokenization = "LatinWordTokenizer"
+
+[alignment]
+
+identifier = "SBLGNT-JFA11-transfer"
+format = "Scripture Burrito v0.3"
+copyright = "Copyright © 2024 by BiblioNexus"
+license = "CC-BY-4.0"
+process = "transfer from Spanish RVR09"
+scope = "NT"
+team = "BiblioNexus"
