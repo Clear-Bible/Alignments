@@ -1,0 +1,32 @@
+[source]
+
+identifier = "SBLGNT"
+copyright = "Copyright 2010 by the Society of Biblical Literature and Logos Bible Software."
+license = "CC-BY-4.0"
+
+[source.metadata]
+copyright = "Copyright © 2023 by Clear Bible, Inc."
+license = "CC-BY-4.0"
+
+[target]
+
+identifier = "ONAV"
+name.eng = "Biblica® Open New Arabic Version 2012"
+license = "CC-BY-SA-4.0"
+url = "https://app.library.bible/content/b17e246951402e50/summary"
+
+[target.metadata]
+copyright = "Copyright © 2024 by Biblica"
+license = "CC-BY-SA-4.0"
+tokenization = "LatinWhiteSpaceIncludedTokenizer"
+
+[alignment]
+
+identifier = "SBLGNT-ONAV-manual"
+format = "Scripture Burrito v0.3"
+copyright = "Copyright © 2024 by Biblica"
+license = "CC-BY-SA-4.0"
+process = "manual"
+process.notes = "Alignment by contractor using ClearAligner."
+scope = "NT"
+team = "Biblica"
