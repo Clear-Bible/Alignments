@@ -1,0 +1,89 @@
+name: publish-data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  release-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Build per-language archives
+        run: |
+          mkdir -p dist
+
+          # Shared source TSVs (Greek/Hebrew) — bundled into every language
+          # archive so each is self-contained for use with AlignmentSet.
+          SOURCES=data/sources
+
+          for langdir in data/*/; do
+            lang=$(basename "$langdir")
+            # Only package directories that contain alignment or target data
+            if [[ -d "$langdir/targets" || -d "$langdir/alignments" ]]; then
+              echo "Packaging $lang..."
+              zip -r "dist/alignments-${lang}.zip" "$SOURCES" "$langdir"
+            fi
+          done
+
+          echo "Archives:"
+          ls -lh dist/
+
+      - name: Publish to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: data-latest
+          name: Latest Alignment Data
+          prerelease: true
+          body: |
+            Per-language alignment data archives, updated automatically on every push to `main`.
+
+            Each archive (e.g. `alignments-eng.zip`) contains:
+            - `data/sources/` — shared Greek/Hebrew source TSVs (SBLGNT, WLC, WLCM, BGNT)
+            - `data/{lang}/` — target corpus TSVs and alignment JSON/TOML files for that language
+
+            ## Usage
+
+            1. Install [`biblealignlib`](https://pypi.org/project/biblealignlib/): `pip install biblealignlib`
+            2. Download and unzip the archive for your language.
+            3. Point `langdatapath` and `sourcedatapath` at the extracted folders:
+
+            ```python
+            from pathlib import Path
+            from biblealignlib.burrito import AlignmentSet, Manager
+
+            data = Path("/path/to/extracted/data")
+            alset = AlignmentSet(
+                sourceid="SBLGNT",
+                targetid="BSB",
+                targetlanguage="eng",
+                langdatapath=data / "eng",
+                sourcedatapath=data / "sources",
+            )
+            mgr = Manager(alset)
+            mgr["41004003"]  # VerseData for Mark 4:3
+            ```
+
+            ## Available languages
+
+            | Archive | Language |
+            |---------|----------|
+            | `alignments-arb.zip` | Arabic |
+            | `alignments-asm.zip` | Assamese |
+            | `alignments-ben.zip` | Bengali |
+            | `alignments-eng.zip` | English |
+            | `alignments-fra.zip` | French |
+            | `alignments-hau.zip` | Hausa |
+            | `alignments-hin.zip` | Hindi |
+            | `alignments-por.zip` | Portuguese |
+            | `alignments-rus.zip` | Russian |
+            | `alignments-spa.zip` | Spanish |
+          files: dist/*.zip
