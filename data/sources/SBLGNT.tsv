@@ -423,7 +423,7 @@ n40001024018	γυναῖκα-1	γυναῖκα	G1135	wife	wife	γυνή	noun	N-A
 n40001024019	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
 n40001025001	καὶ-1	καὶ	G2532	and	but	καί	conj	CONJ
 n40001025002	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
-n40001025003	ἐγίνωσκεν-1	ἐγίνωσκεν	G1097	knew	had ~ maritalrelations with	γινώσκω	verb	V-IAI-3S
+n40001025003	ἐγίνωσκεν-1	ἐγίνωσκεν	G1097	knew	had ~ marital relations with	γινώσκω	verb	V-IAI-3S
 n40001025004	αὐτὴν-1	αὐτὴν	G0848	her	her	ἑαυτοῦ	pron	P-ASF
 n40001025005	ἕως-1	ἕως	G2193	until	until	ἕως	prep	ADV
 n40001025006	οὗ-1	οὗ	G3739	that	*	ὅς	pron	R-GSM
@@ -1340,7 +1340,7 @@ n40004007004	Ἰησοῦς-1	Ἰησοῦς	G2424	Jesus	Jesus	Ἰησοῦς	no
 n40004007005	Πάλιν-1	Πάλιν	G3825	Again	again	πάλιν	adv	ADV
 n40004007006	γέγραπται-1	γέγραπται	G1125	it has been written	written	γράφω	verb	V-RPI-3S
 n40004007007	Οὐκ-1	Οὐκ	G3756	Not	not	οὐ	adv	PRT-N
-n40004007008	ἐκπειράσεις-1	ἐκπειράσεις	G1598	you shall test	put ~ tothe test	ἐκπειράζω	verb	V-FAI-2S
+n40004007008	ἐκπειράσεις-1	ἐκπειράσεις	G1598	you shall test	put ~ to the test	ἐκπειράζω	verb	V-FAI-2S
 n40004007009	κύριον-1	κύριον	G2962	[the] Lord	Lord	κύριος	noun	N-ASM
 n40004007010	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n40004007011	θεόν-1	θεόν	G2316	God	God	θεός	noun	N-ASM
@@ -2135,7 +2135,7 @@ n40005029004	ὀφθαλμός-1	ὀφθαλμός	G3788	eye	eye	ὀφθαλμό
 n40005029005	σου-1	σου	G4675	of you	your	σύ	pron	P-2GS
 n40005029006	ὁ-2	ὁ	G3588	-		ὁ	det	T-NSM
 n40005029007	δεξιὸς-1	δεξιὸς	G1188	right	right	δεξιός	adj	A-NSM
-n40005029008	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to stumble	causes ~ tosin	σκανδαλίζω	verb	V-PAI-3S
+n40005029008	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to stumble	causes ~ to sin	σκανδαλίζω	verb	V-PAI-3S
 n40005029009	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n40005029010	ἔξελε-1	ἔξελε	G1807	pluck out	tear ~ out	ἐξαιρέω	verb	V-2AAM-2S
 n40005029011	αὐτὸν-1	αὐτὸν	G0846	it	it	αὐτός	pron	P-ASM
@@ -2167,7 +2167,7 @@ n40005030003	ἡ-1	ἡ	G3588	the	the	ὁ	det	T-NSF
 n40005030004	δεξιά-1	δεξιά	G1188	right	right	δεξιός	adj	A-NSF
 n40005030005	σου-1	σου	G4675	of you	your	σύ	pron	P-2GS
 n40005030006	χεὶρ-1	χεὶρ	G5495	hand	hand	χείρ	noun	N-NSF
-n40005030007	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to stumble	causes ~ tosin	σκανδαλίζω	verb	V-PAI-3S
+n40005030007	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to stumble	causes ~ to sin	σκανδαλίζω	verb	V-PAI-3S
 n40005030008	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n40005030009	ἔκκοψον-1	ἔκκοψον	G1581	cut off	cut ~ off	ἐκκόπτω	verb	V-AAM-2S
 n40005030010	αὐτὴν-1	αὐτὴν	G0848	it	it	ἑαυτοῦ	pron	P-ASF
@@ -2358,7 +2358,7 @@ n40005040015	ἱμάτιον-1	ἱμάτιον	G2440	cloak	cloak	ἱμάτιον
 n40005041001	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n40005041002	ὅστις-1	ὅστις	G3748	whoever	whoever	ὅστις	pron	R-NSM
 n40005041003	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
-n40005041004	ἀγγαρεύσει-1	ἀγγαρεύσει	G0029	shall compel to go	forces ~ togo	ἀγγαρεύω	verb	V-FAI-3S
+n40005041004	ἀγγαρεύσει-1	ἀγγαρεύσει	G0029	shall compel to go	forces ~ to go	ἀγγαρεύω	verb	V-FAI-3S
 n40005041005	μίλιον-1	μίλιον	G3400	mile	mile	μίλιον	noun	N-ASN
 n40005041006	ἕν-1	ἕν	G1520	one	one	εἷς	adj	A-ASN
 n40005041007	ὕπαγε-1	ὕπαγε	G5217	go	go	ὑπάγω	verb	V-PAM-2S
@@ -2416,7 +2416,7 @@ n40005045010	ὅτι-1	ὅτι	G3754	For	for	ὅτι	conj	CONJ
 n40005045011	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n40005045012	ἥλιον-1	ἥλιον	G2246	sun	sun	ἥλιος	noun	N-ASM
 n40005045013	αὐτοῦ-1	αὐτοῦ	G0846	of Him	his	αὐτός	pron	P-GSM
-n40005045014	ἀνατέλλει-1	ἀνατέλλει	G0393	He makes rise	causes ~ torise	ἀνατέλλω	verb	V-PAI-3S
+n40005045014	ἀνατέλλει-1	ἀνατέλλει	G0393	He makes rise	causes ~ to rise	ἀνατέλλω	verb	V-PAI-3S
 n40005045015	ἐπὶ-1	ἐπὶ	G1909	on	on	ἐπί	prep	PREP
 n40005045016	πονηροὺς-1	πονηροὺς	G4190	evil	evil	πονηρός	adj	A-APM
 n40005045017	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
@@ -3225,7 +3225,7 @@ n40007006020	ποσὶν-1	ποσὶν	G4228	feet	feet	πούς	noun	N-DPM
 n40007006021	αὐτῶν-1	αὐτῶν	G0846	of them	their	αὐτός	pron	P-GPM
 n40007006022	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n40007006023	στραφέντες-1	στραφέντες	G4762	having turned	turn	στρέφω	verb	V-2APP-NPM
-n40007006024	ῥήξωσιν-1	ῥήξωσιν	G4486	they tear to pieces	tear ~ topieces	ῥήγνυμι	verb	V-AAS-3P
+n40007006024	ῥήξωσιν-1	ῥήξωσιν	G4486	they tear to pieces	tear ~ to pieces	ῥήγνυμι	verb	V-AAS-3P
 n40007006025	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
 n40007007001	Αἰτεῖτε-1	Αἰτεῖτε	G0154	Ask	ask	αἰτέω	verb	V-PAM-2P
 n40007007002	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
@@ -5615,7 +5615,7 @@ n40011002005	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
 n40011002006	τῷ-1	τῷ	G3588	the	the	ὁ	det	T-DSN
 n40011002007	δεσμωτηρίῳ-1	δεσμωτηρίῳ	G1201	prison	prison	δεσμωτήριον	noun	N-DSN
 n40011002008	τὰ-1	τὰ	G3588	the	the	ὁ	det	T-APN
-n40011002009	ἔργα-1	ἔργα	G2041	works	what ~ wasdoing	ἔργον	noun	N-APN
+n40011002009	ἔργα-1	ἔργα	G2041	works	what ~ was doing	ἔργον	noun	N-APN
 n40011002010	τοῦ-1	τοῦ	G3588	of the	the	ὁ	det	T-GSM
 n40011002011	χριστοῦ-1	χριστοῦ	G5547	Christ	Christ	Χριστός	noun	N-GSM
 n40011002012	πέμψας-1	πέμψας	G3992	having sent	sent	πέμπω	verb	V-AAP-NSM
@@ -5781,7 +5781,7 @@ n40011012013	οὐρανῶν-1	οὐρανῶν	G3772	heavens	heaven	οὐρα�
 n40011012014	βιάζεται-1	βιάζεται	G0971	is taken by violence	suffers violence	βιάζω	verb	V-PPI-3S
 n40011012015	καὶ-1	καὶ	G2532	and [the]	and	καί	conj	CONJ
 n40011012016	βιασταὶ-1	βιασταὶ	G0973	violent	violent	βιαστής	noun	N-NPM
-n40011012017	ἁρπάζουσιν-1	ἁρπάζουσιν	G0726	claim	take ~ byforce	ἁρπάζω	verb	V-PAI-3P
+n40011012017	ἁρπάζουσιν-1	ἁρπάζουσιν	G0726	claim	take ~ by force	ἁρπάζω	verb	V-PAI-3P
 n40011012018	αὐτήν-1	αὐτήν	G0848	it	it	ἑαυτοῦ	pron	P-ASF
 n40011013001	πάντες-1	πάντες	G3956	All	all	πᾶς	adj	A-NPM
 n40011013002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
@@ -8128,7 +8128,7 @@ n40014004010	αὐτήν-1	αὐτήν	G0848	her	her	ἑαυτοῦ	pron	P-ASF
 n40014005001	καὶ-1	καὶ	G2532	Although	and	καί	conj	CONJ
 n40014005002	θέλων-1	θέλων	G2309	wishing	wanted	θέλω	verb	V-PAP-NSM
 n40014005003	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
-n40014005004	ἀποκτεῖναι-1	ἀποκτεῖναι	G0615	to kill	put ~ todeath	ἀποκτείνω	verb	V-AAN
+n40014005004	ἀποκτεῖναι-1	ἀποκτεῖναι	G0615	to kill	put ~ to death	ἀποκτείνω	verb	V-AAN
 n40014005005	ἐφοβήθη-1	ἐφοβήθη	G5399	he feared	feared	φοβέομαι	verb	V-AOI-3S
 n40014005006	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n40014005007	ὄχλον-1	ὄχλον	G3793	multitude	crowd	ὄχλος	noun	N-ASM
@@ -9727,7 +9727,7 @@ n40016027020	ἀποδώσει-1	ἀποδώσει	G0591	He will give	reward	ἀ
 n40016027021	ἑκάστῳ-1	ἑκάστῳ	G1538	to each	each	ἕκαστος	adj	A-DSM
 n40016027022	κατὰ-1	κατὰ	G2596	according to	according to	κατά	prep	PREP
 n40016027023	τὴν-1	τὴν	G3588	the	he	ὁ	det	T-ASF
-n40016027024	πρᾶξιν-1	πρᾶξιν	G4234	deeds	what ~ hasdone	πρᾶξις	noun	N-ASF
+n40016027024	πρᾶξιν-1	πρᾶξιν	G4234	deeds	what ~ has done	πρᾶξις	noun	N-ASF
 n40016027025	αὐτοῦ-3	αὐτοῦ	G0846	of him	he	αὐτός	pron	P-GSM
 n40016028001	ἀμὴν-1	ἀμὴν	G0281	Truly	truly	ἀμήν	ptcl	HEB
 n40016028002	λέγω-1	λέγω	G3004	I say	say	λέγω	verb	V-PAI-1S
@@ -10332,7 +10332,7 @@ n40018005013	δέχεται-1	δέχεται	G1209	receives	welcomes	δέχομ�
 n40018006001	Ὃς-1	Ὃς	G3739	Whoever	whoever	ὅς	pron	R-NSM
 n40018006002	δ’-1	δ	G1161	then	but	δέ	conj	CONJ
 n40018006003	ἂν-1	ἂν	G0302	-	*	ἄν	ptcl	PRT
-n40018006004	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	shall cause to stumble	causes ~ tosin	σκανδαλίζω	verb	V-AAS-3S
+n40018006004	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	shall cause to stumble	causes ~ to sin	σκανδαλίζω	verb	V-AAS-3S
 n40018006005	ἕνα-1	ἕνα	G1520	one	one	εἷς	adj	A-ASM
 n40018006006	τῶν-1	τῶν	G3588	of the		ὁ	det	T-GPM
 n40018006007	μικρῶν-1	μικρῶν	G3398	little ones	little	μικρός	adj	A-GPM
@@ -10387,7 +10387,7 @@ n40018008006	ἢ-1	ἢ	G2228	or	or	ἤ	conj	PRT
 n40018008007	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n40018008008	πούς-1	πούς	G4228	foot	foot	πούς	noun	N-NSM
 n40018008009	σου-2	σου	G4675	of you	your	σύ	pron	P-2GS
-n40018008010	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to sin	causes ~ tosin	σκανδαλίζω	verb	V-PAI-3S
+n40018008010	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to sin	causes ~ to sin	σκανδαλίζω	verb	V-PAI-3S
 n40018008011	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n40018008012	ἔκκοψον-1	ἔκκοψον	G1581	cut off	cut ~ off	ἐκκόπτω	verb	V-AAM-2S
 n40018008013	αὐτὸν-1	αὐτὸν	G0846	it	it	αὐτός	pron	P-ASM
@@ -10423,7 +10423,7 @@ n40018009002	εἰ-1	εἰ	G1487	if	if	εἰ	conj	COND
 n40018009003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n40018009004	ὀφθαλμός-1	ὀφθαλμός	G3788	eye	eye	ὀφθαλμός	noun	N-NSM
 n40018009005	σου-1	σου	G4675	of you	your	σύ	pron	P-2GS
-n40018009006	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to sin	causes ~ tosin	σκανδαλίζω	verb	V-PAI-3S
+n40018009006	σκανδαλίζει-1	σκανδαλίζει	G4624	causes to sin	causes ~ to sin	σκανδαλίζω	verb	V-PAI-3S
 n40018009007	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n40018009008	ἔξελε-1	ἔξελε	G1807	gouge out	tear ~ out	ἐξαιρέω	verb	V-2AAM-2S
 n40018009009	αὐτὸν-1	αὐτὸν	G0846	it	it	αὐτός	pron	P-ASM
@@ -10755,7 +10755,7 @@ n40018025019	ὅσα-1	ὅσα	G3745	as many as	that	ὅσος	pron	K-APN
 n40018025020	ἔχει-1	ἔχει	G2192	he had	had	ἔχω	verb	V-PAI-3S
 n40018025021	καὶ-4	καὶ	G2532	and	and	καί	conj	CONJ
 n40018025022	ἀποδοθῆναι-1	ἀποδοθῆναι	G0591	payment to be made	payment ~ made	ἀποδίδωμι	verb	V-APN
-n40018026001	πεσὼν-1	πεσὼν	G4098	Having fallen down	threw ~ tothe ground	πίπτω	verb	V-2AAP-NSM
+n40018026001	πεσὼν-1	πεσὼν	G4098	Having fallen down	threw ~ to the ground	πίπτω	verb	V-2AAP-NSM
 n40018026002	οὖν-1	οὖν	G3767	therefore	so	οὖν	conj	CONJ
 n40018026003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n40018026004	δοῦλος-1	δοῦλος	G1401	servant	servant	δοῦλος	noun	N-NSM
@@ -12585,7 +12585,7 @@ n40021031022	τελῶναι-1	τελῶναι	G5057	tax collectors	tax collecto
 n40021031023	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n40021031024	αἱ-1	αἱ	G3588	the	the	ὁ	det	T-NPF
 n40021031025	πόρναι-1	πόρναι	G4204	prostitutes	prostitutes	πόρνη	noun	N-NPF
-n40021031026	προάγουσιν-1	προάγουσιν	G4254	go before	going ~ aheadof	προάγω	verb	V-PAI-3P
+n40021031026	προάγουσιν-1	προάγουσιν	G4254	go before	going ~ ahead of	προάγω	verb	V-PAI-3P
 n40021031027	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
 n40021031028	εἰς-1	εἰς	G1519	into	into	εἰς	prep	PREP
 n40021031029	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
@@ -14933,7 +14933,7 @@ n40024047006	πᾶσιν-1	πᾶσιν	G3956	all	all	πᾶς	adj	A-DPN
 n40024047007	τοῖς-1	τοῖς	G3588	the	the	ὁ	det	T-DPN
 n40024047008	ὑπάρχουσιν-1	ὑπάρχουσιν	G5224	possessing	possessions	ὑπάρχω	verb	V-PAP-DPN
 n40024047009	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
-n40024047010	καταστήσει-1	καταστήσει	G2525	he will set	put ~ incharge	καθίστημι	verb	V-FAI-3S
+n40024047010	καταστήσει-1	καταστήσει	G2525	he will set	put ~ in charge	καθίστημι	verb	V-FAI-3S
 n40024047011	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n40024048001	ἐὰν-1	ἐὰν	G1437	If	if	ἐάν	conj	COND
 n40024048002	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
@@ -14981,7 +14981,7 @@ n40024050015	ᾗ-2	ᾗ	G3739	which	that	ὅς	pron	R-DSF
 n40024050016	οὐ-2	οὐ	G3756	not	not	οὐ	adv	PRT-N
 n40024050017	γινώσκει-1	γινώσκει	G1097	he is aware	know	γινώσκω	verb	V-PAI-3S
 n40024051001	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n40024051002	διχοτομήσει-1	διχοτομήσει	G1371	will cut in pieces	cut ~ inpieces	διχοτομέω	verb	V-FAI-3S
+n40024051002	διχοτομήσει-1	διχοτομήσει	G1371	will cut in pieces	cut ~ in pieces	διχοτομέω	verb	V-FAI-3S
 n40024051003	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
 n40024051004	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n40024051005	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-ASN
@@ -15294,7 +15294,7 @@ n40025021014	πιστός-1	πιστός	G4103	faithful	faithful	πιστός	ad
 n40025021015	ἐπὶ-2	ἐπὶ	G1909	over	of	ἐπί	prep	PREP
 n40025021016	πολλῶν-1	πολλῶν	G4183	many things	many	πολύς	adj	A-GPN
 n40025021017	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
-n40025021018	καταστήσω-1	καταστήσω	G2525	will I set	put ~ incharge	καθίστημι	verb	V-FAI-1S
+n40025021018	καταστήσω-1	καταστήσω	G2525	will I set	put ~ in charge	καθίστημι	verb	V-FAI-1S
 n40025021019	εἴσελθε-1	εἴσελθε	G1525	Enter	enter	εἰσέρχομαι	verb	V-2AAM-2S
 n40025021020	εἰς-1	εἰς	G1519	into	into	εἰς	prep	PREP
 n40025021021	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
@@ -15337,7 +15337,7 @@ n40025023014	πιστός-1	πιστός	G4103	faithful	faithful	πιστός	ad
 n40025023015	ἐπὶ-2	ἐπὶ	G1909	over	of	ἐπί	prep	PREP
 n40025023016	πολλῶν-1	πολλῶν	G4183	many things	many	πολύς	adj	A-GPN
 n40025023017	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
-n40025023018	καταστήσω-1	καταστήσω	G2525	will I set	put ~ incharge	καθίστημι	verb	V-FAI-1S
+n40025023018	καταστήσω-1	καταστήσω	G2525	will I set	put ~ in charge	καθίστημι	verb	V-FAI-1S
 n40025023019	εἴσελθε-1	εἴσελθε	G1525	Enter	enter	εἰσέρχομαι	verb	V-2AAM-2S
 n40025023020	εἰς-1	εἰς	G1519	into	into	εἰς	prep	PREP
 n40025023021	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
@@ -15560,7 +15560,7 @@ n40025035005	μοι-1	μοι	G3427	Me	me	ἐγώ	pron	P-1DS
 n40025035006	φαγεῖν-1	φαγεῖν	G5315	to eat	eat	ἐσθίω	verb	V-2AAN
 n40025035007	ἐδίψησα-1	ἐδίψησα	G1372	I thirsted	thirsty	διψάω	verb	V-AAI-1S
 n40025035008	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
-n40025035009	ἐποτίσατέ-1	ἐποτίσατέ	G4222	you gave to drink	gave ~ todrink	ποτίζω	verb	V-AAI-2P
+n40025035009	ἐποτίσατέ-1	ἐποτίσατέ	G4222	you gave to drink	gave ~ to drink	ποτίζω	verb	V-AAI-2P
 n40025035010	με-1	με	G3165	me	me	ἐγώ	pron	P-1AS
 n40025035011	ξένος-1	ξένος	G3581	a stranger	stranger	ξένος	adj	A-NSM
 n40025035012	ἤμην-1	ἤμην	G2252	I was	was	εἰμί	verb	V-IMI-1S
@@ -15598,7 +15598,7 @@ n40025037013	ἐθρέψαμεν-1	ἐθρέψαμεν	G5142	fed [You]	feed	τρ
 n40025037014	ἢ-1	ἢ	G2228	Or	or	ἤ	conj	PRT
 n40025037015	διψῶντα-1	διψῶντα	G1372	thirsting	thirsty	διψάω	verb	V-PAP-ASM
 n40025037016	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
-n40025037017	ἐποτίσαμεν-1	ἐποτίσαμεν	G4222	gave [You] to drink	give ~ todrink	ποτίζω	verb	V-AAI-1P
+n40025037017	ἐποτίσαμεν-1	ἐποτίσαμεν	G4222	gave [You] to drink	give ~ to drink	ποτίζω	verb	V-AAI-1P
 n40025038001	πότε-1	πότε	G4219	When	when	πότε	adv	PRT-I
 n40025038002	δέ-1	δέ	G1161	now	and	δέ	conj	CONJ
 n40025038003	σε-1	σε	G4571	You	you	σύ	pron	P-2AS
@@ -16734,7 +16734,7 @@ n40026059011	τοῦ-1	τοῦ	G3588	-		ὁ	det	T-GSM
 n40026059012	Ἰησοῦ-1	Ἰησοῦ	G2424	Jesus	Jesus	Ἰησοῦς	noun	N-GSM
 n40026059013	ὅπως-1	ὅπως	G3704	so that	so that	ὅπως	conj	ADV
 n40026059014	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
-n40026059015	θανατώσωσιν-1	θανατώσωσιν	G2289	they might put to death	put ~ todeath	θανατόω	verb	V-AAS-3P
+n40026059015	θανατώσωσιν-1	θανατώσωσιν	G2289	they might put to death	put ~ to death	θανατόω	verb	V-AAS-3P
 n40026060001	καὶ-1	καὶ	G2532	but	but	καί	conj	CONJ
 n40026060002	οὐ-1	οὐ	G3756	not any	not	οὐ	adv	PRT-N
 n40026060003	εὗρον-1	εὗρον	G2147	they found	find	εὑρίσκω	verb	V-2AAI-3P
@@ -16780,7 +16780,7 @@ n40026063006	ὁ-2	ὁ	G3588	the	the	ὁ	det	T-NSM
 n40026063007	ἀρχιερεὺς-1	ἀρχιερεὺς	G0749	high priest	high priest	ἀρχιερεύς	noun	N-NSM
 n40026063008	εἶπεν-1	εἶπεν	G2036	said	said	λέγω	verb	V-2AAI-3S
 n40026063009	αὐτῷ-1	αὐτῷ	G0846	to Him	him	αὐτός	pron	P-DSM
-n40026063010	Ἐξορκίζω-1	Ἐξορκίζω	G1844	I adjure	put ~ underoath	ἐξορκίζω	verb	V-PAI-1S
+n40026063010	Ἐξορκίζω-1	Ἐξορκίζω	G1844	I adjure	put ~ under oath	ἐξορκίζω	verb	V-PAI-1S
 n40026063011	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n40026063012	κατὰ-1	κατὰ	G2596	by	by	κατά	prep	PREP
 n40026063013	τοῦ-1	τοῦ	G3588	-	the	ὁ	det	T-GSM
@@ -17010,7 +17010,7 @@ n40027001014	κατὰ-1	κατὰ	G2596	against	against	κατά	prep	PREP
 n40027001015	τοῦ-2	τοῦ	G3588	-		ὁ	det	T-GSM
 n40027001016	Ἰησοῦ-1	Ἰησοῦ	G2424	Jesus	Jesus	Ἰησοῦς	noun	N-GSM
 n40027001017	ὥστε-1	ὥστε	G5620	so that	to	ὥστε	conj	CONJ
-n40027001018	θανατῶσαι-1	θανατῶσαι	G2289	they might put to death	put ~ todeath	θανατόω	verb	V-AAN
+n40027001018	θανατῶσαι-1	θανατῶσαι	G2289	they might put to death	put ~ to death	θανατόω	verb	V-AAN
 n40027001019	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n40027002001	καὶ-1	καὶ	G2532	And	and	καί	conj	CONJ
 n40027002002	δήσαντες-1	δήσαντες	G1210	having bound	bound	δέω	verb	V-AAP-NPM
@@ -17261,7 +17261,7 @@ n40027019012	αὐτοῦ-2	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
 n40027019013	λέγουσα-1	λέγουσα	G3004	saying	saying	λέγω	verb	V-PAP-NSF
 n40027019014	Μηδὲν-1	Μηδὲν	G3367	[Let there be] nothing	nothing	μηδείς	adj	A-NSN-N
 n40027019015	σοὶ-1	σοὶ	G4671	between you	you	σύ	pron	P-2DS
-n40027019016	καὶ-1	καὶ	G2532	and	have ~ todo with	καί	conj	CONJ
+n40027019016	καὶ-1	καὶ	G2532	and	have ~ to do with	καί	conj	CONJ
 n40027019017	τῷ-1	τῷ	G3588	the		ὁ	det	T-DSM
 n40027019018	δικαίῳ-1	δικαίῳ	G1342	righteous [man]	righteous	δίκαιος	adj	A-DSM
 n40027019019	ἐκείνῳ-1	ἐκείνῳ	G1565	that	that	ἐκεῖνος	pron	D-DSM
@@ -17289,7 +17289,7 @@ n40027020013	Βαραββᾶν-1	Βαραββᾶν	G0912	Barabbas	Barabbas	Βα�
 n40027020014	τὸν-2	τὸν	G3588	-		ὁ	det	T-ASM
 n40027020015	δὲ-2	δὲ	G1161	and	and	δέ	conj	CONJ
 n40027020016	Ἰησοῦν-1	Ἰησοῦν	G2424	Jesus	Jesus	Ἰησοῦς	noun	N-ASM
-n40027020017	ἀπολέσωσιν-1	ἀπολέσωσιν	G0622	should destroy	put ~ todeath	ἀπόλλυμι	verb	V-AAS-3P
+n40027020017	ἀπολέσωσιν-1	ἀπολέσωσιν	G0622	should destroy	put ~ to death	ἀπόλλυμι	verb	V-AAS-3P
 n40027021001	ἀποκριθεὶς-1	ἀποκριθεὶς	G0611	Answering	answered	ἀποκρίνομαι	verb	V-AOP-NSM
 n40027021002	δὲ-1	δὲ	G1161	now	again	δέ	conj	CONJ
 n40027021003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
@@ -17706,7 +17706,7 @@ n40027048012	ὄξους-1	ὄξους	G3690	with vinegar	sour wine	ὄξος	no
 n40027048013	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
 n40027048014	περιθεὶς-1	περιθεὶς	G4060	having put [it] on	put ~ on	περιτίθημι	verb	V-2AAP-NSM
 n40027048015	καλάμῳ-1	καλάμῳ	G2563	a reed	reed	κάλαμος	noun	N-DSM
-n40027048016	ἐπότιζεν-1	ἐπότιζεν	G4222	gave to drink	gave ~ todrink	ποτίζω	verb	V-IAI-3S
+n40027048016	ἐπότιζεν-1	ἐπότιζεν	G4222	gave to drink	gave ~ to drink	ποτίζω	verb	V-IAI-3S
 n40027048017	αὐτόν-1	αὐτόν	G0846	Him	him	αὐτός	pron	P-ASM
 n40027049001	οἱ-1	οἱ	G3588	-	the	ὁ	det	T-NPM
 n40027049002	δὲ-1	δὲ	G1161	And	but	δέ	conj	CONJ
@@ -21029,7 +21029,7 @@ n41005015009	δαιμονιζόμενον-1	δαιμονιζόμενον	G1139	p
 n41005015010	καθήμενον-1	καθήμενον	G2521	sitting	sitting	κάθημαι	verb	V-PNP-ASM
 n41005015011	ἱματισμένον-1	ἱματισμένον	G2439	clothed	clothed	ἱματίζω	verb	V-RPP-ASM
 n41005015012	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
-n41005015013	σωφρονοῦντα-1	σωφρονοῦντα	G4993	sound minded	in ~ rightmind	σωφρονέω	verb	V-PAP-ASM
+n41005015013	σωφρονοῦντα-1	σωφρονοῦντα	G4993	sound minded	in ~ right mind	σωφρονέω	verb	V-PAP-ASM
 n41005015014	τὸν-3	τὸν	G3588	the [one]	the	ὁ	det	T-ASM
 n41005015015	ἐσχηκότα-1	ἐσχηκότα	G2192	having had	had	ἔχω	verb	V-RAP-ASM
 n41005015016	τὸν-4	τὸν	G3588	the	the	ὁ	det	T-ASM
@@ -24396,7 +24396,7 @@ n41009040009	ἐστιν-1	ἐστιν	G2076	is	is	εἰμί	verb	V-PAI-3S
 n41009041001	Ὃς-1	Ὃς	G3739	Whoever	whoever	ὅς	pron	R-NSM
 n41009041002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
 n41009041003	ἂν-1	ἂν	G0302	-	*	ἄν	ptcl	PRT
-n41009041004	ποτίσῃ-1	ποτίσῃ	G4222	might give to drink	gives ~ todrink	ποτίζω	verb	V-AAS-3S
+n41009041004	ποτίσῃ-1	ποτίσῃ	G4222	might give to drink	gives ~ to drink	ποτίζω	verb	V-AAS-3S
 n41009041005	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
 n41009041006	ποτήριον-1	ποτήριον	G4221	a cup	cup	ποτήριον	noun	N-ASN
 n41009041007	ὕδατος-1	ὕδατος	G5204	of water	water	ὕδωρ	noun	N-GSN
@@ -24418,7 +24418,7 @@ n41009041022	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
 n41009042001	Καὶ-1	Καὶ	G2532	And	and	καί	conj	CONJ
 n41009042002	ὃς-1	ὃς	G3739	whoever	*whoever	ὅς	pron	R-NSM
 n41009042003	ἂν-1	ἂν	G0302	-	*	ἄν	ptcl	PRT
-n41009042004	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	might cause to stumble	causes ~ tosin	σκανδαλίζω	verb	V-AAS-3S
+n41009042004	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	might cause to stumble	causes ~ to sin	σκανδαλίζω	verb	V-AAS-3S
 n41009042005	ἕνα-1	ἕνα	G1520	one	one	εἷς	adj	A-ASM
 n41009042006	τῶν-1	τῶν	G3588	of the	ones	ὁ	det	T-GPM
 n41009042007	μικρῶν-1	μικρῶν	G3398	little ones	little	μικρός	adj	A-GPM
@@ -24446,7 +24446,7 @@ n41009042028	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n41009042029	θάλασσαν-1	θάλασσαν	G2281	sea	sea	θάλασσα	noun	N-ASF
 n41009043001	Καὶ-1	Καὶ	G2532	And	and	καί	conj	CONJ
 n41009043002	ἐὰν-1	ἐὰν	G1437	if	if	ἐάν	conj	COND
-n41009043003	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624		causes ~ tosin	σκανδαλίζω	verb	V-PAS-3S
+n41009043003	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624		causes ~ to sin	σκανδαλίζω	verb	V-PAS-3S
 n41009043004	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n41009043005	ἡ-1	ἡ	G3588	the	the	ὁ	det	T-NSF
 n41009043006	χείρ-1	χείρ	G5495	hand	hand	χείρ	noun	N-NSF
@@ -24480,7 +24480,7 @@ n41009045002	ἐὰν-1	ἐὰν	G1437	if	if	ἐάν	conj	COND
 n41009045003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n41009045004	πούς-1	πούς	G4228	foot	foot	πούς	noun	N-NSM
 n41009045005	σου-1	σου	G4675	of you	your	σύ	pron	P-2GS
-n41009045006	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624	should cause to stumble	causes ~ tosin	σκανδαλίζω	verb	V-PAS-3S
+n41009045006	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624	should cause to stumble	causes ~ to sin	σκανδαλίζω	verb	V-PAS-3S
 n41009045007	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n41009045008	ἀπόκοψον-1	ἀπόκοψον	G0609	cut off	cut ~ off	ἀποκόπτω	verb	V-AAM-2S
 n41009045009	αὐτόν-1	αὐτόν	G0846	it	it	αὐτός	pron	P-ASM
@@ -24506,7 +24506,7 @@ n41009047002	ἐὰν-1	ἐὰν	G1437	if	if	ἐάν	conj	COND
 n41009047003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n41009047004	ὀφθαλμός-1	ὀφθαλμός	G3788	eye	eye	ὀφθαλμός	noun	N-NSM
 n41009047005	σου-1	σου	G4675	of you	your	σύ	pron	P-2GS
-n41009047006	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624	should cause to stumble	causes ~ tosin	σκανδαλίζω	verb	V-PAS-3S
+n41009047006	σκανδαλίζῃ-1	σκανδαλίζῃ	G4624	should cause to stumble	causes ~ to sin	σκανδαλίζω	verb	V-PAS-3S
 n41009047007	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n41009047008	ἔκβαλε-1	ἔκβαλε	G1544	cast out	tear ~ out	ἐκβάλλω	verb	V-2AAM-2S
 n41009047009	αὐτόν-1	αὐτόν	G0846	it	it	αὐτός	pron	P-ASM
@@ -24550,7 +24550,7 @@ n41009050004	ἐὰν-1	ἐὰν	G1437	if	if	ἐάν	conj	COND
 n41009050005	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
 n41009050006	τὸ-2	τὸ	G3588	the	the	ὁ	det	T-NSN
 n41009050007	ἅλας-2	ἅλας	G0217	salt	salt	ἅλας	noun	N-NSN
-n41009050008	ἄναλον-1	ἄναλον	G0358	unsalty	deprived of ~ saltcontent	ἄναλος	adj	A-NSN
+n41009050008	ἄναλον-1	ἄναλον	G0358	unsalty	deprived of ~ salt content	ἄναλος	adj	A-NSN
 n41009050009	γένηται-1	γένηται	G1096	becomes	becomes	γίνομαι	verb	V-2ADS-3S
 n41009050010	ἐν-1	ἐν	G1722	with	by	ἐν	prep	PREP
 n41009050011	τίνι-1	τίνι	G5101	what	what	τίς	pron	I-DSN
@@ -26068,7 +26068,7 @@ n41012004005	αὐτοὺς-1	αὐτοὺς	G0848	them	them	ἑαυτοῦ	pron
 n41012004006	ἄλλον-1	ἄλλον	G0243	another	another	ἄλλος	adj	A-ASM
 n41012004007	δοῦλον-1	δοῦλον	G1401	servant	servant	δοῦλος	noun	N-ASM
 n41012004008	κἀκεῖνον-1	κἀκεῖνον	G2548	and him	him	κἀκεῖνος	pron	D-ASM-K
-n41012004009	ἐκεφαλίωσαν-1	ἐκεφαλίωσαν	G2775	they struck on the head	wounded ~ inthe head	κεφαλιόω	verb	V-AAI-3P
+n41012004009	ἐκεφαλίωσαν-1	ἐκεφαλίωσαν	G2775	they struck on the head	wounded ~ in the head	κεφαλιόω	verb	V-AAI-3P
 n41012004010	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n41012004011	ἠτίμασαν-1	ἠτίμασαν	G0818	treated shamefully	treated ~ shamefully	ἀτιμάζω	verb	V-AAI-3P
 n41012005001	καὶ-1	καὶ	G2532	And	and	καί	conj	CONJ
@@ -26309,7 +26309,7 @@ n41012018008	ἀνάστασιν-1	ἀνάστασιν	G0386	a resurrection	resu
 n41012018009	μὴ-1	μὴ	G3361	not	no	μή	adv	PRT-N
 n41012018010	εἶναι-1	εἶναι	G1511	there is	there is	εἰμί	verb	V-PAN
 n41012018011	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n41012018012	ἐπηρώτων-1	ἐπηρώτων	G1905	they began questioning	asked ~ aquestion	ἐπερωτάω	verb	V-IAI-3P
+n41012018012	ἐπηρώτων-1	ἐπηρώτων	G1905	they began questioning	asked ~ a question	ἐπερωτάω	verb	V-IAI-3P
 n41012018013	αὐτὸν-1	αὐτὸν	G0846	Him	him	αὐτός	pron	P-ASM
 n41012018014	λέγοντες-1	λέγοντες	G3004	saying	saying	λέγω	verb	V-PAP-NPM
 n41012019001	Διδάσκαλε-1	Διδάσκαλε	G1320	Teacher	teacher	διδάσκαλος	noun	N-VSM
@@ -27183,7 +27183,7 @@ n41013022017	ἐκλεκτούς-1	ἐκλεκτούς	G1588	elect	elect	ἐκλ
 n41013023001	ὑμεῖς-1	ὑμεῖς	G5210	You	you	σύ	pron	P-2NP
 n41013023002	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
 n41013023003	βλέπετε-1	βλέπετε	G0991	take heed	take heed	βλέπω	verb	V-PAM-2P
-n41013023004	προείρηκα-1	προείρηκα	G4302	I have foretold	told ~ aheadof time	προλέγω	verb	V-RAI-1S
+n41013023004	προείρηκα-1	προείρηκα	G4302	I have foretold	told ~ ahead of time	προλέγω	verb	V-RAI-1S
 n41013023005	ὑμῖν-1	ὑμῖν	G5213	to you	you	σύ	pron	P-2DP
 n41013023006	πάντα-1	πάντα	G3956	all things	everything	πᾶς	adj	A-APN
 n41013024001	Ἀλλὰ-1	Ἀλλὰ	G0235	But	but	ἀλλά	conj	CONJ
@@ -28310,7 +28310,7 @@ n41014055011	Ἰησοῦ-1	Ἰησοῦ	G2424	Jesus	Jesus	Ἰησοῦς	noun	N
 n41014055012	μαρτυρίαν-1	μαρτυρίαν	G3141	testimony	testimony	μαρτυρία	noun	N-ASF
 n41014055013	εἰς-1	εἰς	G1519	to	to	εἰς	prep	PREP
 n41014055014	τὸ-2	τὸ	G3588	-		ὁ	det	T-ASN
-n41014055015	θανατῶσαι-1	θανατῶσαι	G2289	put to death	put ~ todeath	θανατόω	verb	V-AAN
+n41014055015	θανατῶσαι-1	θανατῶσαι	G2289	put to death	put ~ to death	θανατόω	verb	V-AAN
 n41014055016	αὐτόν-1	αὐτόν	G0846	Him	him	αὐτός	pron	P-ASM
 n41014055017	καὶ-2	καὶ	G2532	but	but	καί	conj	CONJ
 n41014055018	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
@@ -28668,7 +28668,7 @@ n41015004010	οὐδέν-1	οὐδέν	G3762	nothing	anything	οὐδείς	adj	
 n41015004011	ἴδε-1	ἴδε	G2396	See	see	ἴδε	ptcl	V-2AAM-2S
 n41015004012	πόσα-1	πόσα	G4214	how many things	how many	πόσος	pron	Q-APN
 n41015004013	σου-1	σου	G4675	You	you	σύ	pron	P-2GS
-n41015004014	κατηγοροῦσιν-1	κατηγοροῦσιν	G2723	they testify against	charges ~ bringagainst	κατηγορέω	verb	V-PAI-3P
+n41015004014	κατηγοροῦσιν-1	κατηγοροῦσιν	G2723	they testify against	charges ~ bring against	κατηγορέω	verb	V-PAI-3P
 n41015005001	ὁ-1	ὁ	G3588	-		ὁ	det	T-NSM
 n41015005002	δὲ-1	δὲ	G1161	But	but	δέ	conj	CONJ
 n41015005003	Ἰησοῦς-1	Ἰησοῦς	G2424	Jesus	Jesus	Ἰησοῦς	noun	N-NSM
@@ -29084,7 +29084,7 @@ n41015036006	σπόγγον-1	σπόγγον	G4699	a sponge	sponge	σπόγγο�
 n41015036007	ὄξους-1	ὄξους	G3690	with vinegar	sour wine	ὄξος	noun	N-GSN
 n41015036008	περιθεὶς-1	περιθεὶς	G4060	having put [it] on	put ~ on	περιτίθημι	verb	V-2AAP-NSM
 n41015036009	καλάμῳ-1	καλάμῳ	G2563	a reed	reed	κάλαμος	noun	N-DSM
-n41015036010	ἐπότιζεν-1	ἐπότιζεν	G4222	gave to drink	gave ~ todrink	ποτίζω	verb	V-IAI-3S
+n41015036010	ἐπότιζεν-1	ἐπότιζεν	G4222	gave to drink	gave ~ to drink	ποτίζω	verb	V-IAI-3S
 n41015036011	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n41015036012	λέγων-1	λέγων	G3004	saying	saying	λέγω	verb	V-PAP-NSM
 n41015036013	Ἄφετε-1	Ἄφετε	G0863	Let be	leave	ἀφίημι	verb	V-2AAM-2P
@@ -29922,7 +29922,7 @@ n42001019017	λαλῆσαι-1	λαλῆσαι	G2980	to speak	speak	λαλέω	v
 n42001019018	πρὸς-1	πρὸς	G4314	to	to	πρός	prep	PREP
 n42001019019	σὲ-1	σὲ	G4571	you	you	σύ	pron	P-2AS
 n42001019020	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
-n42001019021	εὐαγγελίσασθαί-1	εὐαγγελίσασθαί	G2097	to bring glad tidings	bring ~ goodnews	εὐαγγελίζω	verb	V-AMN
+n42001019021	εὐαγγελίσασθαί-1	εὐαγγελίσασθαί	G2097	to bring glad tidings	bring ~ good news	εὐαγγελίζω	verb	V-AMN
 n42001019022	σοι-1	σοι	G4671	to you	you	σύ	pron	P-2DS
 n42001019023	ταῦτα-1	ταῦτα	G5023	these	this	οὗτος	pron	D-APN
 n42001020001	καὶ-1	καὶ	G2532	And	and	καί	conj	CONJ
@@ -30014,7 +30014,7 @@ n42001024008	ἡ-1	ἡ	G3588	the	the	ὁ	det	T-NSF
 n42001024009	γυνὴ-1	γυνὴ	G1135	wife	wife	γυνή	noun	N-NSF
 n42001024010	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
 n42001024011	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n42001024012	περιέκρυβεν-1	περιέκρυβεν	G4032	hid	kept ~ inseclusion	περικρύβω	verb	V-IAI-3S
+n42001024012	περιέκρυβεν-1	περιέκρυβεν	G4032	hid	kept ~ in seclusion	περικρύβω	verb	V-IAI-3S
 n42001024013	ἑαυτὴν-1	ἑαυτὴν	G1438	herself	herself	ἑαυτοῦ	pron	F-3ASF
 n42001024014	μῆνας-1	μῆνας	G3376	months	months	μήν	noun	N-APM
 n42001024015	πέντε-1	πέντε	G4002	five	five	πέντε	num	A-NUI
@@ -30889,7 +30889,7 @@ n42002007005	αὐτῆς-1	αὐτῆς	G0846	of her	her	αὐτός	pron	P-GSF
 n42002007006	τὸν-2	τὸν	G3588	the	the	ὁ	det	T-ASM
 n42002007007	πρωτότοκον-1	πρωτότοκον	G4416	firstborn	firstborn	πρωτότοκος	adj	A-ASM-S
 n42002007008	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
-n42002007009	ἐσπαργάνωσεν-1	ἐσπαργάνωσεν	G4683	wrapped in swaddling cloths	wrapped ~ incloths	σπαργανόω	verb	V-AAI-3S
+n42002007009	ἐσπαργάνωσεν-1	ἐσπαργάνωσεν	G4683	wrapped in swaddling cloths	wrapped ~ in cloths	σπαργανόω	verb	V-AAI-3S
 n42002007010	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
 n42002007011	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
 n42002007012	ἀνέκλινεν-1	ἀνέκλινεν	G0347	laid	laid	ἀνακλίνω	verb	V-AAI-3S
@@ -30945,7 +30945,7 @@ n42002010006	Μὴ-1	Μὴ	G3361	Not	not	μή	adv	PRT-N
 n42002010007	φοβεῖσθε-1	φοβεῖσθε	G5399	fear	afraid	φοβέομαι	verb	V-PNM-2P
 n42002010008	ἰδοὺ-1	ἰδοὺ	G2400	behold	behold	ἰδού	ptcl	V-2AMM-2S
 n42002010009	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
-n42002010010	εὐαγγελίζομαι-1	εὐαγγελίζομαι	G2097	I bring good news	bring ~ goodnews	εὐαγγελίζω	verb	V-PMI-1S
+n42002010010	εὐαγγελίζομαι-1	εὐαγγελίζομαι	G2097	I bring good news	bring ~ good news	εὐαγγελίζω	verb	V-PMI-1S
 n42002010011	ὑμῖν-1	ὑμῖν	G5213	to you	you	σύ	pron	P-2DP
 n42002010012	χαρὰν-1	χαρὰν	G5479	[of] joy	joy	χαρά	noun	N-ASF
 n42002010013	μεγάλην-1	μεγάλην	G3173	great	great	μέγας	adj	A-ASF
@@ -32423,7 +32423,7 @@ n42004012006	Ἰησοῦς-1	Ἰησοῦς	G2424	Jesus	Jesus	Ἰησοῦς	no
 n42004012007	ὅτι-1	ὅτι	G3754	-		ὅτι	conj	CONJ
 n42004012008	Εἴρηται-1	Εἴρηται	G2046	It has been said	said	λέγω	verb	V-RPI-3S
 n42004012009	Οὐκ-1	Οὐκ	G3756	Not	not	οὐ	adv	PRT-N
-n42004012010	ἐκπειράσεις-1	ἐκπειράσεις	G1598	you shall test	put ~ tothe test	ἐκπειράζω	verb	V-FAI-2S
+n42004012010	ἐκπειράσεις-1	ἐκπειράσεις	G1598	you shall test	put ~ to the test	ἐκπειράζω	verb	V-FAI-2S
 n42004012011	κύριον-1	κύριον	G2962	[the] Lord	Lord	κύριος	noun	N-ASM
 n42004012012	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n42004012013	θεόν-1	θεόν	G2316	God	God	θεός	noun	N-ASM
@@ -34356,7 +34356,7 @@ n42006035007	ἀγαθοποιεῖτε-1	ἀγαθοποιεῖτε	G0015	do go
 n42006035008	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n42006035009	δανίζετε-1	δανίζετε	G1155	lend	lend	δανείζω	verb	V-PAM-2P
 n42006035010	μηδὲν-1	μηδὲν	G3367	nothing	nothing	μηδείς	adj	A-ASN-N
-n42006035011	ἀπελπίζοντες-1	ἀπελπίζοντες	G0560	expecting in return	expecting ~ inreturn	ἀπελπίζω	verb	V-PAP-NPM
+n42006035011	ἀπελπίζοντες-1	ἀπελπίζοντες	G0560	expecting in return	expecting ~ in return	ἀπελπίζω	verb	V-PAP-NPM
 n42006035012	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
 n42006035013	ἔσται-1	ἔσται	G2071	will be	be	εἰμί	verb	V-FDI-3S
 n42006035014	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
@@ -35840,7 +35840,7 @@ n42008014020	πορευόμενοι-1	πορευόμενοι	G4198	moving along	
 n42008014021	συμπνίγονται-1	συμπνίγονται	G4846	are choked	choked	συμπνίγω	verb	V-PPI-3P
 n42008014022	καὶ-4	καὶ	G2532	and	and	καί	conj	CONJ
 n42008014023	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
-n42008014024	τελεσφοροῦσιν-1	τελεσφοροῦσιν	G5052	do mature	bring ~ fruitto maturity	τελεσφορέω	verb	V-PAI-3P
+n42008014024	τελεσφοροῦσιν-1	τελεσφοροῦσιν	G5052	do mature	bring ~ fruit to maturity	τελεσφορέω	verb	V-PAI-3P
 n42008015001	τὸ-1	τὸ	G3588	That	the	ὁ	det	T-NSN
 n42008015002	δὲ-1	δὲ	G1161	now	but	δέ	conj	CONJ
 n42008015003	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
@@ -40111,7 +40111,7 @@ n42012032003	τὸ-1	τὸ	G3588	-		ὁ	det	T-NSN
 n42012032004	μικρὸν-1	μικρὸν	G3398	little	little	μικρός	adj	A-NSN
 n42012032005	ποίμνιον-1	ποίμνιον	G4168	flock	flock	ποίμνιον	noun	N-NSN
 n42012032006	ὅτι-1	ὅτι	G3754	for	for	ὅτι	conj	CONJ
-n42012032007	εὐδόκησεν-1	εὐδόκησεν	G2106	took delight	is ~ goodpleasure	εὐδοκέω	verb	V-AAI-3S
+n42012032007	εὐδόκησεν-1	εὐδόκησεν	G2106	took delight	is ~ good pleasure	εὐδοκέω	verb	V-AAI-3S
 n42012032008	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n42012032009	πατὴρ-1	πατὴρ	G3962	Father	father	πατήρ	noun	N-NSM
 n42012032010	ὑμῶν-1	ὑμῶν	G5216	of you	your	σύ	pron	P-2GP
@@ -40318,7 +40318,7 @@ n42012044006	πᾶσιν-1	πᾶσιν	G3956	all	all	πᾶς	adj	A-DPN
 n42012044007	τοῖς-1	τοῖς	G3588	the	the	ὁ	det	T-DPN
 n42012044008	ὑπάρχουσιν-1	ὑπάρχουσιν	G5224	possessions	possessions	ὑπάρχω	verb	V-PAP-DPN
 n42012044009	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
-n42012044010	καταστήσει-1	καταστήσει	G2525	he will set	put ~ incharge	καθίστημι	verb	V-FAI-3S
+n42012044010	καταστήσει-1	καταστήσει	G2525	he will set	put ~ in charge	καθίστημι	verb	V-FAI-3S
 n42012044011	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n42012045001	ἐὰν-1	ἐὰν	G1437	If	if	ἐάν	conj	COND
 n42012045002	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
@@ -40367,7 +40367,7 @@ n42012046015	ᾗ-2	ᾗ	G3739	that	that	ὅς	pron	R-DSF
 n42012046016	οὐ-2	οὐ	G3756	not	not	οὐ	adv	PRT-N
 n42012046017	γινώσκει-1	γινώσκει	G1097	he knows	know	γινώσκω	verb	V-PAI-3S
 n42012046018	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
-n42012046019	διχοτομήσει-1	διχοτομήσει	G1371	he will cut in two	cut ~ inpieces	διχοτομέω	verb	V-FAI-3S
+n42012046019	διχοτομήσει-1	διχοτομήσει	G1371	he will cut in two	cut ~ in pieces	διχοτομέω	verb	V-FAI-3S
 n42012046020	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
 n42012046021	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
 n42012046022	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-ASN
@@ -41474,7 +41474,7 @@ n42014012027	πλουσίους-1	πλουσίους	G4145	rich	rich	πλούσ�
 n42014012028	μήποτε-1	μήποτε	G3379		lest	μήποτε	conj	CONJ
 n42014012029	καὶ-2	καὶ	G2532	also	also	καί	adv	CONJ
 n42014012030	αὐτοὶ-1	αὐτοὶ	G0846	they	they	αὐτός	pron	P-NPM
-n42014012031	ἀντικαλέσωσίν-1	ἀντικαλέσωσίν	G0479	should invite in return	invite ~ inreturn	ἀντικαλέω	verb	V-AAS-3P
+n42014012031	ἀντικαλέσωσίν-1	ἀντικαλέσωσίν	G0479	should invite in return	invite ~ in return	ἀντικαλέω	verb	V-AAS-3P
 n42014012032	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n42014012033	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
 n42014012034	γένηται-1	γένηται	G1096	be made	be	γίνομαι	verb	V-2ADS-3S
@@ -43070,7 +43070,7 @@ n42017002014	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n42017002015	θάλασσαν-1	θάλασσαν	G2281	sea	sea	θάλασσα	noun	N-ASF
 n42017002016	ἢ-1	ἢ	G2228	than	than	ἤ	conj	PRT
 n42017002017	ἵνα-1	ἵνα	G2443	that	that	ἵνα	conj	CONJ
-n42017002018	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	he should cause to stumble	cause ~ tostumble	σκανδαλίζω	verb	V-AAS-3S
+n42017002018	σκανδαλίσῃ-1	σκανδαλίσῃ	G4624	he should cause to stumble	cause ~ to stumble	σκανδαλίζω	verb	V-AAS-3S
 n42017002019	τῶν-1	τῶν	G3588	-		ὁ	det	T-GPM
 n42017002020	μικρῶν-1	μικρῶν	G3398	little	little	μικρός	adj	A-GPM
 n42017002021	τούτων-1	τούτων	G5130	of these	these	οὗτος	pron	D-GPM
@@ -44951,7 +44951,7 @@ n42019043017	συνέξουσίν-1	συνέξουσίν	G4912	will hem in	hem ~
 n42019043018	σε-2	σε	G4571	you	you	σύ	pron	P-2AS
 n42019043019	πάντοθεν-1	πάντοθεν	G3840	on every side	on every side	πάντοθεν	adv	ADV
 n42019044001	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n42019044002	ἐδαφιοῦσίν-1	ἐδαφιοῦσίν	G1474	will level to the ground	crush ~ tothe ground	ἐδαφίζω	verb	V-FAI-3P-ATT
+n42019044002	ἐδαφιοῦσίν-1	ἐδαφιοῦσίν	G1474	will level to the ground	crush ~ to the ground	ἐδαφίζω	verb	V-FAI-3P-ATT
 n42019044003	σε-1	σε	G4571	you	you	σύ	pron	P-2AS
 n42019044004	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n42019044005	τὰ-1	τὰ	G3588	the	the	ὁ	det	T-APN
@@ -45979,7 +45979,7 @@ n42021016009	συγγενῶν-1	συγγενῶν	G4773	relatives	relatives	σ�
 n42021016010	καὶ-4	καὶ	G2532	and	and	καί	conj	CONJ
 n42021016011	φίλων-1	φίλων	G5384	friends	friends	φίλος	adj	A-GPM
 n42021016012	καὶ-5	καὶ	G2532	and	and	καί	conj	CONJ
-n42021016013	θανατώσουσιν-1	θανατώσουσιν	G2289	they will put to death	put ~ todeath	θανατόω	verb	V-FAI-3P
+n42021016013	θανατώσουσιν-1	θανατώσουσιν	G2289	they will put to death	put ~ to death	θανατόω	verb	V-FAI-3P
 n42021016014	ἐξ-1	ἐξ	G1537	[some] from among	some of	ἐκ	prep	PREP
 n42021016015	ὑμῶν-1	ὑμῶν	G5216	you	you	σύ	pron	P-2GP
 n42021017001	καὶ-1	καὶ	G2532	And	and	καί	conj	CONJ
@@ -46340,7 +46340,7 @@ n42022002006	οἱ-2	οἱ	G3588	the	the	ὁ	det	T-NPM
 n42022002007	γραμματεῖς-1	γραμματεῖς	G1122	scribes	scribes	γραμματεύς	noun	N-NPM
 n42022002008	τὸ-1	τὸ	G3588	-		ὁ	det	T-ASN
 n42022002009	πῶς-1	πῶς	G4459	how	how	πῶς	adv	ADV-I
-n42022002010	ἀνέλωσιν-1	ἀνέλωσιν	G0337	they might put to death	put ~ todeath	ἀναιρέω	verb	V-2AAS-3P
+n42022002010	ἀνέλωσιν-1	ἀνέλωσιν	G0337	they might put to death	put ~ to death	ἀναιρέω	verb	V-2AAS-3P
 n42022002011	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n42022002012	ἐφοβοῦντο-1	ἐφοβοῦντο	G5399	they were afraid	afraid of	φοβέομαι	verb	V-INI-3P
 n42022002013	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
@@ -47573,7 +47573,7 @@ n42023010007	γραμματεῖς-1	γραμματεῖς	G1122	scribes	scribes
 n42023010008	εὐτόνως-1	εὐτόνως	G2159	vehemently	vehemently	εὐτόνως	adv	ADV
 n42023010009	κατηγοροῦντες-1	κατηγοροῦντες	G2723	accusing	accusing	κατηγορέω	verb	V-PAP-NPM
 n42023010010	αὐτοῦ-1	αὐτοῦ	G0846	Him	him	αὐτός	pron	P-GSM
-n42023011001	ἐξουθενήσας-1	ἐξουθενήσας	G1848	Having set at naught	treated ~ withcontempt	ἐξουθενέω	verb	V-AAP-NSM
+n42023011001	ἐξουθενήσας-1	ἐξουθενήσας	G1848	Having set at naught	treated ~ with contempt	ἐξουθενέω	verb	V-AAP-NSM
 n42023011002	δὲ-1	δὲ	G1161	then	and	δέ	conj	CONJ
 n42023011003	αὐτὸν-1	αὐτὸν	G0846	Him	him	αὐτός	pron	P-ASM
 n42023011004	καὶ-1	καὶ	G2532		then	καί	adv	ADV
@@ -51102,7 +51102,7 @@ n43004009017	Σαμαρίτιδος-1	Σαμαρίτιδος	G4542	Samaritan	Sam
 n43004009018	οὔσης-1	οὔσης	G5607	being	am	εἰμί	verb	V-PAP-GSF
 n43004009019	οὐ-1	οὐ	G3756	Not	not	οὐ	adv	PRT-N
 n43004009020	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
-n43004009021	συγχρῶνται-1	συγχρῶνται	G4798	have association	have ~ dealingswith	συγχράομαι	verb	V-PNI-3P
+n43004009021	συγχρῶνται-1	συγχρῶνται	G4798	have association	have ~ dealings with	συγχράομαι	verb	V-PNI-3P
 n43004009022	Ἰουδαῖοι-1	Ἰουδαῖοι	G2453	Jews	jews	Ἰουδαῖος	adj	A-NPM
 n43004009023	Σαμαρίταις-1	Σαμαρίταις	G4541	with Samaritans	Samaritans	Σαμαρίτης	noun	N-DPM
 n43004010001	ἀπεκρίθη-1	ἀπεκρίθη	G0611	Answered	answered	ἀποκρίνομαι	verb	V-ADI-3S
@@ -52922,7 +52922,7 @@ n43006015004	ὅτι-1	ὅτι	G3754	that	that	ὅτι	conj	CONJ
 n43006015005	μέλλουσιν-1	μέλλουσιν	G3195	they are about	were about to	μέλλω	verb	V-PAI-3P
 n43006015006	ἔρχεσθαι-1	ἔρχεσθαι	G2064	to come	come	ἔρχομαι	verb	V-PNN
 n43006015007	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n43006015008	ἁρπάζειν-1	ἁρπάζειν	G0726	to seize	take ~ byforce	ἁρπάζω	verb	V-PAN
+n43006015008	ἁρπάζειν-1	ἁρπάζειν	G0726	to seize	take ~ by force	ἁρπάζω	verb	V-PAN
 n43006015009	αὐτὸν-1	αὐτὸν	G0846	Him	him	αὐτός	pron	P-ASM
 n43006015010	ἵνα-1	ἵνα	G2443	that	to	ἵνα	conj	CONJ
 n43006015011	ποιήσωσιν-1	ποιήσωσιν	G4160	they might make [Him]	make	ποιέω	verb	V-AAS-3P
@@ -56970,7 +56970,7 @@ n43010024010	πότε-1	πότε	G4219	when	when	πότε	adv	PRT-I
 n43010024011	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n43010024012	ψυχὴν-1	ψυχὴν	G5590	soul	soul	ψυχή	noun	N-ASF
 n43010024013	ἡμῶν-1	ἡμῶν	G2257	of us	us	ἐγώ	pron	P-1GP
-n43010024014	αἴρεις-1	αἴρεις	G0142	hold You in suspense	keep ~ insuspense	αἴρω	verb	V-PAI-2S
+n43010024014	αἴρεις-1	αἴρεις	G0142	hold You in suspense	keep ~ in suspense	αἴρω	verb	V-PAI-2S
 n43010024015	εἰ-1	εἰ	G1487	If	if	εἰ	conj	COND
 n43010024016	σὺ-1	σὺ	G4771	You	you	σύ	pron	P-2NS
 n43010024017	εἶ-1	εἶ	G1488	are	are	εἰμί	verb	V-PAI-2S
@@ -58053,7 +58053,7 @@ n43011049011	ἐκείνου-1	ἐκείνου	G1565	same	that	ἐκεῖνος	
 n43011049012	εἶπεν-1	εἶπεν	G2036	said	said	λέγω	verb	V-2AAI-3S
 n43011049013	αὐτοῖς-1	αὐτοῖς	G0846	to them	them	αὐτός	pron	P-DPM
 n43011049014	Ὑμεῖς-1	Ὑμεῖς	G5210	You	you	σύ	pron	P-2NP
-n43011049015	οὐ-1	οὐ	G3756	not	not ~ atall	οὐ	adv	PRT-N
+n43011049015	οὐ-1	οὐ	G3756	not	not ~ at all	οὐ	adv	PRT-N
 n43011049016	οἴδατε-1	οἴδατε	G1492	know	know	οἶδα	verb	V-RAI-2P
 n43011049017	οὐδέν-1	οὐδέν	G3762	nothing	anything	οὐδείς	adj	A-ASN-N
 n43011050001	οὐδὲ-1	οὐδὲ	G3761	nor	nor	οὐδέ	conj	CONJ-N
@@ -58119,7 +58119,7 @@ n43011053004	τῆς-1	τῆς	G3588	-		ὁ	det	T-GSF
 n43011053005	ἡμέρας-1	ἡμέρας	G2250	day	day	ἡμέρα	noun	N-GSF
 n43011053006	ἐβουλεύσαντο-1	ἐβουλεύσαντο	G1011	they took counsel together	plotted	βουλεύομαι	verb	V-ADI-3P
 n43011053007	ἵνα-1	ἵνα	G2443	that	to	ἵνα	conj	CONJ
-n43011053008	ἀποκτείνωσιν-1	ἀποκτείνωσιν	G0615	they might kill	put ~ todeath	ἀποκτείνω	verb	V-AAS-3P
+n43011053008	ἀποκτείνωσιν-1	ἀποκτείνωσιν	G0615	they might kill	put ~ to death	ἀποκτείνω	verb	V-AAS-3P
 n43011053009	αὐτόν-1	αὐτόν	G0846	Him	him	αὐτός	pron	P-ASM
 n43011054001	Ὁ-1	Ὁ	G3588	-		ὁ	det	T-NSM
 n43011054002	οὖν-1	οὖν	G3767	Therefore	therefore	οὖν	conj	CONJ
@@ -58386,7 +58386,7 @@ n43012010005	ἵνα-1	ἵνα	G2443	that	to	ἵνα	conj	CONJ
 n43012010006	καὶ-1	καὶ	G2532	also	also	καί	adv	CONJ
 n43012010007	τὸν-1	τὸν	G3588	-		ὁ	det	T-ASM
 n43012010008	Λάζαρον-1	Λάζαρον	G2976	Lazarus	Lazarus	Λάζαρος	noun	N-ASM
-n43012010009	ἀποκτείνωσιν-1	ἀποκτείνωσιν	G0615	they might kill	put ~ todeath	ἀποκτείνω	verb	V-AAS-3P
+n43012010009	ἀποκτείνωσιν-1	ἀποκτείνωσιν	G0615	they might kill	put ~ to death	ἀποκτείνω	verb	V-AAS-3P
 n43012011001	ὅτι-1	ὅτι	G3754	because	because	ὅτι	conj	CONJ
 n43012011002	πολλοὶ-1	πολλοὶ	G4183	many	many	πολύς	adj	A-NPM
 n43012011003	δι’-1	δι	G1223	on account of	on account of	διά	prep	PREP
@@ -62495,7 +62495,7 @@ n43018031019	Ἰουδαῖοι-1	Ἰουδαῖοι	G2453	Jews	jews	Ἰουδα
 n43018031020	Ἡμῖν-1	Ἡμῖν	G2254	To us	us	ἐγώ	pron	P-1DP
 n43018031021	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
 n43018031022	ἔξεστιν-1	ἔξεστιν	G1832	it is permitted	permitted	ἔξεστι(ν)	verb	V-PAI-3S
-n43018031023	ἀποκτεῖναι-1	ἀποκτεῖναι	G0615	to put to death	put ~ todeath	ἀποκτείνω	verb	V-AAN
+n43018031023	ἀποκτεῖναι-1	ἀποκτεῖναι	G0615	to put to death	put ~ to death	ἀποκτείνω	verb	V-AAN
 n43018031024	οὐδένα-1	οὐδένα	G3762	no one	anyone	οὐδείς	adj	A-ASM-N
 n43018032001	ἵνα-1	ἵνα	G2443	that	so that	ἵνα	conj	CONJ
 n43018032002	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
@@ -65591,7 +65591,7 @@ n44002023010	διὰ-1	διὰ	G1223	by	by	διά	prep	PREP
 n44002023011	χειρὸς-1	χειρὸς	G5495	hands	hands	χείρ	noun	N-GSF
 n44002023012	ἀνόμων-1	ἀνόμων	G0459	lawless	lawless	ἄνομος	adj	A-GPM
 n44002023013	προσπήξαντες-1	προσπήξαντες	G4362	having crucified	crucified	προσπήγνυμι	verb	V-AAP-NPM
-n44002023014	ἀνείλατε-1	ἀνείλατε	G0337	You put to death	put ~ todeath	ἀναιρέω	verb	V-AAI-2P
+n44002023014	ἀνείλατε-1	ἀνείλατε	G0337	You put to death	put ~ to death	ἀναιρέω	verb	V-AAI-2P
 n44002024001	ὃν-1	ὃν	G3739	whom	him	ὅς	pron	R-ASM
 n44002024002	ὁ-1	ὁ	G3588	-		ὁ	det	T-NSM
 n44002024003	θεὸς-1	θεὸς	G2316	God	God	θεός	noun	N-NSM
@@ -67444,7 +67444,7 @@ n44005013005	ἐτόλμα-1	ἐτόλμα	G5111	dared	dared	τολμάω	verb	V
 n44005013006	κολλᾶσθαι-1	κολλᾶσθαι	G2853	to join	join	κολλάομαι	verb	V-PPN
 n44005013007	αὐτοῖς-1	αὐτοῖς	G0846	them	them	αὐτός	pron	P-DPM
 n44005013008	ἀλλ’-1	ἀλλ	G0235	but	but	ἀλλά	conj	CONJ
-n44005013009	ἐμεγάλυνεν-1	ἐμεγάλυνεν	G3170	were magnifying	held ~ inhigh esteem	μεγαλύνω	verb	V-IAI-3S
+n44005013009	ἐμεγάλυνεν-1	ἐμεγάλυνεν	G3170	were magnifying	held ~ in high esteem	μεγαλύνω	verb	V-IAI-3S
 n44005013010	αὐτοὺς-1	αὐτοὺς	G0848	them	them	ἑαυτοῦ	pron	P-APM
 n44005013011	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
 n44005013012	λαός-1	λαός	G2992	people	people	λαός	noun	N-NSM
@@ -69093,7 +69093,7 @@ n44007043016	ἐποιήσατε-1	ἐποιήσατε	G4160	you made	made	πο�
 n44007043017	προσκυνεῖν-1	προσκυνεῖν	G4352	to worship	worship	προσκυνέω	verb	V-PAN
 n44007043018	αὐτοῖς-1	αὐτοῖς	G0846	them	them	αὐτός	pron	P-DPM
 n44007043019	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
-n44007043020	μετοικιῶ-1	μετοικιῶ	G3351	I will remove	send ~ intoexile	μετοικίζω	verb	V-FAI-1S-ATT
+n44007043020	μετοικιῶ-1	μετοικιῶ	G3351	I will remove	send ~ into exile	μετοικίζω	verb	V-FAI-1S-ATT
 n44007043021	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
 n44007043022	ἐπέκεινα-1	ἐπέκεινα	G1900	beyond	beyond	ἐπέκεινα	prep	ADV
 n44007043023	Βαβυλῶνος-1	Βαβυλῶνος	G0897	Babylon	Babylon	Βαβυλών	noun	N-GSF
@@ -70194,7 +70194,7 @@ n44009008010	ὀφθαλμῶν-1	ὀφθαλμῶν	G3788	eyes	eyes	ὀφθαλ
 n44009008011	αὐτοῦ-1	αὐτοῦ	G0846	of him	his	αὐτός	pron	P-GSM
 n44009008012	οὐδὲν-1	οὐδὲν	G3762	nothing	nothing	οὐδείς	adj	A-ASN-N
 n44009008013	ἔβλεπεν-1	ἔβλεπεν	G0991	he could see	see	βλέπω	verb	V-IAI-3S
-n44009008014	χειραγωγοῦντες-1	χειραγωγοῦντες	G5496	Leading by the hand	led ~ bythe hand	χειραγωγέω	verb	V-PAP-NPM
+n44009008014	χειραγωγοῦντες-1	χειραγωγοῦντες	G5496	Leading by the hand	led ~ by the hand	χειραγωγέω	verb	V-PAP-NPM
 n44009008015	δὲ-3	δὲ	G1161	then	so	δέ	conj	CONJ
 n44009008016	αὐτὸν-1	αὐτὸν	G0846	him	they	αὐτός	pron	P-ASM
 n44009008017	εἰσήγαγον-1	εἰσήγαγον	G1521	they brought [him]	brought	εἰσάγω	verb	V-2AAI-3P
@@ -70455,7 +70455,7 @@ n44009021031	ἀρχιερεῖς-1	ἀρχιερεῖς	G0749	chief priests	chi
 n44009022001	Σαῦλος-1	Σαῦλος	G4569	Saul	Saul	Σαῦλος	noun	N-NSM
 n44009022002	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
 n44009022003	μᾶλλον-1	μᾶλλον	G3123	all the more	more	μᾶλλον	adv	ADV
-n44009022004	ἐνεδυναμοῦτο-1	ἐνεδυναμοῦτο	G1743	was empowered	increased ~ instrength	ἐνδυναμόω	verb	V-IPI-3S
+n44009022004	ἐνεδυναμοῦτο-1	ἐνεδυναμοῦτο	G1743	was empowered	increased ~ in strength	ἐνδυναμόω	verb	V-IPI-3S
 n44009022005	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n44009022006	συνέχυννεν-1	συνέχυννεν	G4797	kept confounding	confounded	συγχέω	verb	V-IAI-3S
 n44009022007	τοὺς-1	τοὺς	G3588		the	ὁ	det	T-APM
@@ -71528,7 +71528,7 @@ n44010039013	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n44010039014	Ἰερουσαλήμ-1	Ἰερουσαλήμ	G2419	Jerusalem	Jerusalem	Ἰερουσαλήμ	noun	N-PRI
 n44010039015	ὃν-1	ὃν	G3739	whom	him	ὅς	pron	R-ASM
 n44010039016	καὶ-3	καὶ	G2532	also	also	καί	adv	CONJ
-n44010039017	ἀνεῖλαν-1	ἀνεῖλαν	G0337	they put to death	put ~ todeath	ἀναιρέω	verb	V-2AAI-3P
+n44010039017	ἀνεῖλαν-1	ἀνεῖλαν	G0337	they put to death	put ~ to death	ἀναιρέω	verb	V-2AAI-3P
 n44010039018	κρεμάσαντες-1	κρεμάσαντες	G2910	having hanged [Him]	hanging	κρεμάννυμι	verb	V-AAP-NPM
 n44010039019	ἐπὶ-1	ἐπὶ	G1909	on	on	ἐπί	prep	PREP
 n44010039020	ξύλου-1	ξύλου	G3586	a tree	tree	ξύλον	noun	N-GSN
@@ -72923,7 +72923,7 @@ n44013011024	σκότος-1	σκότος	G4655	darkness	darkness	σκότος	no
 n44013011025	καὶ-4	καὶ	G2532	and	and	καί	conj	CONJ
 n44013011026	περιάγων-1	περιάγων	G4013	going about	went about	περιάγω	verb	V-PAP-NSM
 n44013011027	ἐζήτει-1	ἐζήτει	G2212	he was seeking	seeking	ζητέω	verb	V-IAI-3S
-n44013011028	χειραγωγούς-1	χειραγωγούς	G5497	someone to lead [him] by the hand	someone to lead ~ bythe hand	χειραγωγός	noun	N-APM
+n44013011028	χειραγωγούς-1	χειραγωγούς	G5497	someone to lead [him] by the hand	someone to lead ~ by the hand	χειραγωγός	noun	N-APM
 n44013012001	τότε-1	τότε	G5119	Then	then	τότε	adv	ADV
 n44013012002	ἰδὼν-1	ἰδὼν	G3708	having seen	saw	ὁράω	verb	V-2AAP-NSM
 n44013012003	ὁ-1	ὁ	G3588	the	the	ὁ	det	T-NSM
@@ -73067,7 +73067,7 @@ n44013019004	ἑπτὰ-1	ἑπτὰ	G2033	seven	seven	ἑπτά	num	A-NUI
 n44013019005	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
 n44013019006	γῇ-1	γῇ	G1093	[the] land	land	γῆ	noun	N-DSF
 n44013019007	Χανάαν-1	Χανάαν	G5477	of Canaan	Canaan	Χανάαν	noun	N-PRI
-n44013019008	κατεκληρονόμησεν-1	κατεκληρονόμησεν	G2624	He gave as an inheritance	gave ~ asan inheritance	κατακληρονομέω	verb	V-AAI-3S
+n44013019008	κατεκληρονόμησεν-1	κατεκληρονόμησεν	G2624	He gave as an inheritance	gave ~ as an inheritance	κατακληρονομέω	verb	V-AAI-3S
 n44013019009	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n44013019010	γῆν-1	γῆν	G1093	land	land	γῆ	noun	N-ASF
 n44013019011	αὐτῶν-1	αὐτῶν	G0846	of them	their	αὐτός	pron	P-GPM
@@ -73283,7 +73283,7 @@ n44013031021	λαόν-1	λαόν	G2992	people	people	λαός	noun	N-ASM
 n44013032001	καὶ-1	καὶ	G2532	And	and	καί	conj	CONJ
 n44013032002	ἡμεῖς-1	ἡμεῖς	G2249	we	we	ἐγώ	pron	P-1NP
 n44013032003	ὑμᾶς-1	ὑμᾶς	G5209	to you	you	σύ	pron	P-2AP
-n44013032004	εὐαγγελιζόμεθα-1	εὐαγγελιζόμεθα	G2097	preach the gospel	bring ~ thegood news	εὐαγγελίζω	verb	V-PMI-1P
+n44013032004	εὐαγγελιζόμεθα-1	εὐαγγελιζόμεθα	G2097	preach the gospel	bring ~ the good news	εὐαγγελίζω	verb	V-PMI-1P
 n44013032005	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n44013032006	πρὸς-1	πρὸς	G4314	to	to	πρός	prep	PREP
 n44013032007	τοὺς-1	τοὺς	G3588	the	the	ὁ	det	T-APM
@@ -73885,7 +73885,7 @@ n44014015009	ὁμοιοπαθεῖς-1	ὁμοιοπαθεῖς	G3663	of like n
 n44014015010	ἐσμεν-1	ἐσμεν	G2070	are	are	εἰμί	verb	V-PAI-1P
 n44014015011	ὑμῖν-1	ὑμῖν	G5213	with you	you	σύ	pron	P-2DP
 n44014015012	ἄνθρωποι-1	ἄνθρωποι	G0444	men	men	ἄνθρωπος	noun	N-NPM
-n44014015013	εὐαγγελιζόμενοι-1	εὐαγγελιζόμενοι	G2097	proclaiming the gospel	bring ~ goodnews	εὐαγγελίζω	verb	V-PMP-NPM
+n44014015013	εὐαγγελιζόμενοι-1	εὐαγγελιζόμενοι	G2097	proclaiming the gospel	bring ~ good news	εὐαγγελίζω	verb	V-PMP-NPM
 n44014015014	ὑμᾶς-1	ὑμᾶς	G5209	to you	you	σύ	pron	P-2AP
 n44014015015	ἀπὸ-1	ἀπὸ	G0575	from	from	ἀπό	prep	PREP
 n44014015016	τούτων-1	τούτων	G5130	these	these	οὗτος	pron	D-GPN
@@ -74313,7 +74313,7 @@ n44015009014	αὐτῶν-2	αὐτῶν	G0846	of them	their	αὐτός	pron	P-
 n44015010001	νῦν-1	νῦν	G3568	Now	now	νῦν	adv	ADV
 n44015010002	οὖν-1	οὖν	G3767	therefore	therefore	οὖν	conj	CONJ
 n44015010003	τί-1	τί	G5101	why	why	τίς	pron	I-ASN
-n44015010004	πειράζετε-1	πειράζετε	G3985	are you testing	putting ~ tothe test	πειράζω	verb	V-PAI-2P
+n44015010004	πειράζετε-1	πειράζετε	G3985	are you testing	putting ~ to the test	πειράζω	verb	V-PAI-2P
 n44015010005	τὸν-1	τὸν	G3588	-		ὁ	det	T-ASM
 n44015010006	θεόν-1	θεόν	G2316	God	God	θεός	noun	N-ASM
 n44015010007	ἐπιθεῖναι-1	ἐπιθεῖναι	G2007	to put	placing	ἐπιτίθημι	verb	V-2AAN
@@ -75191,7 +75191,7 @@ n44016020006	εἶπαν-1	εἶπαν	G2036	they said	said	λέγω	verb	V-2AAI
 n44016020007	Οὗτοι-1	Οὗτοι	G3778	These	these	οὗτος	pron	D-NPM
 n44016020008	οἱ-1	οἱ	G3588	-		ὁ	det	T-NPM
 n44016020009	ἄνθρωποι-1	ἄνθρωποι	G0444	men	men	ἄνθρωπος	noun	N-NPM
-n44016020010	ἐκταράσσουσιν-1	ἐκταράσσουσιν	G1613	exceedingly trouble	throwing ~ intoconfusion	ἐκταράσσω	verb	V-PAI-3P
+n44016020010	ἐκταράσσουσιν-1	ἐκταράσσουσιν	G1613	exceedingly trouble	throwing ~ into confusion	ἐκταράσσω	verb	V-PAI-3P
 n44016020011	ἡμῶν-1	ἡμῶν	G2257	of us	our	ἐγώ	pron	P-1GP
 n44016020012	τὴν-1	τὴν	G3588	the		ὁ	det	T-ASF
 n44016020013	πόλιν-1	πόλιν	G4172	city	city	πόλις	noun	N-ASF
@@ -75598,7 +75598,7 @@ n44017004013	τῶν-1	τῶν	G3588	-	the	ὁ	det	T-GPM
 n44017004014	τε-1	τε	G5037	along with	including	τέ	conj	PRT
 n44017004015	σεβομένων-1	σεβομένων	G4576	worshipping	god-fearing	σέβομαι	verb	V-PNP-GPM
 n44017004016	Ἑλλήνων-1	Ἑλλήνων	G1672	Greeks	Greeks	Ἕλλην	noun	N-GPM
-n44017004017	πλῆθος-1	πλῆθος	G4128	a multitude	a ~ manyof	πλῆθος	noun	N-NSN
+n44017004017	πλῆθος-1	πλῆθος	G4128	a multitude	a ~ many of	πλῆθος	noun	N-NSN
 n44017004018	πολὺ-1	πολὺ	G4183	great	great	πολύς	adj	A-NSN
 n44017004019	γυναικῶν-1	γυναικῶν	G1135	women	women	γυνή	noun	N-GPF
 n44017004020	τε-2	τε	G5037	then	and	τέ	conj	PRT
@@ -75619,7 +75619,7 @@ n44017005010	τινὰς-1	τινὰς	G5100	certain	some	τις	pron	X-APM
 n44017005011	πονηροὺς-1	πονηροὺς	G4190	wicked	wicked	πονηρός	adj	A-APM
 n44017005012	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n44017005013	ὀχλοποιήσαντες-1	ὀχλοποιήσαντες	G3792	having collected a crowd	formed a mob	ὀχλοποιέω	verb	V-AAP-NPM
-n44017005014	ἐθορύβουν-1	ἐθορύβουν	G2350	they set in uproar	set ~ inan uproar	θορυβέω	verb	V-IAI-3P
+n44017005014	ἐθορύβουν-1	ἐθορύβουν	G2350	they set in uproar	set ~ in an uproar	θορυβέω	verb	V-IAI-3P
 n44017005015	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n44017005016	πόλιν-1	πόλιν	G4172	city	city	πόλις	noun	N-ASF
 n44017005017	καὶ-3	καὶ	G2532	and	and	καί	conj	CONJ
@@ -75650,7 +75650,7 @@ n44017006014	ὅτι-1	ὅτι	G3754	-		ὅτι	conj	CONJ
 n44017006015	Οἱ-1	Οἱ	G3588	The [ones]		ὁ	det	T-NPM
 n44017006016	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n44017006017	οἰκουμένην-1	οἰκουμένην	G3625	world	world	οἰκουμένη	noun	N-ASF
-n44017006018	ἀναστατώσαντες-1	ἀναστατώσαντες	G0387	having upset	turned ~ upsidedown	ἀναστατόω	verb	V-AAP-NPM
+n44017006018	ἀναστατώσαντες-1	ἀναστατώσαντες	G0387	having upset	turned ~ upside down	ἀναστατόω	verb	V-AAP-NPM
 n44017006019	οὗτοι-1	οὗτοι	G3778	these	these	οὗτος	pron	D-NPM
 n44017006020	καὶ-1	καὶ	G2532	also	also	καί	adv	CONJ
 n44017006021	ἐνθάδε-1	ἐνθάδε	G1759	here	here	ἐνθάδε	adv	ADV
@@ -76510,7 +76510,7 @@ n44018017012	οὐδὲν-1	οὐδὲν	G3762	nothing	none	οὐδείς	adj	A-
 n44018017013	τούτων-1	τούτων	G5130	about these things	these	οὗτος	pron	D-GPN
 n44018017014	τῷ-1	τῷ	G3588	-	whatever	ὁ	det	T-DSM
 n44018017015	Γαλλίωνι-1	Γαλλίωνι	G1058	to Gallio	Gallio	Γαλλίων	noun	N-DSM
-n44018017016	ἔμελεν-1	ἔμελεν	G3199	it mattered	paid ~ attentionto	μέλει	verb	V-IAI-3S
+n44018017016	ἔμελεν-1	ἔμελεν	G3199	it mattered	paid ~ attention to	μέλει	verb	V-IAI-3S
 n44018018001	Ὁ-1	Ὁ	G3588	-		ὁ	det	T-NSM
 n44018018002	δὲ-1	δὲ	G1161	Now	so	δέ	conj	CONJ
 n44018018003	Παῦλος-1	Παῦλος	G3972	Paul	Paul	Παῦλος	noun	N-NSM
@@ -77321,7 +77321,7 @@ n44019033003	τοῦ-1	τοῦ	G3588	the	the	ὁ	det	T-GSM
 n44019033004	ὄχλου-1	ὄχλου	G3793	crowd	crowd	ὄχλος	noun	N-GSM
 n44019033005	συνεβίβασαν-1	συνεβίβασαν	G4822	to explain himself	gave instructions	συμβιβάζω	verb	V-AAI-3P
 n44019033006	Ἀλέξανδρον-1	Ἀλέξανδρον	G0223	Alexander	Alexander	Ἀλέξανδρος	noun	N-ASM
-n44019033007	προβαλόντων-1	προβαλόντων	G4261	having thrust forward	pushed ~ tothe front	προβάλλω	verb	V-2AAP-GPM
+n44019033007	προβαλόντων-1	προβαλόντων	G4261	having thrust forward	pushed ~ to the front	προβάλλω	verb	V-2AAP-GPM
 n44019033008	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
 n44019033009	τῶν-1	τῶν	G3588	the	the	ὁ	det	T-GPM
 n44019033010	Ἰουδαίων-1	Ἰουδαίων	G2453	Jews	jews	Ἰουδαῖος	adj	A-GPM
@@ -79410,7 +79410,7 @@ n44022026007	χιλιάρχῳ-1	χιλιάρχῳ	G5506	commander	commander	χ�
 n44022026008	ἀπήγγειλεν-1	ἀπήγγειλεν	G0518	he reported [it]	reported	ἀπαγγέλλω	verb	V-AAI-3S
 n44022026009	λέγων-1	λέγων	G3004	saying	saying	λέγω	verb	V-PAP-NSM
 n44022026010	Τί-1	Τί	G5101	What	what	τίς	pron	I-ASN
-n44022026011	μέλλεις-1	μέλλεις	G3195	are you going	are ~ aboutto	μέλλω	verb	V-PAI-2S
+n44022026011	μέλλεις-1	μέλλεις	G3195	are you going	are ~ about to	μέλλω	verb	V-PAI-2S
 n44022026012	ποιεῖν-1	ποιεῖν	G4160	to do	do	ποιέω	verb	V-PAN
 n44022026013	ὁ-2	ὁ	G3588	The		ὁ	det	T-NSM
 n44022026014	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
@@ -79701,7 +79701,7 @@ n44023010014	ἐκέλευσεν-1	ἐκέλευσεν	G2753	he commanded	ordere
 n44023010015	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-ASN
 n44023010016	στράτευμα-1	στράτευμα	G4753	troop	soldiers	στράτευμα	noun	N-ASN
 n44023010017	καταβὰν-1	καταβὰν	G2597	having gone down	go down	καταβαίνω	verb	V-2AAP-ASN
-n44023010018	ἁρπάσαι-1	ἁρπάσαι	G0726	to take by force	take ~ away ~ byforce	ἁρπάζω	verb	V-AAN
+n44023010018	ἁρπάσαι-1	ἁρπάσαι	G0726	to take by force	take ~ away ~ by force	ἁρπάζω	verb	V-AAN
 n44023010019	αὐτὸν-1	αὐτὸν	G0846	him	him	αὐτός	pron	P-ASM
 n44023010020	ἐκ-1	ἐκ	G1537	from	from	ἐκ	prep	PREP
 n44023010021	μέσου-1	μέσου	G3319	midst	among	μέσος	adj	A-GSN
@@ -79743,7 +79743,7 @@ n44023012004	ποιήσαντες-1	ποιήσαντες	G4160	having made	forme
 n44023012005	συστροφὴν-1	συστροφὴν	G4963	a conspiracy	conspiracy	συστροφή	noun	N-ASF
 n44023012006	οἱ-1	οἱ	G3588	the	the	ὁ	det	T-NPM
 n44023012007	Ἰουδαῖοι-1	Ἰουδαῖοι	G2453	Jews	jews	Ἰουδαῖος	adj	A-NPM
-n44023012008	ἀνεθεμάτισαν-1	ἀνεθεμάτισαν	G0332	put under an oath	bound ~ undera curse	ἀναθεματίζω	verb	V-AAI-3P
+n44023012008	ἀνεθεμάτισαν-1	ἀνεθεμάτισαν	G0332	put under an oath	bound ~ under a curse	ἀναθεματίζω	verb	V-AAI-3P
 n44023012009	ἑαυτοὺς-1	ἑαυτοὺς	G1438	themselves	themselves	ἑαυτοῦ	pron	F-3APM
 n44023012010	λέγοντες-1	λέγοντες	G3004	declaring	saying	λέγω	verb	V-PAP-NPM
 n44023012011	μήτε-1	μήτε	G3383	neither	neither	μήτε	conj	CONJ-N
@@ -79935,7 +79935,7 @@ n44023021011	ἄνδρες-1	ἄνδρες	G0435	men	men	ἀνήρ	noun	N-NPM
 n44023021012	πλείους-1	πλείους	G4119	more than	more	πολύς	adj	A-NPM-C
 n44023021013	τεσσεράκοντα-1	τεσσεράκοντα	G5062	forty	forty	τεσσεράκοντα	num	A-NUI
 n44023021014	οἵτινες-1	οἵτινες	G3748	who	who	ὅστις	pron	R-NPM
-n44023021015	ἀνεθεμάτισαν-1	ἀνεθεμάτισαν	G0332	have put under an oath	bound ~ byan oath	ἀναθεματίζω	verb	V-AAI-3P
+n44023021015	ἀνεθεμάτισαν-1	ἀνεθεμάτισαν	G0332	have put under an oath	bound ~ by an oath	ἀναθεματίζω	verb	V-AAI-3P
 n44023021016	ἑαυτοὺς-1	ἑαυτοὺς	G1438	themselves	themselves	ἑαυτοῦ	pron	F-3APM
 n44023021017	μήτε-1	μήτε	G3383	neither	neither	μήτε	conj	CONJ-N
 n44023021018	φαγεῖν-1	φαγεῖν	G5315	to eat	eat	ἐσθίω	verb	V-2AAN
@@ -80150,7 +80150,7 @@ n44023034010	πυθόμενος-1	πυθόμενος	G4441	having learned	learne
 n44023034011	ὅτι-1	ὅτι	G3754	that	that	ὅτι	conj	CONJ
 n44023034012	ἀπὸ-1	ἀπὸ	G0575	from	from	ἀπό	prep	PREP
 n44023034013	Κιλικίας-1	Κιλικίας	G2791	Cilicia [he is]	Cilicia	Κιλικία	noun	N-GSF
-n44023035001	Διακούσομαί-1	Διακούσομαί	G1251	I will hear fully	give ~ ahearing	διακούω	verb	V-FDI-1S
+n44023035001	Διακούσομαί-1	Διακούσομαί	G1251	I will hear fully	give ~ a hearing	διακούω	verb	V-FDI-1S
 n44023035002	σου-1	σου	G4675	you	you	σύ	pron	P-2GS
 n44023035003	ἔφη-1	ἔφη	G5346	he was saying	said	φημί	verb	V-IAI-3S
 n44023035004	ὅταν-1	ὅταν	G3752	when	when	ὅταν	conj	CONJ
@@ -81861,7 +81861,7 @@ n44027007009	κατὰ-1	κατὰ	G2596	off	off	κατά	prep	PREP
 n44027007010	τὴν-1	τὴν	G3588	-		ὁ	det	T-ASF
 n44027007011	Κνίδον-1	Κνίδον	G2834	Cnidus	Cnidus	Κνίδος	noun	N-ASF
 n44027007012	μὴ-1	μὴ	G3361	not	not	μή	adv	PRT-N
-n44027007013	προσεῶντος-1	προσεῶντος	G4330	permitting	allow ~ toapproach	προσεάω	verb	V-PAP-GSM
+n44027007013	προσεῶντος-1	προσεῶντος	G4330	permitting	allow ~ to approach	προσεάω	verb	V-PAP-GSM
 n44027007014	ἡμᾶς-1	ἡμᾶς	G2248	us	us	ἐγώ	pron	P-1AP
 n44027007015	τοῦ-1	τοῦ	G3588	the	the	ὁ	det	T-GSM
 n44027007016	ἀνέμου-1	ἀνέμου	G0417	wind	wind	ἄνεμος	noun	N-GSM
@@ -86172,7 +86172,7 @@ n45007025011	οὖν-1	οὖν	G3767	so	then	οὖν	conj	CONJ
 n45007025012	αὐτὸς-1	αὐτὸς	G0846	myself	myself	αὐτός	pron	P-NSM
 n45007025013	ἐγὼ-1	ἐγὼ	G1473	I	I	ἐγώ	pron	P-1NS
 n45007025014	τῷ-2	τῷ	G3588	with the	the	ὁ	det	T-DSM
-n45007025015	μὲν-1	μὲν	G3303	indeed	on the one hand ~ onthe other	μέν	conj	PRT
+n45007025015	μὲν-1	μὲν	G3303	indeed	on the one hand ~ on the other	μέν	conj	PRT
 n45007025016	νοῒ-1	νοῒ	G3563	mind	mind	νοῦς	noun	N-DSM
 n45007025017	δουλεύω-1	δουλεύω	G1398	serve	serving	δουλεύω	verb	V-PAI-1S
 n45007025018	νόμῳ-1	νόμῳ	G3551	law	law	νόμος	noun	N-DSM
@@ -86264,7 +86264,7 @@ n45008005005	ὄντες-1	ὄντες	G5607	being	live	εἰμί	verb	V-PAP-NPM
 n45008005006	τὰ-1	τὰ	G3588	the things	the	ὁ	det	T-APN
 n45008005007	τῆς-1	τῆς	G3588	of the	the	ὁ	det	T-GSF
 n45008005008	σαρκὸς-1	σαρκὸς	G4561	flesh	flesh	σάρξ	noun	N-GSF
-n45008005009	φρονοῦσιν-1	φρονοῦσιν	G5426	mind	set ~ mindson	φρονέω	verb	V-PAI-3P
+n45008005009	φρονοῦσιν-1	φρονοῦσιν	G5426	mind	set ~ minds on	φρονέω	verb	V-PAI-3P
 n45008005010	οἱ-2	οἱ	G3588	those	those	ὁ	det	T-NPM
 n45008005011	δὲ-1	δὲ	G1161	however	but	δέ	conj	CONJ
 n45008005012	κατὰ-2	κατὰ	G2596	according to	according to	κατά	prep	PREP
@@ -86541,7 +86541,7 @@ n45008022005	ἡ-1	ἡ	G3588	the	the	ὁ	det	T-NSF
 n45008022006	κτίσις-1	κτίσις	G2937	creation	creation	κτίσις	noun	N-NSF
 n45008022007	συστενάζει-1	συστενάζει	G4959	groans together	groaning	συστενάζω	verb	V-PAI-3S
 n45008022008	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n45008022009	συνωδίνει-1	συνωδίνει	G4944	travails together	in ~ painsof childbirth	συνωδίνω	verb	V-PAI-3S
+n45008022009	συνωδίνει-1	συνωδίνει	G4944	travails together	in ~ pains of childbirth	συνωδίνω	verb	V-PAI-3S
 n45008022010	ἄχρι-1	ἄχρι	G0891	until	until	ἄχρι	prep	ADV
 n45008022011	τοῦ-1	τοῦ	G3588	-	the	ὁ	det	T-GSM
 n45008022012	νῦν-1	νῦν	G3568	now	now	νῦν	adv	ADV
@@ -88339,7 +88339,7 @@ n45012003011	ὄντι-1	ὄντι	G5607	being	is	εἰμί	verb	V-PAP-DSM
 n45012003012	ἐν-1	ἐν	G1722	among	among	ἐν	prep	PREP
 n45012003013	ὑμῖν-1	ὑμῖν	G5213	you	you	σύ	pron	P-2DP
 n45012003014	μὴ-1	μὴ	G3361	not	not	μή	adv	PRT-N
-n45012003015	ὑπερφρονεῖν-1	ὑπερφρονεῖν	G5252	to be high-minded	think ~ morehighly	ὑπερφρονέω	verb	V-PAN
+n45012003015	ὑπερφρονεῖν-1	ὑπερφρονεῖν	G5252	to be high-minded	think ~ more highly	ὑπερφρονέω	verb	V-PAN
 n45012003016	παρ’-1	παρ	G3844	above	than	παρά	prep	PREP
 n45012003017	ὃ-1	ὃ	G3739	what	he	ὅς	pron	R-ASN
 n45012003018	δεῖ-1	δεῖ	G1210	it behooves [you]	ought	δέω	verb	V-PAI-3S
@@ -88555,7 +88555,7 @@ n45012020007	ψώμιζε-1	ψώμιζε	G5595	feed	feed	ψωμίζω	verb	V-PAM
 n45012020008	αὐτόν-1	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n45012020009	ἐὰν-2	ἐὰν	G1437	if	if	ἐάν	conj	COND
 n45012020010	διψᾷ-1	διψᾷ	G1372	he should thirst	thirsty	διψάω	verb	V-PAS-3S
-n45012020011	πότιζε-1	πότιζε	G4222	give drink	give ~ todrink	ποτίζω	verb	V-PAM-2S
+n45012020011	πότιζε-1	πότιζε	G4222	give drink	give ~ to drink	ποτίζω	verb	V-PAM-2S
 n45012020012	αὐτόν-2	αὐτόν	G0846	him	him	αὐτός	pron	P-ASM
 n45012020013	τοῦτο-1	τοῦτο	G5124	this	so	οὗτος	pron	D-ASN
 n45012020014	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
@@ -89807,7 +89807,7 @@ n45016002020	αὐτὴ-1	αὐτὴ	G0846	she	she	αὐτός	pron	P-NSF
 n45016002021	προστάτις-1	προστάτις	G4368	a patroness	helper	προστάτις	noun	N-NSF
 n45016002022	πολλῶν-1	πολλῶν	G4183	of many	many	πολύς	adj	A-GPM
 n45016002023	ἐγενήθη-1	ἐγενήθη	G1096	has been	been	γίνομαι	verb	V-AOI-3S
-n45016002024	καὶ-3	καὶ	G2532	and	and ~ aswell	καί	conj	CONJ
+n45016002024	καὶ-3	καὶ	G2532	and	and ~ as well	καί	conj	CONJ
 n45016002025	ἐμοῦ-1	ἐμοῦ	G1473	of me	me	ἐγώ	pron	P-1GS
 n45016002026	αὐτοῦ-1	αὐτοῦ	G0846	myself	myself	αὐτός	pron	P-GSM
 n45016003001	Ἀσπάσασθε-1	Ἀσπάσασθε	G0782	Greet	greet	ἀσπάζομαι	verb	V-ADM-2P
@@ -90953,7 +90953,7 @@ n46003001014	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
 n46003001015	Χριστῷ-1	Χριστῷ	G5547	Christ	Christ	Χριστός	noun	N-DSM
 n46003002001	γάλα-1	γάλα	G1051	Milk	milk	γάλα	noun	N-ASN
 n46003002002	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
-n46003002003	ἐπότισα-1	ἐπότισα	G4222	I gave to drink	gave ~ todrink	ποτίζω	verb	V-AAI-1S
+n46003002003	ἐπότισα-1	ἐπότισα	G4222	I gave to drink	gave ~ to drink	ποτίζω	verb	V-AAI-1S
 n46003002004	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
 n46003002005	βρῶμα-1	βρῶμα	G1033	solid food	solid food	βρῶμα	noun	N-ASN
 n46003002006	οὔπω-1	οὔπω	G3768	not yet	not yet	οὔπω	adv	ADV-N
@@ -93088,7 +93088,7 @@ n46008013016	μὴ-2	μὴ	G3361	not	not	μή	adv	PRT-N
 n46008013017	τὸν-3	τὸν	G3588	the	the	ὁ	det	T-ASM
 n46008013018	ἀδελφόν-2	ἀδελφόν	G0080	brother	brother	ἀδελφός	noun	N-ASM
 n46008013019	μου-2	μου	G3450	of me	my	ἐγώ	pron	P-1GS
-n46008013020	σκανδαλίσω-1	σκανδαλίσω	G4624	I might snare	cause ~ tofall	σκανδαλίζω	verb	V-AAS-1S
+n46008013020	σκανδαλίσω-1	σκανδαλίσω	G4624	I might snare	cause ~ to fall	σκανδαλίζω	verb	V-AAS-1S
 n46009001001	Οὐκ-1	Οὐκ	G3756	Not	not	οὐ	ptcl	PRT-N
 n46009001002	εἰμὶ-1	εἰμὶ	G1510	am I	am	εἰμί	verb	V-PAI-1S
 n46009001003	ἐλεύθερος-1	ἐλεύθερος	G1658	free	free	ἐλεύθερος	adj	A-NSM
@@ -93405,7 +93405,7 @@ n46009019004	ἐκ-1	ἐκ	G1537	from	from	ἐκ	prep	PREP
 n46009019005	πάντων-1	πάντων	G3956	all	all	πᾶς	adj	A-GPM
 n46009019006	πᾶσιν-1	πᾶσιν	G3956	to all	all	πᾶς	adj	A-DPM
 n46009019007	ἐμαυτὸν-1	ἐμαυτὸν	G1683	myself	myself	ἐμαυτοῦ	pron	F-1ASM
-n46009019008	ἐδούλωσα-1	ἐδούλωσα	G1402	I became servant	made ~ aslave	δουλόω	verb	V-AAI-1S
+n46009019008	ἐδούλωσα-1	ἐδούλωσα	G1402	I became servant	made ~ a slave	δουλόω	verb	V-AAI-1S
 n46009019009	ἵνα-1	ἵνα	G2443	so that	so that	ἵνα	conj	CONJ
 n46009019010	τοὺς-1	τοὺς	G3588	the	the	ὁ	det	T-APM
 n46009019011	πλείονας-1	πλείονας	G4119	more	more	πολύς	adj	A-APM-C
@@ -93658,7 +93658,7 @@ n46010008011	εἴκοσι-1	εἴκοσι	G1501		twenty-	εἴκοσι(ν)	num	
 n46010008012	τρεῖς-1	τρεῖς	G5140		three	τρεῖς	adj	A-NPF
 n46010008013	χιλιάδες-1	χιλιάδες	G5505	thousand	thousand	χιλιάς	noun	N-NPF
 n46010009001	μηδὲ-1	μηδὲ	G3366	Neither	not	μηδέ	conj	CONJ-N
-n46010009002	ἐκπειράζωμεν-1	ἐκπειράζωμεν	G1598	should we test	put ~ tothe test	ἐκπειράζω	verb	V-PAS-1P
+n46010009002	ἐκπειράζωμεν-1	ἐκπειράζωμεν	G1598	should we test	put ~ to the test	ἐκπειράζω	verb	V-PAS-1P
 n46010009003	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n46010009004	Χριστόν-1	Χριστόν	G5547		Christ	Χριστός	noun	N-ASM
 n46010009005	καθώς-1	καθώς	G2531	as	as	καθώς	conj	ADV
@@ -93849,7 +93849,7 @@ n46010021014	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
 n46010021015	τραπέζης-2	τραπέζης	G5132	of [the] table	table	τράπεζα	noun	N-GSF
 n46010021016	δαιμονίων-2	δαιμονίων	G1140	of demons	demons	δαιμόνιον	noun	N-GPN
 n46010022001	ἢ-1	ἢ	G2228	Or	or	ἤ	conj	PRT
-n46010022002	παραζηλοῦμεν-1	παραζηλοῦμεν	G3863	do we provoke to jealousy	provoke ~ tojealousy	παραζηλόω	verb	V-PAI-1P
+n46010022002	παραζηλοῦμεν-1	παραζηλοῦμεν	G3863	do we provoke to jealousy	provoke ~ to jealousy	παραζηλόω	verb	V-PAI-1P
 n46010022003	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n46010022004	κύριον-1	κύριον	G2962	Lord	Lord	κύριος	noun	N-ASM
 n46010022005	μὴ-1	μὴ	G3361	Not	not	μή	ptcl	PRT-N
@@ -96158,7 +96158,7 @@ n46015026004	ὁ-1	ὁ	G3588	-		ὁ	det	T-NSM
 n46015026005	θάνατος-1	θάνατος	G2288	death	death	θάνατος	noun	N-NSM
 n46015027001	πάντα-1	πάντα	G3956	All things	all	πᾶς	adj	A-APN
 n46015027002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
-n46015027003	ὑπέταξεν-1	ὑπέταξεν	G5293	He has put in subjection	put ~ insubjection	ὑποτάσσω	verb	V-AAI-3S
+n46015027003	ὑπέταξεν-1	ὑπέταξεν	G5293	He has put in subjection	put ~ in subjection	ὑποτάσσω	verb	V-AAI-3S
 n46015027004	ὑπὸ-1	ὑπὸ	G5259	under	under	ὑπό	prep	PREP
 n46015027005	τοὺς-1	τοὺς	G3588	the	the	ὁ	det	T-APM
 n46015027006	πόδας-1	πόδας	G4228	feet	feet	πούς	noun	N-APM
@@ -96173,7 +96173,7 @@ n46015027014	δῆλον-1	δῆλον	G1212	[it is] evident	clear	δῆλος	a
 n46015027015	ὅτι-2	ὅτι	G3754	that	that	ὅτι	conj	CONJ
 n46015027016	ἐκτὸς-1	ἐκτὸς	G1622	[is] excepted	excepted	ἐκτός	prep	ADV
 n46015027017	τοῦ-1	τοῦ	G3588	the [One]	he	ὁ	det	T-GSM
-n46015027018	ὑποτάξαντος-1	ὑποτάξαντος	G5293	having put in subjection	put ~ insubjection	ὑποτάσσω	verb	V-AAP-GSM
+n46015027018	ὑποτάξαντος-1	ὑποτάξαντος	G5293	having put in subjection	put ~ in subjection	ὑποτάσσω	verb	V-AAP-GSM
 n46015027019	αὐτῷ-1	αὐτῷ	G0846	to Him	him	αὐτός	pron	P-DSM
 n46015027020	τὰ-1	τὰ	G3588	-		ὁ	det	T-APN
 n46015027021	πάντα-3	πάντα	G3956	all things	all	πᾶς	adj	A-APN
@@ -98293,7 +98293,7 @@ n47004015011	τῶν-1	τῶν	G3588	-	the	ὁ	det	T-GPM
 n47004015012	πλειόνων-1	πλειόνων	G4119	more and more	more and more	πολύς	adj	A-GPM-C
 n47004015013	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
 n47004015014	εὐχαριστίαν-1	εὐχαριστίαν	G2169	thanksgiving	thanksgiving	εὐχαριστία	noun	N-ASF
-n47004015015	περισσεύσῃ-1	περισσεύσῃ	G4052	may increase	cause ~ toabound	περισσεύω	verb	V-AAS-3S
+n47004015015	περισσεύσῃ-1	περισσεύσῃ	G4052	may increase	cause ~ to abound	περισσεύω	verb	V-AAS-3S
 n47004015016	εἰς-1	εἰς	G1519	to	to	εἰς	prep	PREP
 n47004015017	τὴν-2	τὴν	G3588	the	the	ὁ	det	T-ASF
 n47004015018	δόξαν-1	δόξαν	G1391	glory	glory	δόξα	noun	N-ASF
@@ -98548,7 +98548,7 @@ n47005013002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
 n47005013003	ἐξέστημεν-1	ἐξέστημεν	G1839	we are beside ourselves	beside ourselves	ἐξίστημι	verb	V-2AAI-1P
 n47005013004	θεῷ-1	θεῷ	G2316	[it is] to God	God	θεός	noun	N-DSM
 n47005013005	εἴτε-2	εἴτε	G1535	or if	if	εἴτε	conj	CONJ
-n47005013006	σωφρονοῦμεν-1	σωφρονοῦμεν	G4993	we are sober-minded	in ~ rightmind	σωφρονέω	verb	V-PAI-1P
+n47005013006	σωφρονοῦμεν-1	σωφρονοῦμεν	G4993	we are sober-minded	in ~ right mind	σωφρονέω	verb	V-PAI-1P
 n47005013007	ὑμῖν-1	ὑμῖν	G5213	[it is] for you	you	σύ	pron	P-2DP
 n47005014001	ἡ-1	ἡ	G3588	The	the	ὁ	det	T-NSF
 n47005014002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
@@ -101391,7 +101391,7 @@ n47013010024	καθαίρεσιν-1	καθαίρεσιν	G2506	tearing down	tear
 n47013011001	Λοιπόν-1	Λοιπόν	G3063	Finally	finally	λοιπός	adj	A-ASN
 n47013011002	ἀδελφοί-1	ἀδελφοί	G0080	brothers	brothers	ἀδελφός	noun	N-VPM
 n47013011003	χαίρετε-1	χαίρετε	G5463	rejoice	rejoice	χαίρω	verb	V-PAM-2P
-n47013011004	καταρτίζεσθε-1	καταρτίζεσθε	G2675	Be perfected	put ~ inorder	καταρτίζω	verb	V-PPM-2P
+n47013011004	καταρτίζεσθε-1	καταρτίζεσθε	G2675	Be perfected	put ~ in order	καταρτίζω	verb	V-PPM-2P
 n47013011005	παρακαλεῖσθε-1	παρακαλεῖσθε	G3870	be exhorted	encouraged	παρακαλέω	verb	V-PPM-2P
 n47013011006	τὸ-1	τὸ	G3588	[be of] the	the	ὁ	det	T-ASN
 n47013011007	αὐτὸ-1	αὐτὸ	G0846	same	one	αὐτός	adj	P-ASN
@@ -101570,7 +101570,7 @@ n48001009006	λέγω-1	λέγω	G3004	I say	say	λέγω	verb	V-PAI-1S
 n48001009007	εἴ-1	εἴ	G1487	if	if	εἰ	conj	COND
 n48001009008	τις-1	τις	G5100	anyone	anyone	τις	pron	X-NSM
 n48001009009	ὑμᾶς-1	ὑμᾶς	G5209	[to] you	you	σύ	pron	P-2AP
-n48001009010	εὐαγγελίζεται-1	εὐαγγελίζεται	G2097	is preaching a gospel	preaching ~ agospel	εὐαγγελίζω	verb	V-PMI-3S
+n48001009010	εὐαγγελίζεται-1	εὐαγγελίζεται	G2097	is preaching a gospel	preaching ~ a gospel	εὐαγγελίζω	verb	V-PMI-3S
 n48001009011	παρ’-1	παρ	G3844	contrary to	contrary to	παρά	prep	PREP
 n48001009012	ὃ-1	ὃ	G3739	what	what	ὅς	pron	R-ASN
 n48001009013	παρελάβετε-1	παρελάβετε	G3880	you received	received	παραλαμβάνω	verb	V-2AAI-2P
@@ -102856,7 +102856,7 @@ n48004016001	ὥστε-1	ὥστε	G5620	So	so then	ὥστε	conj	CONJ
 n48004016002	ἐχθρὸς-1	ἐχθρὸς	G2190	enemy	enemy	ἐχθρός	adj	A-NSM
 n48004016003	ὑμῶν-1	ὑμῶν	G5216	of you	your	σύ	pron	P-2GP
 n48004016004	γέγονα-1	γέγονα	G1096	have I become	become	γίνομαι	verb	V-2RAI-1S
-n48004016005	ἀληθεύων-1	ἀληθεύων	G0226	speaking truth	telling ~ thetruth	ἀληθεύω	verb	V-PAP-NSM
+n48004016005	ἀληθεύων-1	ἀληθεύων	G0226	speaking truth	telling ~ the truth	ἀληθεύω	verb	V-PAP-NSM
 n48004016006	ὑμῖν-1	ὑμῖν	G5213	to you	you	σύ	pron	P-2DP
 n48004017001	ζηλοῦσιν-1	ζηλοῦσιν	G2206	They are zealous after	make much of	ζηλόω	verb	V-PAI-3P
 n48004017002	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
@@ -102888,7 +102888,7 @@ n48004019001	τέκνα-1	τέκνα	G5043	Children	children	τέκνον	noun	N
 n48004019002	μου-1	μου	G3450	of me	my	ἐγώ	pron	P-1GS
 n48004019003	οὓς-1	οὓς	G3739	of whom	whom	ὅς	pron	R-APM
 n48004019004	πάλιν-1	πάλιν	G3825	again	again	πάλιν	adv	ADV
-n48004019005	ὠδίνω-1	ὠδίνω	G5605	I travail	am ~ inthe pain of childbirth	ὠδίνω	verb	V-PAI-1S
+n48004019005	ὠδίνω-1	ὠδίνω	G5605	I travail	am ~ in the pain of childbirth	ὠδίνω	verb	V-PAI-1S
 n48004019006	μέχρις-1	μέχρις	G3360	until	until	μέχρι(ς)	prep	ADV
 n48004019007	οὗ-1	οὗ	G3739	that	*	ὅς	pron	R-GSM
 n48004019008	μορφωθῇ-1	μορφωθῇ	G3445	shall have been formed	formed	μορφόω	verb	V-APS-3S
@@ -104152,7 +104152,7 @@ n49002005003	ἡμᾶς-1	ἡμᾶς	G2248	we	we	ἐγώ	pron	P-1AP
 n49002005004	νεκροὺς-1	νεκροὺς	G3498	dead	dead	νεκρός	adj	A-APM
 n49002005005	τοῖς-1	τοῖς	G3588	-	in the	ὁ	det	T-DPN
 n49002005006	παραπτώμασιν-1	παραπτώμασιν	G3900	in trespasses	trespasses	παράπτωμα	noun	N-DPN
-n49002005007	συνεζωοποίησεν-1	συνεζωοποίησεν	G4806	made [us] alive with	made ~ alivetogether with	συζωοποιέω	verb	V-AAI-3S
+n49002005007	συνεζωοποίησεν-1	συνεζωοποίησεν	G4806	made [us] alive with	made ~ alive together with	συζωοποιέω	verb	V-AAI-3S
 n49002005008	τῷ-1	τῷ	G3588	-		ὁ	det	T-DSM
 n49002005009	Χριστῷ-1	Χριστῷ	G5547	Christ	Christ	Χριστός	noun	N-DSM
 n49002005010	χάριτί-1	χάριτί	G5485	by grace	grace	χάρις	noun	N-DSF
@@ -105725,7 +105725,7 @@ n49006004001	Καὶ-1	Καὶ	G2532	And	and	καί	conj	CONJ
 n49006004002	οἱ-1	οἱ	G3588	-	you	ὁ	det	T-NPM
 n49006004003	πατέρες-1	πατέρες	G3962	fathers	fathers	πατήρ	noun	N-NPM
 n49006004004	μὴ-1	μὴ	G3361	not	not	μή	adv	PRT-N
-n49006004005	παροργίζετε-1	παροργίζετε	G3949	provoke	provoke ~ toanger	παροργίζω	verb	V-PAM-2P
+n49006004005	παροργίζετε-1	παροργίζετε	G3949	provoke	provoke ~ to anger	παροργίζω	verb	V-PAM-2P
 n49006004006	τὰ-1	τὰ	G3588	the	the	ὁ	det	T-APN
 n49006004007	τέκνα-1	τέκνα	G5043	children	children	τέκνον	noun	N-APN
 n49006004008	ὑμῶν-1	ὑμῶν	G5216	of you	your	σύ	pron	P-2GP
@@ -106157,7 +106157,7 @@ n50001006007	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
 n50001006008	ὑμῖν-1	ὑμῖν	G5213	you	you	σύ	pron	P-2DP
 n50001006009	ἔργον-1	ἔργον	G2041	a work	work	ἔργον	noun	N-ASN
 n50001006010	ἀγαθὸν-1	ἀγαθὸν	G0018	good	good	ἀγαθός	adj	A-ASN
-n50001006011	ἐπιτελέσει-1	ἐπιτελέσει	G2005	will complete [it]	bring ~ tocompletion	ἐπιτελέω	verb	V-FAI-3S
+n50001006011	ἐπιτελέσει-1	ἐπιτελέσει	G2005	will complete [it]	bring ~ to completion	ἐπιτελέω	verb	V-FAI-3S
 n50001006012	ἄχρι-1	ἄχρι	G0891	until	until	ἄχρι	prep	ADV
 n50001006013	ἡμέρας-1	ἡμέρας	G2250	[the] day	day	ἡμέρα	noun	N-GSF
 n50001006014	Χριστοῦ-1	Χριστοῦ	G5547	of Christ	Christ	Χριστός	noun	N-GSM
@@ -107308,7 +107308,7 @@ n50003019016	αὐτῶν-1	αὐτῶν	G0846	of them	their	αὐτός	pron	P-
 n50003019017	οἱ-1	οἱ	G3588	those	they	ὁ	det	T-NPM
 n50003019018	τὰ-1	τὰ	G3588	things		ὁ	det	T-APN
 n50003019019	ἐπίγεια-1	ἐπίγεια	G1919	earthly	earthly	ἐπίγειος	adj	A-APN
-n50003019020	φρονοῦντες-1	φρονοῦντες	G5426	minding	minds ~ seton	φρονέω	verb	V-PAP-NPM
+n50003019020	φρονοῦντες-1	φρονοῦντες	G5426	minding	minds ~ set on	φρονέω	verb	V-PAP-NPM
 n50003020001	ἡμῶν-1	ἡμῶν	G2257	Of us	our	ἐγώ	pron	P-1GP
 n50003020002	γὰρ-1	γὰρ	G1063	for	but	γάρ	conj	CONJ
 n50003020003	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-NSN
@@ -108161,7 +108161,7 @@ n51001025011	δοθεῖσάν-1	δοθεῖσάν	G1325	having been given	given
 n51001025012	μοι-1	μοι	G3427	me	me	ἐγώ	pron	P-1DS
 n51001025013	εἰς-1	εἰς	G1519	toward	for	εἰς	prep	PREP
 n51001025014	ὑμᾶς-1	ὑμᾶς	G5209	you	you	σύ	pron	P-2AP
-n51001025015	πληρῶσαι-1	πληρῶσαι	G4137	to complete	make ~ fullyknown	πληρόω	verb	V-AAN
+n51001025015	πληρῶσαι-1	πληρῶσαι	G4137	to complete	make ~ fully known	πληρόω	verb	V-AAN
 n51001025016	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n51001025017	λόγον-1	λόγον	G3056	word	word	λόγος	noun	N-ASM
 n51001025018	τοῦ-2	τοῦ	G3588	-		ὁ	det	T-GSM
@@ -108650,7 +108650,7 @@ n51003001016	θεοῦ-1	θεοῦ	G2316	of God	God	θεός	noun	N-GSM
 n51003001017	καθήμενος-1	καθήμενος	G2521	sitting	seated	κάθημαι	verb	V-PNP-NSM
 n51003002001	τὰ-1	τὰ	G3588	The things	the	ὁ	det	T-APN
 n51003002002	ἄνω-1	ἄνω	G0507	above	above	ἄνω	adv	ADV
-n51003002003	φρονεῖτε-1	φρονεῖτε	G5426	set [your] minds on	set ~ mindson	φρονέω	verb	V-PAM-2P
+n51003002003	φρονεῖτε-1	φρονεῖτε	G5426	set [your] minds on	set ~ minds on	φρονέω	verb	V-PAM-2P
 n51003002004	μὴ-1	μὴ	G3361	not	not	μή	adv	PRT-N
 n51003002005	τὰ-2	τὰ	G3588	the things	the	ὁ	det	T-APN
 n51003002006	ἐπὶ-1	ἐπὶ	G1909	on	on	ἐπί	prep	PREP
@@ -109982,7 +109982,7 @@ n52003006006	ἡμᾶς-1	ἡμᾶς	G2248	us	us	ἐγώ	pron	P-1AP
 n52003006007	ἀφ’-1	ἀφ	G0575	from	from	ἀπό	prep	PREP
 n52003006008	ὑμῶν-1	ὑμῶν	G5216	you	you	σύ	pron	P-2GP
 n52003006009	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
-n52003006010	εὐαγγελισαμένου-1	εὐαγγελισαμένου	G2097	having brought good news	brought ~ goodnews	εὐαγγελίζω	verb	V-AMP-GSM
+n52003006010	εὐαγγελισαμένου-1	εὐαγγελισαμένου	G2097	having brought good news	brought ~ good news	εὐαγγελίζω	verb	V-AMP-GSM
 n52003006011	ἡμῖν-1	ἡμῖν	G2254	to us	us	ἐγώ	pron	P-1DP
 n52003006012	τὴν-1	τὴν	G3588	of the	(of) the	ὁ	det	T-ASF
 n52003006013	πίστιν-1	πίστιν	G4102	faith	faith	πίστις	noun	N-ASF
@@ -113307,7 +113307,7 @@ n55001008011	τὸν-1	τὸν	G3588	the	the	ὁ	det	T-ASM
 n55001008012	δέσμιον-1	δέσμιον	G1198	prisoner	prisoner	δέσμιος	noun	N-ASM
 n55001008013	αὐτοῦ-1	αὐτοῦ	G0846	of Him	his	αὐτός	pron	P-GSM
 n55001008014	ἀλλὰ-1	ἀλλὰ	G0235	but	but	ἀλλά	conj	CONJ
-n55001008015	συγκακοπάθησον-1	συγκακοπάθησον	G4777	suffer together	join ~ insuffering	συγκακοπαθέω	verb	V-AAM-2S
+n55001008015	συγκακοπάθησον-1	συγκακοπάθησον	G4777	suffer together	join ~ in suffering	συγκακοπαθέω	verb	V-AAM-2S
 n55001008016	τῷ-1	τῷ	G3588	for the	the	ὁ	det	T-DSN
 n55001008017	εὐαγγελίῳ-1	εὐαγγελίῳ	G2098	gospel	gospel	εὐαγγέλιον	noun	N-DSN
 n55001008018	κατὰ-1	κατὰ	G2596	according to	according to	κατά	prep	PREP
@@ -113355,7 +113355,7 @@ n55001010012	καταργήσαντος-1	καταργήσαντος	G2673	havin
 n55001010013	μὲν-1	μὲν	G3303	indeed	on the one hand	μέν	conj	PRT
 n55001010014	τὸν-1	τὸν	G3588	-		ὁ	det	T-ASM
 n55001010015	θάνατον-1	θάνατον	G2288	death	death	θάνατος	noun	N-ASM
-n55001010016	φωτίσαντος-1	φωτίσαντος	G5461	having brought to light	brought ~ tolight	φωτίζω	verb	V-AAP-GSM
+n55001010016	φωτίσαντος-1	φωτίσαντος	G5461	having brought to light	brought ~ to light	φωτίζω	verb	V-AAP-GSM
 n55001010017	δὲ-2	δὲ	G1161	now	and	δέ	conj	CONJ
 n55001010018	ζωὴν-1	ζωὴν	G2222	life	life	ζωή	noun	N-ASF
 n55001010019	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
@@ -113391,7 +113391,7 @@ n55001012016	ὅτι-1	ὅτι	G3754	that	that	ὅτι	conj	CONJ
 n55001012017	δυνατός-1	δυνατός	G1415	able	able	δυνατός	adj	A-NSM
 n55001012018	ἐστιν-1	ἐστιν	G2076	He is	is	εἰμί	verb	V-PAI-3S
 n55001012019	τὴν-1	τὴν	G3588	the	the	ὁ	det	T-ASF
-n55001012020	παραθήκην-1	παραθήκην	G3866	deposit entrusted	what ~ haveentrusted	παραθήκη	noun	N-ASF
+n55001012020	παραθήκην-1	παραθήκην	G3866	deposit entrusted	what ~ have entrusted	παραθήκη	noun	N-ASF
 n55001012021	μου-1	μου	G3450	of me	I	ἐγώ	pron	P-1GS
 n55001012022	φυλάξαι-1	φυλάξαι	G5442	to guard	guard	φυλάσσω	verb	V-AAN
 n55001012023	εἰς-1	εἰς	G1519	for	until	εἰς	prep	PREP
@@ -116351,7 +116351,7 @@ n58004006007	αὐτήν-1	αὐτήν	G0848	it	it	ἑαυτοῦ	pron	P-ASF
 n58004006008	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n58004006009	οἱ-1	οἱ	G3588	those	those	ὁ	det	T-NPM
 n58004006010	πρότερον-1	πρότερον	G4386	formerly	formerly	πρότερος	adj	ADV-C
-n58004006011	εὐαγγελισθέντες-1	εὐαγγελισθέντες	G2097	having received the good news	received ~ goodnews	εὐαγγελίζω	verb	V-APP-NPM
+n58004006011	εὐαγγελισθέντες-1	εὐαγγελισθέντες	G2097	having received the good news	received ~ good news	εὐαγγελίζω	verb	V-APP-NPM
 n58004006012	οὐ-1	οὐ	G3756	not	not	οὐ	adv	PRT-N
 n58004006013	εἰσῆλθον-1	εἰσῆλθον	G1525	did enter in	enter	εἰσέρχομαι	verb	V-2AAI-3P
 n58004006014	δι’-1	δι	G1223	because of	because of	διά	prep	PREP
@@ -116849,7 +116849,7 @@ n58006006010	υἱὸν-1	υἱὸν	G5207	Son	son	υἱός	noun	N-ASM
 n58006006011	τοῦ-1	τοῦ	G3588	-		ὁ	det	T-GSM
 n58006006012	θεοῦ-1	θεοῦ	G2316	of God	God	θεός	noun	N-GSM
 n58006006013	καὶ-2	καὶ	G2532	and	and	καί	conj	CONJ
-n58006006014	παραδειγματίζοντας-1	παραδειγματίζοντας	G3856	subjecting [Him] to open shame	holding ~ upto contempt	παραδειγματίζω	verb	V-PAP-APM
+n58006006014	παραδειγματίζοντας-1	παραδειγματίζοντας	G3856	subjecting [Him] to open shame	holding ~ up to contempt	παραδειγματίζω	verb	V-PAP-APM
 n58006007001	γῆ-1	γῆ	G1093	Land	ground	γῆ	noun	N-NSF
 n58006007002	γὰρ-1	γὰρ	G1063	for	for	γάρ	conj	CONJ
 n58006007003	ἡ-1	ἡ	G3588	-		ὁ	det	T-NSF
@@ -117581,7 +117581,7 @@ n58008004003	οὖν-1	οὖν	G3767	then	now	οὖν	conj	CONJ
 n58008004004	ἦν-1	ἦν	G2258	He were	were	εἰμί	verb	V-IAI-3S
 n58008004005	ἐπὶ-1	ἐπὶ	G1909	on	on	ἐπί	prep	PREP
 n58008004006	γῆς-1	γῆς	G1093	earth	earth	γῆ	noun	N-GSF
-n58008004007	οὐδ’-1	οὐδ	G3761	not even	not ~ atall	οὐδέ	adv	CONJ-N
+n58008004007	οὐδ’-1	οὐδ	G3761	not even	not ~ at all	οὐδέ	adv	CONJ-N
 n58008004008	ἂν-1	ἂν	G0302	-	would	ἄν	ptcl	PRT
 n58008004009	ἦν-2	ἦν	G2258	would He be	be	εἰμί	verb	V-IAI-3S
 n58008004010	ἱερεύς-1	ἱερεύς	G2409	a priest	priest	ἱερεύς	noun	N-NSM
@@ -119398,7 +119398,7 @@ n58011034011	ἰσχυροὶ-1	ἰσχυροὶ	G2478	mighty	mighty	ἰσχυρ
 n58011034012	ἐν-1	ἐν	G1722	in	in	ἐν	prep	PREP
 n58011034013	πολέμῳ-1	πολέμῳ	G4171	war	battle	πόλεμος	noun	N-DSM
 n58011034014	παρεμβολὰς-1	παρεμβολὰς	G3925	[the] armies	armies	παρεμβολή	noun	N-APF
-n58011034015	ἔκλιναν-1	ἔκλιναν	G2827	put to flight	put ~ toflight	κλίνω	verb	V-AAI-3P
+n58011034015	ἔκλιναν-1	ἔκλιναν	G2827	put to flight	put ~ to flight	κλίνω	verb	V-AAI-3P
 n58011034016	ἀλλοτρίων-1	ἀλλοτρίων	G0245	of foreigners	foreign	ἀλλότριος	adj	A-GPM
 n58011035001	ἔλαβον-1	ἔλαβον	G2983	Received back	received	λαμβάνω	verb	V-2AAI-3P
 n58011035002	γυναῖκες-1	γυναῖκες	G1135	women	women	γυνή	noun	N-NPF
@@ -120410,7 +120410,7 @@ n59001006009	διακρινόμενος-2	διακρινόμενος	G1252	doubt
 n59001006010	ἔοικεν-1	ἔοικεν	G1503	is like	like	ἔοικα	verb	V-RAI-3S
 n59001006011	κλύδωνι-1	κλύδωνι	G2830	a wave	wave	κλύδων	noun	N-DSM
 n59001006012	θαλάσσης-1	θαλάσσης	G2281	of [the] sea	sea	θάλασσα	noun	N-GSF
-n59001006013	ἀνεμιζομένῳ-1	ἀνεμιζομένῳ	G0416	being blown by the wind	driven ~ bythe wind	ἀνεμίζομαι	verb	V-PPP-DSM
+n59001006013	ἀνεμιζομένῳ-1	ἀνεμιζομένῳ	G0416	being blown by the wind	driven ~ by the wind	ἀνεμίζομαι	verb	V-PPP-DSM
 n59001006014	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n59001006015	ῥιπιζομένῳ-1	ῥιπιζομένῳ	G4494	being tossed by the wind	tossed	ῥιπίζομαι	verb	V-PPP-DSM
 n59001007001	μὴ-1	μὴ	G3361	Not	not	μή	adv	PRT-N
@@ -121797,7 +121797,7 @@ n59005004023	ὦτα-1	ὦτα	G3775	ears	ears	οὖς	noun	N-APN
 n59005004024	Κυρίου-1	Κυρίου	G2962	of [the] Lord	Lord	κύριος	noun	N-GSM
 n59005004025	Σαβαὼθ-1	Σαβαὼθ	G4519	of Hosts	hosts	Σαβαώθ	noun	HEB
 n59005004026	εἰσεληλύθασιν-1	εἰσεληλύθασιν	G1525	have entered	reached	εἰσέρχομαι	verb	V-2RAI-3P
-n59005005001	ἐτρυφήσατε-1	ἐτρυφήσατε	G5171	You lived in luxury	lived ~ inluxury	τρυφάω	verb	V-AAI-2P
+n59005005001	ἐτρυφήσατε-1	ἐτρυφήσατε	G5171	You lived in luxury	lived ~ in luxury	τρυφάω	verb	V-AAI-2P
 n59005005002	ἐπὶ-1	ἐπὶ	G1909	upon	on	ἐπί	prep	PREP
 n59005005003	τῆς-1	τῆς	G3588	the	the	ὁ	det	T-GSF
 n59005005004	γῆς-1	γῆς	G1093	earth	earth	γῆ	noun	N-GSF
@@ -122119,7 +122119,7 @@ n60001003013	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-ASN
 n60001003014	πολὺ-1	πολὺ	G4183	great	great	πολύς	adj	A-ASN
 n60001003015	αὐτοῦ-1	αὐτοῦ	G0846	of Him	his	αὐτός	pron	P-GSM
 n60001003016	ἔλεος-1	ἔλεος	G1656	mercy	mercy	ἔλεος	noun	N-ASN
-n60001003017	ἀναγεννήσας-1	ἀναγεννήσας	G0313	having begotten again	caused ~ tobe born again	ἀναγεννάω	verb	V-AAP-NSM
+n60001003017	ἀναγεννήσας-1	ἀναγεννήσας	G0313	having begotten again	caused ~ to be born again	ἀναγεννάω	verb	V-AAP-NSM
 n60001003018	ἡμᾶς-1	ἡμᾶς	G2248	us	us	ἐγώ	pron	P-1AP
 n60001003019	εἰς-1	εἰς	G1519	to	to	εἰς	prep	PREP
 n60001003020	ἐλπίδα-1	ἐλπίδα	G1680	a hope	hope	ἐλπίς	noun	N-ASF
@@ -124203,7 +124203,7 @@ n61002004008	ἐφείσατο-1	ἐφείσατο	G5339	spared	spare	φείδο
 n61002004009	ἀλλὰ-1	ἀλλὰ	G0235	but	but	ἀλλά	conj	CONJ
 n61002004010	σειραῖς-1	σειραῖς	G4577		chains	σειρά	noun	N-DPF
 n61002004011	ζόφου-1	ζόφου	G2217	of gloomy darkness	darkness	ζόφος	noun	N-GSM
-n61002004012	ταρταρώσας-1	ταρταρώσας	G5020	having cast [them] down to Tartarus	cast ~ intohell	ταρταρόω	verb	V-AAP-NSM
+n61002004012	ταρταρώσας-1	ταρταρώσας	G5020	having cast [them] down to Tartarus	cast ~ into hell	ταρταρόω	verb	V-AAP-NSM
 n61002004013	παρέδωκεν-1	παρέδωκεν	G3860	delivered [them]	delivered	παραδίδωμι	verb	V-AAI-3S
 n61002004014	εἰς-1	εἰς	G1519	for	for	εἰς	prep	PREP
 n61002004015	κρίσιν-1	κρίσιν	G2920	judgment	judgment	κρίσις	noun	N-ASF
@@ -127767,7 +127767,7 @@ n65001016010	καὶ-1	καὶ	G2532	and	and	καί	conj	CONJ
 n65001016011	τὸ-1	τὸ	G3588	the	the	ὁ	det	T-NSN
 n65001016012	στόμα-1	στόμα	G4750	mouth	mouths	στόμα	noun	N-NSN
 n65001016013	αὐτῶν-2	αὐτῶν	G0846	of them	they	αὐτός	pron	P-GPM
-n65001016014	λαλεῖ-1	λαλεῖ	G2980	speaks	are ~ inspeech	λαλέω	verb	V-PAI-3S
+n65001016014	λαλεῖ-1	λαλεῖ	G2980	speaks	are ~ in speech	λαλέω	verb	V-PAI-3S
 n65001016015	ὑπέρογκα-1	ὑπέρογκα	G5246	great swelling [words]	bombastic	ὑπέρογκος	adj	A-APN
 n65001016016	θαυμάζοντες-1	θαυμάζοντες	G2296	flattering	flattering	θαυμάζω	verb	V-PAP-NPM
 n65001016017	πρόσωπα-1	πρόσωπα	G4383	faces	people	πρόσωπον	noun	N-APN
@@ -136644,7 +136644,7 @@ n66020013023	ἐκρίθησαν-1	ἐκρίθησαν	G2919	they were judged	ju
 n66020013024	ἕκαστος-1	ἕκαστος	G1538	each [of them]	each	ἕκαστος	adj	A-NSM
 n66020013025	κατὰ-1	κατὰ	G2596	according to	according to	κατά	prep	PREP
 n66020013026	τὰ-1	τὰ	G3588	the	the	ὁ	det	T-APN
-n66020013027	ἔργα-1	ἔργα	G2041	works	what ~ haddone	ἔργον	noun	N-APN
+n66020013027	ἔργα-1	ἔργα	G2041	works	what ~ had done	ἔργον	noun	N-APN
 n66020013028	αὐτῶν-1	αὐτῶν	G0846	of them	their	αὐτός	pron	P-GPM
 n66020014001	καὶ-1	καὶ	G2532	And	then	καί	conj	CONJ
 n66020014002	ὁ-1	ὁ	G3588	-		ὁ	det	T-NSM
