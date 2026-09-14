@@ -1,4 +1,4 @@
-{"documents": [{"docid": "WLCM", "scheme": "BCVWP"}, {"docid": "IRVHin", "scheme": "BCVWP"}], "meta": {"conformsTo": "0.3", "creator": "Biblica"}, "type": "translation", "records": [{"source": ["o010010010011", "o010010010012"], "target": ["01001001001", "01001001002"], "meta": {"id": "01001001.1", "origin": "manual", "status": "created"}},
+{"documents": [{"docid": "WLCM", "scheme": "BCVWP"}, {"docid": "IRVHin", "scheme": "BCVWP"}], "meta": {"conformsTo": "0.3", "creator": "Biblica"}, "roles": ["source", "target"], "type": "translation", "records": [{"source": ["o010010010011", "o010010010012"], "target": ["01001001001", "01001001002"], "meta": {"id": "01001001.1", "origin": "manual", "status": "created"}},
 {"source": ["o010010010031"], "target": ["01001001003", "01001001004"], "meta": {"id": "01001001.2", "origin": "manual", "status": "created"}},
 {"source": ["o010010010051", "o010010010052"], "target": ["01001001005"], "meta": {"id": "01001001.3", "origin": "manual", "status": "created"}},
 {"source": ["o010010010061", "o010010010062"], "target": ["01001001006"], "meta": {"id": "01001001.4", "origin": "manual", "status": "created"}},

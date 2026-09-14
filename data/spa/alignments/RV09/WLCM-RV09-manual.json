@@ -1,4 +1,4 @@
-{"documents": [{"docid": "wlcm", "scheme": "BCVWP"}, {"docid": "RV09", "scheme": "BCVWP"}], "meta": {"conformsTo": "0.3", "creator": "United Bible Societies"}, "roles": ["source", "target"], "type": "translation", "records": [{"source": ["o010010010012"], "target": ["01001001003"], "meta": {"id": "01001001.1", "origin": "manual"}},
+{"documents": [{"docid": "WLCM", "scheme": "BCVWP"}, {"docid": "RV09", "scheme": "BCVWP"}], "meta": {"conformsTo": "0.3", "creator": "United Bible Societies"}, "roles": ["source", "target"], "type": "translation", "records": [{"source": ["o010010010012"], "target": ["01001001003"], "meta": {"id": "01001001.1", "origin": "manual"}},
 {"source": ["o010010010021"], "target": ["01001001004"], "meta": {"id": "01001001.2", "origin": "manual"}},
 {"source": ["o010010010031"], "target": ["01001001005"], "meta": {"id": "01001001.3", "origin": "manual"}},
 {"source": ["o010010010052"], "target": ["01001001007"], "meta": {"id": "01001001.4", "origin": "manual"}},
